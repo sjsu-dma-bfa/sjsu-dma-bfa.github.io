@@ -14,6 +14,8 @@ Paste it into a file in the folder you just created called index.html
 
 Submit the link to your index page to canvas
 
+Example: https://sjsu-dma-bfa.github.io/2021s/rholberton/
+
 
 If you don't have edit access to repo:
 
