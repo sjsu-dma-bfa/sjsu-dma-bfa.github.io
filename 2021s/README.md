@@ -2,7 +2,7 @@ This  will become the Exhibition Page for the Spring 2020 Graduating  DMA BFA Cl
 
 Once you have been added to the class github as a contributor:
 
-Create a Folder in the following directory: https://github.com/sjsu-dma-bfa/sjsu-dma-bfa.github.io/tree/main/2021s
+Create a folder in this directory
 
 Name it: your first initial your lastname
 
