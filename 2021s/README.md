@@ -19,6 +19,6 @@ Example: https://sjsu-dma-bfa.github.io/2021s/rholberton/
 
 If you don't have edit access to repo:
 
-Double check that you provided your info in the Github Repo Signup Canvas assignment
+Double check that you provided your info in the Github Repo Signup Canvas assignment. 
 Double check that you accepted the collaboration invitation from sjsu-dma-bfa. Check your spam folder of the email account you provided that is associated with your gituhub repo
  
