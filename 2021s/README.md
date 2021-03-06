@@ -8,7 +8,7 @@ Name it: your first initial your lastname
 
 Example: rholberton
 
-Copy the index.html code and replace the  highlighted  text with your name
+Copy the index.html code and replace the 'Hello World'  text with your name
 
 Paste it into a file in the folder you just created called index.html
 
