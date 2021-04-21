@@ -1,7 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
+
+/* ColorScheme
+#2b67c7 blue
+#91a5f6 blue purple
+#ca97be gray pink
+#6571ad dark blue
+#afaef8 light purple
+#67bc8b light green
+#3c9b79 dark green */
+
+/* Gradient Background
+background: linear-gradient(167deg, #91a5f6 0%, #2b67c7 100%);
+background: linear-gradient(211deg, #ca97be 0%, #afaef8 100%);
+*/
+
+
 body {
   overflow: hidden;
+}
+
+li {
+  padding: 20px;
+  margin: 7px;
+  display: inline;
 }
 
 /* single page slide navigator */
@@ -76,21 +98,21 @@ body {
 }
 
 .slide a:hover {
-  transform: scale(1.3);
-  color: yellow;
+  text-shadow: 0px 0px 30px rgba(255,255,255,0.5);
   transition: 0.5s;
+  color: transparent;
 }
 
 .slick-vertical .slick-slide {
-  background-color: #374a67;
+  background: linear-gradient(167deg, #91a5f6 0%, #2b67c7 100%);
   border: none;
 }
 
 .slick-vertical .slick-slide:nth-of-type(even) {
-  background-color: #64718c;
+  background: linear-gradient(211deg, #ca97be 0%, #afaef8 100%);;
 }
 
-.slick-dots {
+/* .slick-dots {
   top: 50%;
   right: 0;
   transform: translateY(-50%) rotate(90deg);
@@ -101,8 +123,8 @@ body {
 .slick-dots li.slick-active button:before,
 .slick-dots li button:before {
   color: white;
-  font-size: 12px;
-}
+  font-size: 17px;
+} */
 
 /* grid layout basic setting */
 html, body, .grid-container {
@@ -124,7 +146,7 @@ html, body, .grid-container {
 
 .zoom-link {
   grid-area: 1 / 2 / 2 / 3;
-  background-color: pink;
+  background-color: #ca97be;
 }
 
 .New-Art-City-link {
@@ -133,12 +155,12 @@ html, body, .grid-container {
 
 .art1 {
   grid-area: 1 / 3 / 2 / 4;
-  background-color: orange;
+  background-color: #2b67c7 ;
 }
 
 .art2 {
   grid-area: 2 / 2 / 3 / 3;
-  background-color: lightyellow;
+  background-color: #8d9cdf;
 }
 
 .new-art-city- {
@@ -178,17 +200,17 @@ html, body, .grid-container_artist1 {
 
 .art3 {
   grid-area: art3;
-  background-color: pink;
+  background-color: #ca97be;
 }
 
 .art4 {
   grid-area: art4;
-  background-color: lightblue;
+  background-color: #6571ad;
 }
 
 .artist1 {
   grid-area: artist1;
-  background-color: lightblue;
+  background-color: #6571ad;
 }
 
 .artist2 {
@@ -197,12 +219,12 @@ html, body, .grid-container_artist1 {
 
 .artist3 {
   grid-area: artist3;
-  background-color: lightyellow;
+  background-color: #8d9cdf;
 }
 
 .artist4 {
   grid-area: artist4;
-  background-color: orange;
+  background-color: #2b67c7;
 }
 
 .artist5 {
@@ -220,7 +242,7 @@ html, body, .grid-container_artist1 {
 
 .artist8 {
   grid-area: artist8;
-  background-color: lightyellow;
+  background-color: #8d9cdf;
 }
 
 .artist9 {
@@ -229,12 +251,12 @@ html, body, .grid-container_artist1 {
 
 .artist10 {
   grid-area: artist10;
-  background-color: lightblue;
+  background-color: #6571ad;
 }
 
 .artist11 {
   grid-area: artist11;
-  background-color: orange;
+  background-color: #2b67c7;
 }
 
 .artist12 {
@@ -275,7 +297,7 @@ html, body, .grid-container_artist2 {
 
 .art5 {
   grid-area: art5;
-  background-color: lightyellow;
+  background-color: #8d9cdf;
 }
 
 .art6 {
@@ -288,12 +310,12 @@ html, body, .grid-container_artist2 {
 
 .artist14 {
   grid-area: artist14;
-  background-color: pink;
+  background-color: #ca97be;
 }
 
 .artist15 {
   grid-area: artist15;
-  background-color: lightblue;
+  background-color: #6571ad;
 }
 
 .artist16 {
@@ -303,7 +325,7 @@ html, body, .grid-container_artist2 {
 
 .artist17 {
   grid-area: artist17;
-  background-color: orange;
+  background-color: #2b67c7;
 }
 
 .artist18 {
@@ -317,22 +339,22 @@ html, body, .grid-container_artist2 {
 
 .artist20 {
   grid-area: artist20;
-  background-color: lightblue;
+  background-color: #6571ad;
 }
 
 .artist21 {
   grid-area: artist21;
-  background-color: pink;
+  background-color: #ca97be;
 }
 
 .artist22 {
   grid-area: artist22;
-  background-color: lightyellow;
+  background-color: #8d9cdf;
 }
 
 .artist23 {
   grid-area: artist23;
-  background-color: orange;
+  background-color: #2b67c7;
 }
 
 .artist24 {
@@ -370,16 +392,17 @@ html, body, .grid-container_work {
 
 .art7 {
   grid-area: art7;
-  background-color: lightblue;
+  background-color: #afaef8;
 }
 
 .art8 {
   grid-area: art8;
+  background-color: #8d9cdf;
 }
 
 .works-listed {
   grid-area: works-listed;
-  background-color: orange
+  background: linear-gradient(211deg, #ca97be 0%, #afaef8 100%);
 }
 
 /* For presentation only, no need to copy the code below */
@@ -394,3 +417,61 @@ html, body, .grid-container_work {
   top: 0;
   left: 0;
 }
+
+/* navigation menu */
+
+.topnav {
+  position: fixed;
+  overflow: hidden;
+  background-color:none;
+  z-index:2;
+  font-family: 'Fredoka One', cursive;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  color: rgba(255,255,255,0.7);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.topnav a:hover {
+  text-shadow: 0px 0px 30px rgba(255,255,255,0.5);
+  transition: 0.5s;
+  color: transparent;
+}
+
+.topnav a.active {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* slide indicator */
+
+.arrow {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  margin-left:-20px;
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
+  background-size: contain;
+}
+
+/* .arrow-upper {
+  position: fixed;
+  top: 50px;
+left: 50%;
+  margin-left:-20px;
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
+  background-size: contain;
+  transform: rotate(180deg);
+} */

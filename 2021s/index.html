@@ -9,26 +9,52 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css'>
   <link rel="stylesheet" href="./style.css">
 
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+
+
 </head>
 
 <body>
+  <!-- navigation menu -->
+  <div class="topnav">
+  <a href="#home">Home</a>
+  <a href="#exhibition">Exhibition</a>
+  <a href="#about">About</a>
+  <a href="#work">Works</a>
+  <a href="#artist">Artists</a>
+</div>
+
+
   <!-- partial:index.partial.html -->
-  <div class="slider">
-    <div class="slide">
+  <div class="slider" >
+    <div class="slide" id="home">
+      <div class="grid-container">
+        <div class="main">
+          <h1>IMAGE</h1>
+        </div>
+
+        </div>
+      </div>
+
+      <!-- end of slide 1 -->
+
+    <div class="slide" id="exhibition">
       <div class="grid-container">
         <div class="main">
           <h1>Title</h1>
         </div>
         <div class="zoom-link">
-          <a href="url">
-              <h3>Link to zoom</h3>
+          <a href="">
+              <h3>Register for opening</h3>
           </a>
           <br>
         </div>
         <div class="New-Art-City-link">
         </div>
         <div class="art1">
-<p>Opening hours: May 7 4-6:30 PM</p>
+<p>Opening hours: <br>
+  May 7 <br>4-6:30 PM</p>
         </div>
         <div class="art2"></div>
         <div class="new-art-city-">
@@ -39,30 +65,33 @@
       </div>
     </div>
 
-    <div class="slide">
+    <!-- end of slide 2 -->
+
+    <div class="slide" id="about">
       <h4>About</h4>
       <p style="padding:30px;">The Exhibition was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
     </div>
 
-    <div class="slide">
+    <div class="slide" id="work">
       <div class="grid-container_work">
         <div class="art7">
           <h2>works</h2>
         </div>
         <div class="art8"></div>
-        <div class="works-listed"></div>
+        <div class="works-listed">
+        </div>
       </div>
     </div>
 
-    <div class="slide">
+    <div class="slide" id="artist">
       <div class="grid-container_artist1">
         <div class="art3">
-<p>Links to the website/social/contact info/work for the exhibition</p>
+<h2>Artists</h2>
         </div>
         <div class="art4">
-          <h2>Artists</h2>
+          <h2>more artists▼</h2>
         </div>
         <div class="artist1">
           <a href="name.html">
@@ -195,19 +224,19 @@ In addition to our full espresso and brew bar menu, we serve fresh made-to-order
         </div>
       </div>
     </div>
-
-
-    <div class="slide">
-      <h1>Exhibition</h1>
-    </div>
-
-
   </div>
+
+    <!-- scroll indicator -->
+  <div class="arrow">
+  </div>
+  <!-- <div class="arrow-upper">
+  </div> -->
   <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js'></script>
   <script src="./script.js"></script>
+
 
 </body>
 
