@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
 
 body {
   background: linear-gradient(167deg, #91a5f6 0%, #2b67c7 100%);
-  font-family: 'Fredoka One', cursive;
-  padding: 30px;
+  font-family: 'Comfortaa', cursive;
+  padding: 50px 0px 50px 0px;
+  width: 90%;
+  text-align: center;
 }
 
 h1 {
   color:white;
   padding: 40px 40px 0px;
-  font-size: 60px;
+  font-size: 80px;
 }
 
 h2 {
@@ -79,7 +82,7 @@ img {
   overflow: hidden;
   background-color:none;
   z-index:2;
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Comfortaa', cursive;
   width: 100%;
 }
 

@@ -10,6 +10,10 @@
   <link rel="stylesheet" href="./style.css">
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
 
 
@@ -18,215 +22,329 @@
 <body>
   <!-- navigation menu -->
   <div class="topnav">
-  <a href="#home">Home</a>
-  <a href="#exhibition">Exhibition</a>
-  <a href="#about">About</a>
-  <a href="#work">Works</a>
-  <a href="#artist">Artists</a>
-</div>
+    <a href="#home">Home</a>
+    <a href="#exhibition">Exhibition</a>
+    <a href="#about">About</a>
+    <a href="#work">Works</a>
+    <a href="#artist">Artists</a>
+    <a href="#credit">Credits</a>
+  </div>
 
+  <link href="https://fonts.googleapis.com/css?family=Teko:700&display=swap" rel="stylesheet">
+
+
+  <!-- <div class="background-container">
+  <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt=""> -->
+  <!-- <div class="stars"></div>
+  <div class="twinkling"></div>
+  <div class="clouds"></div> -->
 
   <!-- partial:index.partial.html -->
-  <div class="slider" >
+  <div class="slider">
+    <!-- slide 01 -->
     <div class="slide" id="home">
-      <div class="grid-container">
-        <div class="main">
-          <h1>IMAGE</h1>
-        </div>
+        <img src="images/island.png" width="850vh;" style="position: absolute; top: 0px; right: 5%; " alt="">
+      <!-- title -->
+        <h1 style="position:absolute; font-size: 8.5vw;">
+          <span class='one'>D</span>
+          <span class='two'>I</span>
+          <span class='three'>G</span>
+          <span class='four'>I</span>
+          <span class='five'>T</span>
+          <span class='six'>A</span>
+          <span class='seven'>L</span><br>
 
-        </div>
-      </div>
-
-      <!-- end of slide 1 -->
-
-    <div class="slide" id="exhibition">
-      <div class="grid-container">
-        <div class="main">
-          <h1>Title</h1>
-        </div>
-        <div class="zoom-link">
-          <a href="">
-              <h3>Register for opening</h3>
-          </a>
-          <br>
-        </div>
-        <div class="New-Art-City-link">
-        </div>
-        <div class="art1">
-<p>Opening hours: <br>
-  May 7 <br>4-6:30 PM</p>
-        </div>
-        <div class="art2"></div>
-        <div class="new-art-city-">
-          <a href="url">
-            <h3>Link to NAC</h3>
-          </a>
-        </div>
-      </div>
+          <span class='one'>A</span>
+          <span class='two'>U</span>
+          <span class='three'>T</span>
+          <span class='four'>O</span>
+          <span class='five'>N</span>
+          <span class='six'>O</span>
+          <span class='seven'>M</span>
+          <span class='eight'>Y</span>
+        </h1>
     </div>
 
-    <!-- end of slide 2 -->
+  <!-- end of slide 1 -->
 
-    <div class="slide" id="about">
-      <h4>About</h4>
-      <p style="padding:30px;">The Exhibition was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
-    </div>
-
-    <div class="slide" id="work">
-      <div class="grid-container_work">
-        <div class="art7">
-          <h2>works</h2>
-        </div>
-        <div class="art8"></div>
-        <div class="works-listed">
-        </div>
+  <div class="slide" id="exhibition">
+    <div class="grid-container">
+      <div class="main">
+        <h1>Title</h1>
       </div>
-    </div>
-
-    <div class="slide" id="artist">
-      <div class="grid-container_artist1">
-        <div class="art3">
-<h2>Artists</h2>
-        </div>
-        <div class="art4">
-          <h2>more artists▼</h2>
-        </div>
-        <div class="artist1">
-          <a href="name.html">
-            <h3>name</h3>
-          </a>
-        </div>
-        <div class="artist2">
-          <a href="name.html">
-            <h3>name</h3>
-          </a>
-        </div>
-        <div class="artist3">
-          <a href="name.html">
-            <h3>name</h3>
-          </a>
-        </div>
-        <div class="artist4">
-          <a href="name.html">
-            <h3>name</h3>
-          </a>
-        </div>
-        <div class="artist5">
-          <a href="name.html">
-            <h3>name</h3>
-          </a>
-        </div>
-        <div class="artist6">
-          <a href="name.html">
-            <h3>name</h3>
-          </a>
-        </div>
-        <div class="artist7">
-          <a href="name.html">
-            <h3>name</h3>
-          </a>
-        </div>
-        <div class="artist8">
-          <a href="name.html">
-            <h3>name</h3>
-          </a>
-        </div>
-        <div class="artist9">
-          <a href="name.html">
-            <h3>name</h3>
-          </a>
-        </div>
-        <div class="artist10">
-          <a href="name.html">
-            <h3>name</h3>
-          </a>
-        </div>
-        <div class="artist11">
-          <a href="name.html">
-            <h3>name</h3>
-          </a>
-        </div>
-        <div class="artist12">
-          <a href="name.html">
-            <h3>name</h3>
-          </a>
-        </div>
+      <div class="zoom-link">
+        <a href="">
+          <h3>Register for opening</h3>
+        </a>
+        <br>
       </div>
-    </div>
-
-    <div class="slide">
-      <div class="grid-container_artist2">
-        <div class="art5">
-        </div>
-        <div class="art6">
-        </div>
-        <div class="artist13">
-          <a href="name.html">
-            <h3>name</h3>
-          </a>
-        </div>
-        <div class="artist14">
-          <a href="name.html">
-            <h3>name</h3>
-          </a>
-        </div>
-        <div class="artist15">
-          <a href="name.html">
-            <h3>name</h3>
-          </a>
-        </div>
-        <div class="artist16">
-          <a href="name.html">
-            <h3>name</h3>
-          </a>
-        </div>
-        <div class="artist17">
-          <a href="name.html">
-            <h3>name</h3>
-          </a>
-        </div>
-        <div class="artist18">
-          <a href="name.html">
-            <h3>name</h3>
-          </a>
-        </div>
-        <div class="artist19">
-          <a href="name.html">
-            <h3>name</h3>
-          </a>
-        </div>
-        <div class="artist20">
-          <a href="name.html">
-            <h3>name</h3>
-          </a>
-        </div>
-        <div class="artist21">
-          <a href="name.html">
-            <h3>name</h3>
-          </a>
-        </div>
-        <div class="artist22">
-          <a href="name.html">
-            <h3>name</h3>
-          </a>
-        </div>
-        <div class="artist23">
-          <a href="name.html">
-            <h3>name</h3>
-          </a>
-        </div>
-        <div class="artist24">
-          <a href="name.html">
-            <h3>name</h3>
-          </a>
-        </div>
+      <div class="New-Art-City-link">
+      </div>
+      <div class="art1">
+        <p>Opening hours: <br>
+          May 7 <br>4-6:30 PM</p>
+      </div>
+      <div class="art2"></div>
+      <div class="new-art-city-">
+        <a href="url">
+          <h3>Link to NAC</h3>
+        </a>
       </div>
     </div>
   </div>
 
-    <!-- scroll indicator -->
+  <!-- end of slide 2 -->
+
+  <div class="slide" id="about">
+    <h4>About</h4>
+    <p style="padding:30px;">The Exhibition was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+      In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+  </div>
+
+  <div class="slide" id="work">
+    <div class="grid-container_work">
+      <div class="art7">
+        <h2>works</h2>
+      </div>
+      <div class="art8"></div>
+      <div class="works-listed">
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" id="artist">
+<!--
+    Artist List
+    - - Jessica Prakash
+    - - Jason Lin
+    - - Meghan Landry
+    - - Tamaki Fujino
+    - - ASRA
+    - - Noor nbondogji
+    - - Emily tran
+    - - Hector Flores
+    - - Alicia Breinke
+    - - Lauren Chun
+    - -  Sabrina Chan
+    - - Matteo Leva
+    - - Clay Bedinger
+    - -  Steven Nguyen
+    - - Vanya Rashev
+    - - Kaicong Tang
+    - - Rachel Centinaje
+    - - Vanessa Mora Mendez
+    - - Ranz Ocampo
+    - - Andrew Barrios
+    - - Elizabeth Nguyen
+    - - Aaron Chin
+    - - Sabrina Kwong
+    - - Deana Desilva
+    - - Marc Velayo
+    - - Mona Kaji -->
+
+    <div class="grid-container_artist1">
+      <div class="art3">
+        <h2>Artists</h2>
+      </div>
+      <div class="art4">
+        <h2>more▼</h2>
+      </div>
+      <div class="artist1">
+        <a href="/abarrios/name.html">
+          <h3>Andrew Barrios</h3>
+        </a>
+      </div>
+      <div class="artist2">
+        <a href="/nbondogji/name.html">
+          <h3>Noor Bondogji</h3>
+        </a>
+      </div>
+      <div class="artist3">
+        <a href="/schan/name.html">
+          <h3>Sabrina Chan</h3>
+        </a>
+      </div>
+      <div class="artist4">
+
+      </div>
+      <div class="artist5">
+        <a href="/lchun/name.html">
+          <h3>Lauren Chun</h3>
+        </a>
+      </div>
+      <div class="artist6">
+        <a href="/asiddiqui/name.html">
+          <h3>ASRA</h3>
+        </a>
+      </div>
+      <div class="artist7">
+
+      </div>
+      <div class="artist8">
+        <a href="/ktang/name.html">
+          <h3>Kaicong Tang</h3>
+        </a>
+      </div>
+      <div class="artist9">
+        <a href="/rocampo/name.html">
+          <h3>Ranz Ocampo</h3>
+        </a>
+      </div>
+      <div class="artist10">
+        <a href="/enguyen/name.html">
+          <h3>Elizabeth Nguyen</h3>
+        </a>
+      </div>
+      <div class="artist11">
+
+
+      </div>
+      <div class="artist12">
+        <a href="/achin/name.html">
+          <h3>Aaron Arthur Chin</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="grid-container_artist2">
+      <div class="art5">
+      </div>
+      <div class="art6">
+      </div>
+      <div class="artist13">
+        <a href="/mlandry/name.html">
+          <h3>Meghan Landry</h3>
+        </a>
+      </div>
+      <div class="artist14">
+
+      </div>
+      <div class="artist15">
+        <a href="/jprakash/name.html.html">
+          <h3>Jessica Prakash</h3>
+        </a>
+      </div>
+      <div class="artist16">
+        <a href="/etran/name.html">
+          <h3>Emily Tran</h3>
+        </a>
+      </div>
+      <div class="artist17">
+        <a href="/jlin/name.html">
+          <h3>Jason Lin</h3>
+        </a>
+      </div>
+      <div class="artist18">
+        <a href="tfujino/name.html">
+          <h3>Tamaki Fujino</h3>
+        </a>
+      </div>
+      <div class="artist19">
+        <a href="skwong/name.html">
+          <h3>Sabrina Kwong</h3>
+        </a>
+      </div>
+      <div class="artist20">
+        <a href="snguyen/name.html">
+          <h3>Steven H. Nguyen</h3>
+        </a>
+      </div>
+      <div class="artist21">
+
+      </div>
+      <div class="artist22">
+        <a href="/vmendez/name.html">
+          <h3>Venessa Mora Méndez</h3>
+        </a>
+      </div>
+      <div class="artist23">
+
+      </div>
+      <div class="artist24">
+        <a href="/vrashev/name.html">
+          <h3>Vanya Rashev</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="grid-container_artist3">
+      <div class="art7">
+        <h2>Artists</h2>
+      </div>
+      <div class="art8">
+        <h2>more▼</h2>
+      </div>
+      <div class="artist25">
+        <a href="/cbedinger/name.html">
+          <h3>Clay Bedinger</h3>
+        </a>
+      </div>
+      <div class="artist26">
+
+      </div>
+      <div class="artist27">
+        <a href="/hflores/name.html">
+          <h3>Hector Flores</h3>
+        </a>
+      </div>
+      <div class="artist28">
+
+      </div>
+      <div class="artist29">
+        <a href="/abreinke/name.html">
+          <h3>Alicia Breinke</h3>
+        </a>
+      </div>
+      <div class="artist30">
+        <a href="/mvelayo/name.html.html">
+          <h3>Marc Velayo</h3>
+        </a>
+      </div>
+      <div class="artist31">
+        <a href="rcentinaje/name.html">
+          <h3>Rachel Centinaje</h3>
+        </a>
+      </div>
+      <div class="artist32">
+
+      </div>
+      <div class="artist33">
+        <a href="/ddesilva/name.html">
+          <h3>Deana Desilva</h3>
+        </a>
+      </div>
+      <div class="artist34">
+        <a href="/mkaji/name.html">
+          <h3>Mona Kaji</h3>
+        </a>
+      </div>
+      <div class="artist35">
+        <a href="/mleva/name.html">
+          <h3>Matteo Leva</h3>
+        </a>
+      </div>
+      <div class="artist36">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" id="credit">
+    <h4>Credit</h4>
+    <p style="padding:30px;">The Exhibition was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+      In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+  </div>
+  </div>
+
+  <!-- scroll indicator -->
   <div class="arrow">
   </div>
   <!-- <div class="arrow-upper">
