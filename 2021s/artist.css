@@ -4,9 +4,10 @@
 body {
   background: linear-gradient(167deg, #91a5f6 0%, #2b67c7 100%);
   font-family: 'Comfortaa', cursive;
-  padding: 50px 0px 50px 0px;
-  width: 90%;
+  width: 80%;
+  margin: 0 auto;
   text-align: center;
+  padding-top:50px;
 }
 
 h1 {
@@ -37,6 +38,7 @@ h4 {
 p {
   color:white;
   padding:10px 40px 20px;
+  text-align:left;
 
 }
 

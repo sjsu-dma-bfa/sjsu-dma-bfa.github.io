@@ -594,3 +594,31 @@ html, body, .grid-container_work {
 
 
  /* star background */
+
+ @import "compass/css3";
+
+
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    background-size: cover;
+    -webkit-background-size: cover;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.star {
+    position: absolute;
+    top: 300px;
+    left: 400px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.75);
+    box-shadow: 0px 0px 10px rgba(255,255,255,0.75);
+}

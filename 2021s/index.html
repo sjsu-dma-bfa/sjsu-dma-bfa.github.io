@@ -15,7 +15,49 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
+<script type="text/javascript">
+$(function(){
+  $(document).ready(function() {
+    var i,
+      size,
+      color,
+      width = $(document).width(),
+      height = $(document).height();
 
+    for (i = 1; i <= 150; i++) {
+      size = Math.ceil(3*Math.random());
+      $('#background').append('<div class="star" data-parallaxify-range="' + Math.round(100*Math.random()) + '" style="top: ' + Math.round(height*Math.random()) + 'px; left: ' + Math.round(width*Math.random()) + 'px; width: ' + size + 'px; height: ' + size + 'px;"></div>');
+    }
+
+    for (i = 1; i <= 30; i++) {
+      size = Math.ceil(5*Math.random()) + 2;
+      $('#background').append('<div class="star" data-parallaxify-range="' + Math.round(400*Math.random()) + '" style="top: ' + Math.round(height*Math.random()) + 'px; left: ' + Math.round(width*Math.random()) + 'px; width: ' + size + 'px; height: ' + size + 'px;"></div>');
+    }
+
+    for (i = 1; i <= 15; i++) {
+      size = Math.ceil(5*Math.random()) + 5;
+      color = 'rgba(' + Math.round(255) + ', ' + Math.round(255) + ', ' + Math.round(255) + ', ' + (Math.round(100*Math.random())/100) + ')';
+      $('#background').append('<div class="star" data-parallaxify-range="' + Math.round(600*Math.random()) + '" style="top: ' + Math.round(height*Math.random()) + 'px; left: ' + Math.round(width*Math.random()) + 'px; width: ' + size + 'px; height: ' + size + 'px; background: ' + color + '; box-shadow: 0px 0px 10px ' + color + ';"></div>');
+    }
+
+    $.parallaxify({
+/*					positionProperty: 'transform',
+      responsive: true,
+      motionType: 'natural',
+      mouseMotionType: 'gaussian',
+      motionAngleX: 80,
+      motionAngleY: 80,
+      alphaFilter: 0.5,
+      adjustBasePosition: true,
+      alphaPosition: 0.025,*/
+    });
+      /*$('#foreground').click(function() {
+      $('#info').animate({ marginLeft: "-150px" }, 700);
+    });*/
+  });
+}); // */
+
+</script>
 
 </head>
 
@@ -33,19 +75,21 @@
   <link href="https://fonts.googleapis.com/css?family=Teko:700&display=swap" rel="stylesheet">
 
 
-  <!-- <div class="background-container">
-  <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt=""> -->
-  <!-- <div class="stars"></div>
-  <div class="twinkling"></div>
-  <div class="clouds"></div> -->
+  <!-- <div id="foreground">
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+    </div> -->
 
   <!-- partial:index.partial.html -->
   <div class="slider">
     <!-- slide 01 -->
     <div class="slide" id="home">
+      <div id="background">
+        <div class="star" data-parallaxify-range="300"></div>
+      </div>
+
         <img src="images/island.png" width="850vh;" style="position: absolute; top: 0px; right: 5%; " alt="">
       <!-- title -->
-        <h1 style="position:absolute; font-size: 8.5vw;">
+        <h1 style="position:absolute; top:45%; font-size: 8.5vw;">
           <span class='one'>D</span>
           <span class='two'>I</span>
           <span class='three'>G</span>
