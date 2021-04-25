@@ -705,7 +705,7 @@ html, body, .grid-container_work {
 .clouds{
 	width:10000px;
 	height: 100%;
-	background: transparent url("/images/clouds_repeat50.png") repeat;
+	background: transparent url("../images/clouds_repeat50.png") repeat;
 	background-size: 1000px 1000px;
     position: absolute;
     right: 0;
