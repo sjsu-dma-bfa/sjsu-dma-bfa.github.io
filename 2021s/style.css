@@ -37,6 +37,8 @@ li {
   padding: 20px;
   margin: 7px;
   display: inline;
+	font-size:20px;
+	list-style:none;
 }
 
 /* single page slide navigator */
