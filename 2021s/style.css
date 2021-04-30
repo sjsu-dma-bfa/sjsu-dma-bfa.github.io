@@ -41,6 +41,17 @@ li {
 	list-style:none;
 }
 
+.worklist-container {
+  font-size: 4vw;
+  line-height: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+
+}
+
 /* single page slide navigator */
 .slick-dotted.slick-slider {
   overflow: hidden;
