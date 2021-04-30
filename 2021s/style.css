@@ -34,7 +34,7 @@ body {
 }
 
 li {
-  padding: 20px;
+  padding: 7vw;
   margin: 7px;
   display: inline;
 	font-size:20px;
@@ -42,14 +42,12 @@ li {
 }
 
 .worklist-container {
-  font-size: 4vw;
   line-height: 1;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
-
+	vertical-align:center;
 }
 
 /* single page slide navigator */
