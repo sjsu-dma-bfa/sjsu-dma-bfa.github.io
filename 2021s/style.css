@@ -806,3 +806,11 @@ html, body, .grid-container_work {
   padding: 30px;
   width: 90%;
 }
+
+.bkgdweb {
+  position: absolute;
+  top: 0px;
+  justify-content: center;
+  opacity: .5;
+  z-index: 0;
+}
