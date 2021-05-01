@@ -258,11 +258,16 @@ html, body, .grid-container_artist1 {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
-  grid-template-areas:
+  /* grid-template-areas:
     "art3 art3 artist1 artist2 artist3"
     "art3 art3 artist4 artist5 artist6"
     "artist7 artist8 artist9 art4 art4"
-    "artist10 artist11 artist12 art4 art4";
+    "artist10 artist11 artist12 art4 art4"; */
+  grid-template-areas:
+    "art3 art3 artist1 artist2 artist3"
+    "art3 art3 artist4 artist5 artist6"
+    "art3 art3 artist7 artist8 artist9"
+    "art3 art3 artist10 artist11 artist12";
 }
 
 .art3 {
