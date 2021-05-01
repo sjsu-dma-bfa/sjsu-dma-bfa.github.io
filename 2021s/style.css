@@ -814,3 +814,36 @@ html, body, .grid-container_work {
   opacity: .5;
   z-index: 0;
 }
+
+/* image gallery */
+
+.square {
+    float:left;
+    position: relative;
+    width: 13%;
+    min-height: 13%;
+    margin:5px;
+    background-color:#1E1E1E;
+    overflow:hidden;
+}
+
+.imagegallery {
+  width:77%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-45%) translateX(-50%);
+  -webkit- transform: translateY(-45%) translateX(-50%);
+  margin:auto;
+}
+
+
+
+/*  For responsive images */
+
+.content .rs{
+    width:auto;
+    height:auto;
+    max-height:100%;
+    max-width:100%;
+}
