@@ -112,6 +112,17 @@ li {
   font-weight: normal;
 }
 
+.slide h5 {
+  font-size: 1.75vw;
+  line-height: 1;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: normal;
+}
+
 .slide p {
   font-size: 1.5vw;
   line-height: 1;
@@ -205,13 +216,15 @@ html, body, .grid-container {
 
 .main {
   grid-area: 1 / 1 / 3 / 2;
-  background-color: #2F4560;
+  /* background-color: #2F4560; */
 }
 
 .zoom-link {
   grid-area: 1 / 2 / 2 / 3;
-  background-color: rgba( 202,151,190 , 0.5 );
-    /* background-color: rgba( 44, 138, 115 , 0.5 ); */
+  /* background-color: rgba( 202,151,190 , 0.5 ); */
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 10px;
 }
 
 .New-Art-City-link {
@@ -221,18 +234,22 @@ html, body, .grid-container {
 
 .art1 {
   grid-area: 1 / 3 / 2 / 4;
-  background-color: rgba( 43,103,199 , 0.5 ) ;
-  /* background-color: rgba( 45, 29, 61 , 0.5 ) ; */
+  /* background-color: rgba( 69, 147, 150 , 0.5 ) ; */
 }
 
 .art2 {
   grid-area: 2 / 2 / 3 / 3;
-  background-color: rgba( 141,156,223 , 0.5);
-    /* background-color: rgba( 15, 29, 89 , 0.5 ); */
+  /* background-color: rgba( 141,156,223 , 0.5);
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 10px; */
 }
 
 .new-art-city- {
   grid-area: 2 / 3 / 3 / 4;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 10px;
 }
 
 /* For presentation only, no need to copy the code below */
@@ -882,9 +899,9 @@ html, body, .grid-container_work {
 } */
 
 .aboutparagraph {
-  font-weight: normal;
   padding: 30px;
   width: 90%;
+  color: #85C9D8;
 }
 
 .bkgdweb {
