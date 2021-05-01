@@ -57,7 +57,7 @@ li {
 
 .slide {
   position: relative;
-  background-color: rgba(7, 24, 43, .75);
+  background-color: rgba(7, 24, 43, .85);
   height: 100vh;
   color: #fff;
   text-align: center;
@@ -112,7 +112,7 @@ li {
 }
 
 .slide p {
-  font-size: 2vw;
+  font-size: 1.5vw;
   line-height: 1;
   position: absolute;
   top: 50%;
@@ -131,13 +131,13 @@ li {
   transform: translate(-50%, -50%);
   font-family: 'Advent Pro', sans-serif;
   font-weight: lighter;
-  display: inline-grid;
+  display: inline-flex;
   height: auto;
 }
 
 .slide ul li {
   /* font-size: 2vw; */
-  /* line-height: 1; */
+  line-height: 1;
   /* position: absolute; */
   /* top: 50%;
   left: 50%;
@@ -800,3 +800,9 @@ html, body, .grid-container_work {
   z-index: 3;
   right: 20px;
 } */
+
+.aboutparagraph {
+  font-weight: normal;
+  padding: 30px;
+  width: 90%;
+}
