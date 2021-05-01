@@ -58,7 +58,7 @@ li {
 
 .slide {
   position: relative;
-  background-color: rgba(7, 24, 43, .85);
+  background-color: rgba(7, 24, 43, .25);
   height: 100vh;
   color: #fff;
   text-align: center;
@@ -209,8 +209,8 @@ html, body, .grid-container {
 
 .zoom-link {
   grid-area: 1 / 2 / 2 / 3;
-  /* background-color: rgba( 202,151,190 , 0.5 ); */
-    background-color: rgba( 44, 138, 115 , 0.5 );
+  background-color: rgba( 202,151,190 , 0.5 );
+    /* background-color: rgba( 44, 138, 115 , 0.5 ); */
 }
 
 .New-Art-City-link {
@@ -220,14 +220,14 @@ html, body, .grid-container {
 
 .art1 {
   grid-area: 1 / 3 / 2 / 4;
-  /* background-color: rgba( 43,103,199 , 0.5 ) ; */
-  background-color: rgba( 45, 29, 61 , 0.5 ) ;
+  background-color: rgba( 43,103,199 , 0.5 ) ;
+  /* background-color: rgba( 45, 29, 61 , 0.5 ) ; */
 }
 
 .art2 {
   grid-area: 2 / 2 / 3 / 3;
-  /* background-color: rgba( 141,156,223 , 0.5); */
-    background-color: rgba( 15, 29, 89 , 0.5 );
+  background-color: rgba( 141,156,223 , 0.5);
+    /* background-color: rgba( 15, 29, 89 , 0.5 ); */
 }
 
 .new-art-city- {
@@ -272,21 +272,21 @@ html, body, .grid-container_artist1 {
 
 .art3 {
   grid-area: art3;
-  /* background-color: rgba( 202,151,190 , 0.5 ); */
-  background-color: rgba( 44, 138, 115 , 0.5 );
+  background-color: rgba( 202,151,190 , 0.5 );
+  /* background-color: rgba( 44, 138, 115 , 0.5 ); */
 
 }
 
 .art4 {
   grid-area: art4;
-  /* background-color: rgba( 101,113,173 , 0.5); */
-  background-color: rgba( 71, 72, 145 , 0.5);
+  background-color: rgba( 101,113,173 , 0.5);
+  /* background-color: rgba( 71, 72, 145 , 0.5); */
 }
 
 .artist1 {
   grid-area: artist1;
-  /* background-color: rgba( 101,113,173 , 0.5); */
-    background-color: rgba( 71, 72, 145 , 0.5);
+  background-color: rgba( 101,113,173 , 0.5);
+    /* background-color: rgba( 71, 72, 145 , 0.5); */
 }
 
 .artist2 {
@@ -295,8 +295,8 @@ html, body, .grid-container_artist1 {
 
 .artist3 {
   grid-area: artist3;
-  /* background-color: rgba( 141,156,223 , 0.5); */
-  background-color: rgba( 15, 29, 89 , 0.5);
+  background-color: rgba( 141,156,223 , 0.5);
+  /* background-color: rgba( 15, 29, 89 , 0.5); */
 
 }
 
@@ -307,8 +307,8 @@ html, body, .grid-container_artist1 {
 
 .artist5 {
   grid-area: artist5;
-  /* background-color: rgba( 252,153,216 , 0.5 ); */
-    background-color: rgba( 45, 29, 61 , 0.5 ) ;
+  background-color: rgba( 252,153,216 , 0.5 );
+    /* background-color: rgba( 45, 29, 61 , 0.5 ) ; */
 }
 
 .artist6 {
@@ -321,8 +321,8 @@ html, body, .grid-container_artist1 {
 
 .artist8 {
   grid-area: artist8;
-  /* background-color: rgba( 141,156,223 , 0.5); */
-  background-color: rgba( 15, 29, 89 , 0.5);
+  background-color: rgba( 141,156,223 , 0.5);
+  /* background-color: rgba( 15, 29, 89 , 0.5); */
 }
 
 .artist9 {
@@ -341,8 +341,8 @@ html, body, .grid-container_artist1 {
 
 .artist12 {
   grid-area: artist12;
-  /* background-color: rgba( 252,153,216 , 0.5 ); */
-    background-color: rgba( 45, 29, 61 , 0.5 ) ;
+  background-color: rgba( 252,153,216 , 0.5 );
+    /* background-color: rgba( 45, 29, 61 , 0.5 ) ; */
 }
 
 /* For presentation only, no need to copy the code below */
@@ -383,8 +383,8 @@ html, body, .grid-container_artist2 {
 
 .art5 {
   grid-area: art5;
-  /* background-color:rgba( 141,156,223 , 0.5); */
-  background-color: rgba( 15, 29, 89 , 0.5);
+  background-color:rgba( 141,156,223 , 0.5);
+  /* background-color: rgba( 15, 29, 89 , 0.5); */
 }
 
 .art6 {
@@ -407,8 +407,8 @@ html, body, .grid-container_artist2 {
 
 .artist16 {
   grid-area: artist16;
-  /* background-color: rgba( 252,153,216 , 0.5 ); */
-    background-color: rgba( 45, 29, 61 , 0.5 ) ;
+  background-color: rgba( 252,153,216 , 0.5 );
+    /* background-color: rgba( 45, 29, 61 , 0.5 ) ; */
 }
 
 .artist17 {
@@ -422,8 +422,8 @@ html, body, .grid-container_artist2 {
 
 .artist19 {
   grid-area: artist19;
-  /* background-color:rgba( 252,153,216 , 0.5 ); */
-    background-color: rgba( 45, 29, 61 , 0.5 ) ;
+  background-color:rgba( 252,153,216 , 0.5 );
+    /* background-color: rgba( 45, 29, 61 , 0.5 ) ; */
 }
 
 .artist20 {
@@ -433,14 +433,14 @@ html, body, .grid-container_artist2 {
 
 .artist21 {
   grid-area: artist21;
-  /* background-color: rgba( 202,151,190 , 0.5 ); */
-    background-color: rgba( 44, 138, 115 , 0.5 );
+  background-color: rgba( 202,151,190 , 0.5 );
+    /* background-color: rgba( 44, 138, 115 , 0.5 ); */
 }
 
 .artist22 {
   grid-area: artist22;
-  /* background-color: rgba( 141,156,223 , 0.5); */
-  background-color: rgba( 15, 29, 89 , 0.5);
+  background-color: rgba( 141,156,223 , 0.5);
+  /* background-color: rgba( 15, 29, 89 , 0.5); */
 }
 
 .artist23 {
@@ -822,8 +822,10 @@ html, body, .grid-container_work {
   position: absolute;
   top: 0px;
   justify-content: center;
-  opacity: .5;
+  opacity: .2;
   z-index: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* image gallery */
