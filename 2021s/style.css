@@ -147,7 +147,7 @@ li {
   font-weight: lighter;
 }
 
-.slide a {
+.slide a:not(.imagelink){
   font-size: 2rem;
   text-decoration: none;
   color: white;
@@ -821,10 +821,17 @@ html, body, .grid-container_work {
     float:left;
     position: relative;
     width: 13%;
-    min-height: 13%;
+    height: 13%;
     margin:5px;
-    background-color:#1E1E1E;
+    padding-bottom:5px;
+    /* background-color:#1E1E1E; */
     overflow:hidden;
+    text-align: center;
+}
+
+.square:hover {
+  transform:scale(1.1);
+  transition:0.5s;
 }
 
 .imagegallery {
@@ -842,8 +849,8 @@ html, body, .grid-container_work {
 /*  For responsive images */
 
 .content .rs{
-    width:auto;
-    height:auto;
+    width:100px;
+    height:100px;
     max-height:100%;
-    max-width:100%;
+    /* max-width:100%; */
 }
