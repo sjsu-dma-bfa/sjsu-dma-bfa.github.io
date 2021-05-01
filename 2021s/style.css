@@ -122,6 +122,31 @@ li {
   font-weight: lighter;
 }
 
+.slide ul {
+  font-size: 2vw;
+  /* line-height: 1; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: lighter;
+  display: inline-grid;
+  height: auto;
+}
+
+.slide ul li {
+  /* font-size: 2vw; */
+  /* line-height: 1; */
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  margin-bottom: 5px;
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: lighter;
+}
+
 .slide a {
   font-size: 2rem;
   text-decoration: none;
