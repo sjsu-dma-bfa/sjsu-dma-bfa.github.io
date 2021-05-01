@@ -173,17 +173,19 @@ li {
 .slide a:hover {
   text-shadow: 0px 0px 30px rgba(255,255,255,0.5);
   transition: 0.5s;
-  color: #2F4560;
+  color: #5B60A3;
 }
 
 .slick-vertical .slick-slide {
 
-  background: linear-gradient(211deg, #ca97be 0%, #afaef8 100%);
+  /* background: linear-gradient(211deg, #ca97be 0%, #afaef8 100%); */
+  background: linear-gradient(211deg, #303347 0%, #D488F1 100%);
   border: none;
 }
 
 .slick-vertical .slick-slide:nth-of-type(even) {
-  background: linear-gradient(167deg, #91a5f6 0%, #2b67c7 100%);
+  /* background: linear-gradient(167deg, #91a5f6 0%, #2b67c7 100%); */
+  background: linear-gradient(167deg, #528597 0%, #5B60A3 100%);
 }
 
 /* .slick-dots {
@@ -725,7 +727,7 @@ html, body, .grid-container_work {
 .topnav a:hover {
   text-shadow: 0px 0px 30px rgba(255,255,255,1);
   transition: 0.25s;
-  color: #272C66;
+  color: #5B60A3;
 }
 
 .topnav a.active {
