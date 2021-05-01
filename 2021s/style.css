@@ -25,6 +25,7 @@ background: linear-gradient(211deg, #ca97be 0%, #afaef8 100%);
 html {
   margin:0;
     height:100%;
+     scroll-behavior: smooth;
 }
 
 body {
