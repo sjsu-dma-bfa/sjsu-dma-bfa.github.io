@@ -364,10 +364,10 @@ html, body, .grid-container_artist2 {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-template-areas:
-    "artist13 artist14 artist15 art5 art5"
-    "artist16 artist17 artist18 art5 art5"
-    "art6 art6 artist19 artist20 artist21"
-    "art6 art6 artist22 artist23 artist24";
+    "artist13 artist14 artist15 artist16"
+    "artist17 artist18 artist19 art5"
+    "art6 artist20 artist21 artist22"
+    "artist23 artist24 artist25 artist26";
 }
 
 .art5 {

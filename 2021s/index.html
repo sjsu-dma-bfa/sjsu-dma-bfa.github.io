@@ -12,52 +12,54 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
-<script type="text/javascript">
-$(function(){
-  $(document).ready(function() {
-    var i,
-      size,
-      color,
-      width = $(document).width(),
-      height = $(document).height();
+  <script type="text/javascript">
+    $(function() {
+      $(document).ready(function() {
+        var i,
+          size,
+          color,
+          width = $(document).width(),
+          height = $(document).height();
 
-    for (i = 1; i <= 150; i++) {
-      size = Math.ceil(3*Math.random());
-      $('#background').append('<div class="star" data-parallaxify-range="' + Math.round(100*Math.random()) + '" style="top: ' + Math.round(height*Math.random()) + 'px; left: ' + Math.round(width*Math.random()) + 'px; width: ' + size + 'px; height: ' + size + 'px;"></div>');
-    }
+        for (i = 1; i <= 150; i++) {
+          size = Math.ceil(3 * Math.random());
+          $('#background').append('<div class="star" data-parallaxify-range="' + Math.round(100 * Math.random()) + '" style="top: ' + Math.round(height * Math.random()) + 'px; left: ' + Math.round(width * Math.random()) + 'px; width: ' +
+            size + 'px; height: ' + size + 'px;"></div>');
+        }
 
-    for (i = 1; i <= 30; i++) {
-      size = Math.ceil(5*Math.random()) + 2;
-      $('#background').append('<div class="star" data-parallaxify-range="' + Math.round(400*Math.random()) + '" style="top: ' + Math.round(height*Math.random()) + 'px; left: ' + Math.round(width*Math.random()) + 'px; width: ' + size + 'px; height: ' + size + 'px;"></div>');
-    }
+        for (i = 1; i <= 30; i++) {
+          size = Math.ceil(5 * Math.random()) + 2;
+          $('#background').append('<div class="star" data-parallaxify-range="' + Math.round(400 * Math.random()) + '" style="top: ' + Math.round(height * Math.random()) + 'px; left: ' + Math.round(width * Math.random()) + 'px; width: ' +
+            size + 'px; height: ' + size + 'px;"></div>');
+        }
 
-    for (i = 1; i <= 15; i++) {
-      size = Math.ceil(5*Math.random()) + 5;
-      color = 'rgba(' + Math.round(255) + ', ' + Math.round(255) + ', ' + Math.round(255) + ', ' + (Math.round(100*Math.random())/100) + ')';
-      $('#background').append('<div class="star" data-parallaxify-range="' + Math.round(600*Math.random()) + '" style="top: ' + Math.round(height*Math.random()) + 'px; left: ' + Math.round(width*Math.random()) + 'px; width: ' + size + 'px; height: ' + size + 'px; background: ' + color + '; box-shadow: 0px 0px 10px ' + color + ';"></div>');
-    }
+        for (i = 1; i <= 15; i++) {
+          size = Math.ceil(5 * Math.random()) + 5;
+          color = 'rgba(' + Math.round(255) + ', ' + Math.round(255) + ', ' + Math.round(255) + ', ' + (Math.round(100 * Math.random()) / 100) + ')';
+          $('#background').append('<div class="star" data-parallaxify-range="' + Math.round(600 * Math.random()) + '" style="top: ' + Math.round(height * Math.random()) + 'px; left: ' + Math.round(width * Math.random()) + 'px; width: ' +
+            size + 'px; height: ' + size + 'px; background: ' + color + '; box-shadow: 0px 0px 10px ' + color + ';"></div>');
+        }
 
-    $.parallaxify({
-/*					positionProperty: 'transform',
-      responsive: true,
-      motionType: 'natural',
-      mouseMotionType: 'gaussian',
-      motionAngleX: 80,
-      motionAngleY: 80,
-      alphaFilter: 0.5,
-      adjustBasePosition: true,
-      alphaPosition: 0.025,*/
-    });
-      /*$('#foreground').click(function() {
+        $.parallaxify({
+          /*					positionProperty: 'transform',
+                responsive: true,
+                motionType: 'natural',
+                mouseMotionType: 'gaussian',
+                motionAngleX: 80,
+                motionAngleY: 80,
+                alphaFilter: 0.5,
+                adjustBasePosition: true,
+                alphaPosition: 0.025,*/
+        });
+        /*$('#foreground').click(function() {
       $('#info').animate({ marginLeft: "-150px" }, 700);
     });*/
-  });
-}); // */
-
-</script>
+      });
+    }); // */
+  </script>
 
 </head>
 
@@ -87,76 +89,81 @@ $(function(){
       </div>
       <div class="background-container">
 
-<!-- <div class="stars"></div> -->
-<!-- <div class="twinkling"></div> -->
-<div class="clouds"></div>
-</div>
+        <!-- <div class="stars"></div> -->
+        <!-- <div class="twinkling"></div> -->
+        <div class="clouds"></div>
+      </div>
 
 
-        <img src="/2021s/images/island.png" width="800vw;" style="position: absolute; top: 0px; right: 5%; " alt="">
+      <img src="/2021s/images/island.png" width="800vw;" style="position: absolute; top: 0px; right: 5%; " alt="">
       <!-- title -->
-        <h1 style="position:absolute; top:45%; font-size: 8.5vw;">
-          <span class='one'>D</span>
-          <span class='two'>I</span>
-          <span class='three'>G</span>
-          <span class='four'>I</span>
-          <span class='five'>T</span>
-          <span class='six'>A</span>
-          <span class='seven'>L</span><br>
+      <h1 style="position:absolute; top:45%; font-size: 8.5vw;">
+        <span class='one'>D</span>
+        <span class='two'>I</span>
+        <span class='three'>G</span>
+        <span class='four'>I</span>
+        <span class='five'>T</span>
+        <span class='six'>A</span>
+        <span class='seven'>L</span><br>
 
-          <span class='one'>A</span>
-          <span class='two'>U</span>
-          <span class='three'>T</span>
-          <span class='four'>O</span>
-          <span class='five'>N</span>
-          <span class='six'>O</span>
-          <span class='seven'>M</span>
-          <span class='eight'>Y</span>
-        </h1>
+        <span class='one'>A</span>
+        <span class='two'>U</span>
+        <span class='three'>T</span>
+        <span class='four'>O</span>
+        <span class='five'>N</span>
+        <span class='six'>O</span>
+        <span class='seven'>M</span>
+        <span class='eight'>Y</span>
+      </h1>
     </div>
 
-  <!-- end of slide 1 -->
+    <!-- end of slide 1 -->
 
-  <div class="slide" id="exhibition">
-    <div class="grid-container">
-      <div class="main">
-        <!-- <h1>Title</h1> -->
-        <!-- <h4>about</h4> -->
-        <p class="aboutparagraph">
-         CADRE Media Lab is pleased to announce Digital Autonomy, an exhibition of digital photography, video, painting, sculpture, and unclassifiable media hosted on New Art City that explores the multitude of interdependent signals crisscrossing the spatio-temporal void.  While never physically co-present, Seniors in their culminating semester of their BFA degree in Digital Media Art came together in digital space and found synaptic resonance; a cognitive sympathy fostered by digital signals. <br>
-          <br>
-          The name itself, Digital Autonomy, is a linguistic performance of cognitive dissidence.  All digital objects are destined for translation, an act that requires a source,  processor, and intended receiver. It begs the question; can any digital-thing, be autonomous? <br>
-          <br>
-          Digital Autonomy asks the viewer to engage in fantasy, consider the physicality of the bodies they inhabit, cast spells over networks, and pokes holes in the cultures of post-colonial frameworks.  As we begin to slowly emerge from our socially distant adaptations, the work imagines new possibilities for the kind of world we are passing into.  The artists in Digital Autonomy suggest new forms of relationships between signals, objects, and environments; redefining body & space on their own terms.
-         </p>
-        <img src="/2021s/images/clouds_repeat50.png" width="1800vw;" style="position: absolute; top: 0px; justify-content: center; opacity: .5;" alt="">
+    <div class="slide" id="exhibition">
+      <div class="grid-container">
+        <div class="main">
+          <!-- <h1>Title</h1> -->
+          <!-- <h4>about</h4> -->
+          <p class="aboutparagraph">
+            CADRE Media Lab is pleased to announce Digital Autonomy, an exhibition of digital photography, video, painting, sculpture, and unclassifiable media hosted on New Art City that explores the multitude of interdependent signals crisscrossing
+            the spatio-temporal void. While never physically co-present, Seniors in their culminating semester of their BFA degree in Digital Media Art came together in digital space and found synaptic resonance; a cognitive sympathy fostered by
+            digital signals. <br>
+            <br>
+            The name itself, Digital Autonomy, is a linguistic performance of cognitive dissidence. All digital objects are destined for translation, an act that requires a source, processor, and intended receiver. It begs the question; can any
+            digital-thing, be autonomous? <br>
+            <br>
+            Digital Autonomy asks the viewer to engage in fantasy, consider the physicality of the bodies they inhabit, cast spells over networks, and pokes holes in the cultures of post-colonial frameworks. As we begin to slowly emerge from our
+            socially distant adaptations, the work imagines new possibilities for the kind of world we are passing into. The artists in Digital Autonomy suggest new forms of relationships between signals, objects, and environments; redefining body &
+            space on their own terms.
+          </p>
+          <img src="/2021s/images/clouds_repeat50.png" width="1800vw;" style="position: absolute; top: 0px; justify-content: center; opacity: .5;" alt="">
 
-      </div>
-      <div class="zoom-link">
-        <a href="https://sjsu.zoom.us/meeting/register/tZ0oc-2rqzIjE9cB8jbmSU2JS3zDU73g1uR4">
-          <h3>register for opening</h3>
-        </a>
-        <br>
-      </div>
-      <div class="New-Art-City-link">
-      </div>
-      <div class="art1">
-        <h3>opening hours: <br>
-          May 7, 2021 <br>4 - 6:30 pm</h3>
-      </div>
-      <div class="art2"></div>
-      <div class="new-art-city-">
-        <a href="https://newart.city/show/cadre-bfa-digital-autonomy">
-          <h3>view in new art city</h3>
-          <img src="/2021s/images/nac-logo-edit2.svg" width="200px;" >
-        </a>
+        </div>
+        <div class="zoom-link">
+          <a href="https://sjsu.zoom.us/meeting/register/tZ0oc-2rqzIjE9cB8jbmSU2JS3zDU73g1uR4">
+            <h3>register for opening</h3>
+          </a>
+          <br>
+        </div>
+        <div class="New-Art-City-link">
+        </div>
+        <div class="art1">
+          <h3>opening hours: <br>
+            May 7, 2021 <br>4 - 6:30 pm</h3>
+        </div>
+        <div class="art2"></div>
+        <div class="new-art-city-">
+          <a href="https://newart.city/show/cadre-bfa-digital-autonomy">
+            <h3>view in new art city</h3>
+            <img src="/2021s/images/nac-logo-edit2.svg" width="200px;" style="opacity: .5;">
+          </a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- end of slide 2 -->
+    <!-- end of slide 2 -->
 
-  <!-- <div class="slide" id="about">
+    <!-- <div class="slide" id="about">
     <img src="/2021s/images/web.gif" width="100%;" height="100%" style="position: absolute; top: 0px; justify-content: center; opacity: .5 " alt="">
     <h4>about</h4>
     <p style="padding:30px; width:90%">
@@ -168,37 +175,50 @@ $(function(){
      </p>
   </div> -->
 
-  <div class="slide" id="work">
-<!--                 <img src="/2021s/images/heroimg.jpg" style="position: absolute; width: 110%; left: -5%;" alt=""> -->
-    <div class="grid-container_work">
-      <div class="art7">
-        <h2>Works</h2>
-      </div>
-      <div class="art8">
-        <h3>Image Gallery</h3>
-      </div>
-      <div class="works-listed">
-        <div class="worklist-container">
-        <li>title</li><li>title</li> <br>
-        <li>title</li><li>title</li>  <br>
-        <li>title</li><li>title</li>  <br>
-        <li>title</li><li>title</li>  <br>
-        <li>title</li><li>title</li>  <br>
-        <li>title</li><li>title</li>  <br>
-        <li>title</li><li>title</li>  <br>
-        <li>title</li><li>title</li>  <br>
-        <li>title</li><li>title</li>  <br>
-        <li>title</li><li>title</li>  <br>
-        <li>title</li><li>title</li>  <br>
-        <li>title</li><li>title</li>  <br>
-        <li>title</li><li>title</li> <br>
+    <div class="slide" id="work">
+      <!--                 <img src="/2021s/images/heroimg.jpg" style="position: absolute; width: 110%; left: -5%;" alt=""> -->
+      <div class="grid-container_work">
+        <div class="art7">
+          <h2>Works</h2>
+        </div>
+        <div class="art8">
+          <h3>Image Gallery</h3>
+        </div>
+        <div class="works-listed">
+          <div class="worklist-container">
+            <li>title</li>
+            <li>title</li> <br>
+            <li>title</li>
+            <li>title</li> <br>
+            <li>title</li>
+            <li>title</li> <br>
+            <li>title</li>
+            <li>title</li> <br>
+            <li>title</li>
+            <li>title</li> <br>
+            <li>title</li>
+            <li>title</li> <br>
+            <li>title</li>
+            <li>title</li> <br>
+            <li>title</li>
+            <li>title</li> <br>
+            <li>title</li>
+            <li>title</li> <br>
+            <li>title</li>
+            <li>title</li> <br>
+            <li>title</li>
+            <li>title</li> <br>
+            <li>title</li>
+            <li>title</li> <br>
+            <li>title</li>
+            <li>title</li> <br>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="slide" id="artist">
-<!--
+    <div class="slide" id="artist">
+      <!--
     Artist List
     - - Jessica Prakash
     - - Jason Lin
@@ -227,211 +247,187 @@ $(function(){
     - - Marc Velayo
     - - Mona Kaji -->
 
-    <div class="grid-container_artist1">
-      <div class="art3">
-        <h2>Artists</h2>
-      </div>
-      <div class="art4">
-        <!-- <h2>more▼</h2> -->
-      </div>
-      <div class="artist1">
-        <a href="/2021s/abarrios/name.html">
-          <h3>Andrew Barrios</h3>
-        </a>
-      </div>
-      <div class="artist2">
-        <a href="/2021s/nbondogji/name.html">
-          <h3>Noor Bondogji</h3>
-        </a>
-      </div>
-      <div class="artist3">
-        <a href="/2021s/schan/name.html">
-          <h3>Sabrina Chan</h3>
-        </a>
-      </div>
-      <div class="artist4">
+      <div class="grid-container_artist1">
+        <div class="art3">
+          <h2>artists</h2>
+        </div>
+        <div class="art4">
+          <!-- <h2>more▼</h2> -->
+        </div>
+        <div class="artist1">
+          <a href="/2021s/asiddiqui/name.html">
+            <h3>ASRA</h3>
+          </a>
+        </div>
+        <div class="artist2">
+          <a href="/2021s/abarrios/name.html">
+            <h3>Andrew Barrios</h3>
+          </a>
+        </div>
+        <div class="artist3">
+          <a href="/2021s/cbedinger/name.html">
+            <h3>Clay Bedinger</h3>
+          </a>
+        </div>
+        <div class="artist4">
+          <a href="/2021s/nbondogji/name.html">
+            <h3>Noor Bondogji</h3>
+          </a>
+        </div>
+        <div class="artist5">
+          <a href="/2021s/abreinke/name.html">
+            <h3>Alicia Breinke</h3>
+          </a>
+        </div>
+        <div class="artist6">
+          <a href="/2021s/rcentinaje/name.html">
+            <h3>Rachel Centinaje</h3>
+          </a>
+        </div>
+        <div class="artist7">
+          <a href="/2021s/schan/name.html">
+            <h3>Sabrina Chan</h3>
+          </a>
+        </div>
+        <div class="artist8">
+          <a href="/2021s/achin/name.html">
+            <h3>Aaron Arthur Chin</h3>
+          </a>
+        </div>
 
-      </div>
-      <div class="artist5">
-        <a href="/2021s/lchun/name.html">
-          <h3>Lauren Chun</h3>
-        </a>
-      </div>
-      <div class="artist6">
-        <a href="/2021s/asiddiqui/name.html">
-          <h3>ASRA</h3>
-        </a>
-      </div>
-      <div class="artist7">
-
-      </div>
-      <div class="artist8">
-        <a href="/2021s/ktang/name.html">
-          <h3>Kaicong Tang</h3>
-        </a>
-      </div>
-      <div class="artist9">
-        <a href="/2021s/rocampo/name.html">
-          <h3>Ranz Ocampo</h3>
-        </a>
-      </div>
-      <div class="artist10">
-        <a href="/2021s/enguyen/name.html">
-          <h3>Elizabeth Nguyen</h3>
-        </a>
-      </div>
-      <div class="artist11">
-
-
-      </div>
-      <div class="artist12">
-        <a href="/2021s/achin/name.html">
-          <h3>Aaron Arthur Chin</h3>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="slide">
-    <div class="grid-container_artist2">
-      <div class="art5">
-      </div>
-      <div class="art6">
-      </div>
-      <div class="artist13">
-        <a href="/2021s/mlandry/name.html">
-          <h3>Meghan Landry</h3>
-        </a>
-      </div>
-      <div class="artist14">
-
-      </div>
-      <div class="artist15">
-        <a href="/2021s/jprakash/name.html">
-          <h3>Jessica Prakash</h3>
-        </a>
-      </div>
-      <div class="artist16">
-        <a href="/2021s/etran/name.html">
-          <h3>Emily Tran</h3>
-        </a>
-      </div>
-      <div class="artist17">
-        <a href="/2021s/jlin/name.html">
-          <h3>Jason Lin</h3>
-        </a>
-      </div>
-      <div class="artist18">
-        <a href="/2021s/tfujino/name.html">
-          <h3>Tamaki Fujino</h3>
-        </a>
-      </div>
-      <div class="artist19">
-        <a href="/2021s/skwong/name.html">
-          <h3>Sabrina Kwong</h3>
-        </a>
-      </div>
-      <div class="artist20">
-        <a href="/2021s/snguyen/name.html">
-          <h3>Steven H. Nguyen</h3>
-        </a>
-      </div>
-      <div class="artist21">
-
-      </div>
-      <div class="artist22">
-        <a href="/2021s/vmendez/name.html">
-          <h3>Venessa Mora Méndez</h3>
-        </a>
-      </div>
-      <div class="artist23">
-
-      </div>
-      <div class="artist24">
-        <a href="/2021s/vrashev/name.html">
-          <h3>Vanya Rashev</h3>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="slide">
-    <div class="grid-container_artist3">
-      <div class="art7">
-        <h2>Artists</h2>
-      </div>
-      <div class="art8">
-        <!-- <h2>more▼</h2> -->
-      </div>
-      <div class="artist25">
-        <a href="/2021s/cbedinger/name.html">
-          <h3>Clay Bedinger</h3>
-        </a>
-      </div>
-      <div class="artist26">
-
-      </div>
-      <div class="artist27">
-        <a href="/2021s/hflores/name.html">
-          <h3>Hector Flores</h3>
-        </a>
-      </div>
-      <div class="artist28">
-
-      </div>
-      <div class="artist29">
-        <a href="/2021s/abreinke/name.html">
-          <h3>Alicia Breinke</h3>
-        </a>
-      </div>
-      <div class="artist30">
-        <a href="/2021s/mvelayo/name.html">
-          <h3>Marc Velayo</h3>
-        </a>
-      </div>
-      <div class="artist31">
-        <a href="/2021s/rcentinaje/name.html">
-          <h3>Rachel Centinaje</h3>
-        </a>
-      </div>
-      <div class="artist32">
-
-      </div>
-      <div class="artist33">
-        <a href="/2021s/ddesilva/name.html">
-          <h3>Deana Desilva</h3>
-        </a>
-      </div>
-      <div class="artist34">
-        <a href="/2021s/mkaji/name.html">
-          <h3>Mona Kaji</h3>
-        </a>
-      </div>
-      <div class="artist35">
-        <a href="/2021s/mleva/name.html">
-          <h3>Matteo Leva</h3>
-        </a>
-      </div>
-      <div class="artist36">
+        <div class="artist9">
+          <a href="/2021s/lchun/name.html">
+            <h3>Lauren Chun</h3>
+          </a>
+        </div>
+        <div class="artist10">
+          <a href="/2021s/ddesilva/name.html">
+            <h3>Deana Desilva</h3>
+          </a>
+        </div>
+        <div class="artist11">
+          <a href="/2021s/hflores/name.html">
+            <h3>Hector Flores</h3>
+          </a>
+        </div>
+        <div class="artist12">
+          <a href="/2021s/tfujino/name.html">
+            <h3>Tamaki Fujino</h3>
+          </a>
+        </div>
 
       </div>
     </div>
-  </div>
 
-  <div class="slide" id="credit">
-    <h4>credits</h4>
-<ul>
-  <li>design: Meghan Landry, Jason Lin, Jessica Prakash</li>
-  <li>web design: Asra Siddiqui, Tamaki Fujino</li>
-  <li>press: Emily Tran, Noor Bondogji</li>
-  <li>exhibition text: Andrew Barrios, Elizabeth Nguyen, Mona Kaji</li>
-  <li>layout: Clay Bedinger, Lauren Chun, Matteo Leva, Sabrina Chan</li>
-  <li>installation: Kaicong Tang, Steven Nguyen, Vanya Rashev</li>
-  <li>documentation & signage: Rachel Centinaje, Ranz Ocampo, Vanessa Mora Mendez</li>
-  <li>equipment & files: Alicia Breinke, Hector Flores</li>
-  <li>reception: Aaron Chin, Deana Desilva, Marc Velayo, Sabrina Kwong</li>
-</ul>
-  </div>
+    <div class="slide">
+      <div class="grid-container_artist2">
+        <div class="artist13">
+          <a href="/2021s/mkaji/name.html">
+            <h3>Mona Kaji</h3>
+          </a>
+        </div>
+        <div class="artist14">
+          <a href="/2021s/skwong/name.html">
+            <h3>Sabrina Kwong</h3>
+          </a>
+        </div>
+        <div class="artist15">
+          <a href="/2021s/mlandry/name.html">
+            <h3>Meghan Landry</h3>
+          </a>
+        </div>
+        <div class="artist16">
+          <a href="/2021s/mleva/name.html">
+            <h3>Matteo Leva</h3>
+          </a>
+        </div>
+        <div class="artist17">
+          <a href="/2021s/jlin/name.html">
+            <h3>Jason Lin</h3>
+          </a>
+        </div>
+        <div class="artist18">
+          <a href="/2021s/vmendez/name.html">
+            <h3>Venessa Mora Méndez</h3>
+          </a>
+        </div>
+        <div class="artist19">
+          <a href="/2021s/enguyen/name.html">
+            <h3>Elizabeth Nguyen</h3>
+          </a>
+        </div>
+        <div class="artist20">
+          <a href="/2021s/snguyen/name.html">
+            <h3>Steven H. Nguyen</h3>
+          </a>
+        </div>
+        <div class="artist21">
+          <a href="/2021s/rocampo/name.html">
+            <h3>Ranz Ocampo</h3>
+          </a>
+        </div>
+        <div class="artist22">
+          <a href="/2021s/jprakash/name.html">
+            <h3>Jessica Prakash</h3>
+          </a>
+        </div>
+        <div class="artist23">
+          <a href="/2021s/vrashev/name.html">
+            <h3>Vanya Rashev</h3>
+          </a>
+        </div>
+        <div class="artist24">
+          <a href="/2021s/ktang/name.html">
+            <h3>Kaicong Tang</h3>
+          </a>
+        </div>
+        <div class="artist25">
+          <a href="/2021s/etran/name.html">
+            <h3>Emily Tran</h3>
+          </a>
+        </div>
+        <div class="artist26">
+          <a href="/2021s/mvelayo/name.html">
+            <h3>Marc Velayo</h3>
+          </a>
+        </div>
+
+
+        <div class="art6">
+
+        </div>
+
+        <div class="art5">
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- <div class="slide">
+      <div class="grid-container_artist3">
+        <div class="art7">
+        </div>
+        <div class="art8">
+        </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="slide" id="credit">
+      <h4>credits</h4>
+      <ul>
+        <li>design: Meghan Landry, Jason Lin, Jessica Prakash</li>
+        <li>web design: Asra Siddiqui, Tamaki Fujino</li>
+        <li>press: Emily Tran, Noor Bondogji</li>
+        <li>exhibition text: Andrew Barrios, Elizabeth Nguyen, Mona Kaji</li>
+        <li>layout: Clay Bedinger, Lauren Chun, Matteo Leva, Sabrina Chan</li>
+        <li>installation: Kaicong Tang, Steven Nguyen, Vanya Rashev</li>
+        <li>documentation & signage: Rachel Centinaje, Ranz Ocampo, Vanessa Mora Mendez</li>
+        <li>equipment & files: Alicia Breinke, Hector Flores</li>
+        <li>reception: Aaron Chin, Deana Desilva, Marc Velayo, Sabrina Kwong</li>
+      </ul>
+    </div>
   </div>
 
   <!-- scroll indicator -->
