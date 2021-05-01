@@ -178,14 +178,14 @@ li {
 
 .slick-vertical .slick-slide {
 
-  /* background: linear-gradient(211deg, #ca97be 0%, #afaef8 100%); */
-  background: linear-gradient(211deg, #303347 0%, #D488F1 100%);
+  background: linear-gradient(211deg, #ca97be 0%, #afaef8 100%);
+  /* background: linear-gradient(211deg, #303347 0%, #D488F1 100%); */
   border: none;
 }
 
 .slick-vertical .slick-slide:nth-of-type(even) {
   /* background: linear-gradient(167deg, #91a5f6 0%, #2b67c7 100%); */
-  background: linear-gradient(167deg, #528597 0%, #5B60A3 100%);
+    background: linear-gradient(167deg, #91a5f6 0%, #41a9a3 100%);
 }
 
 /* .slick-dots {
