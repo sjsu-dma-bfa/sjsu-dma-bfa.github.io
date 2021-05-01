@@ -222,9 +222,9 @@ html, body, .grid-container {
 .zoom-link {
   grid-area: 1 / 2 / 2 / 3;
   /* background-color: rgba( 202,151,190 , 0.5 ); */
-  border: 1px solid white;
+  /* border: 1px solid white;
   border-radius: 5px;
-  margin: 10px;
+  margin: 10px; */
 }
 
 .New-Art-City-link {
