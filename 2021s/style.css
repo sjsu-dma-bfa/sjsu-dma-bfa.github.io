@@ -425,7 +425,7 @@ html, body, .grid-container_artist2 {
     "art5 art5 artist13 artist14 artist15"
     "art5 art5 artist16 artist17 artist18"
     "art6 artist19 artist20 artist21 artist22"
-    "art6 artist23 artist24 artist25 artist26";
+    "art7 artist23 artist24 artist25 artist26";
 }
 
 .art5 {
@@ -435,6 +435,12 @@ html, body, .grid-container_artist2 {
 
 .art6 {
   grid-area: art6;
+}
+
+.art7 {
+  grid-area: art7;
+  /* background-color: rgba( 202,151,190 , 0.5 ); */
+    background-color: rgba( 44, 138, 115 , 0.5 );
 }
 
 .artist13 {
@@ -577,11 +583,7 @@ html, body, .grid-container_artist3 {
     "artist34 artist35 artist36 art8 art8";
 }
 
-.art7 {
-  grid-area: art7;
-  /* background-color: rgba( 202,151,190 , 0.5 ); */
-    background-color: rgba( 44, 138, 115 , 0.5 );
-}
+
 
 .art8 {
   grid-area: art8;
@@ -899,7 +901,7 @@ html, body, .grid-container_work {
   right: 20px;
 } */
 
-.aboutparagraph {
+.paragraph {
   padding: 30px;
   width: 90%;
   color: #2F4560;
