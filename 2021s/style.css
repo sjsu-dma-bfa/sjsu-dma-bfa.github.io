@@ -848,7 +848,7 @@ margin: 0 auto;
   display: none !important;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 479px) {
   .pc {
     display: none !important;
   }
