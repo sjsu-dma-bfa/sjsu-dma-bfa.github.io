@@ -39,13 +39,22 @@ li {
   padding: 7vw;
   margin: 7px;
   display: inline;
-	font-size:20px;
+	font-size:1.5vw;
 	list-style:none;
 }
 
  p {
    line-height: 180%;
  }
+
+ hr {
+   width:70%;
+   border: 1px solid white;
+   margin:30px auto;
+   text-align:center;
+ }
+
+
 .worklist-container {
   position: absolute;
   top: 50%;
@@ -117,7 +126,7 @@ li {
   font-weight: normal;
 }
 
-.slide p {
+.slide p:not(#c2021) {
   font-size: 2vw;
   line-height: 150%;
   position: absolute;
@@ -198,12 +207,12 @@ html, body, .grid-container {
 
 .art1 {
   grid-area: 1 / 3 / 2 / 4;
-  background-color: rgba( 43,103,199 , 0.5 ) ;
+  background-color: rgba( 43,103,199 , 0.3 ) ;
 }
 
 .art2 {
   grid-area: 2 / 2 / 3 / 3;
-    background-color: rgba( 44, 138, 115 , 0.5 );
+    background-color: rgba( 44, 138, 115 , 0.3 );
 }
 
 .new-art-city- {
@@ -819,45 +828,8 @@ html, body, .grid-container_work {
   height: 100%;
 }
 
-/* image gallery */
-
-.square {
-    float:left;
-    position: relative;
-    width: 13%;
-    height: 13%;
-    margin:5px;
-    padding-bottom:5px;
-    /* background-color:#1E1E1E; */
-    overflow:hidden;
-    text-align: center;
-}
-
-.square:hover {
-  transform:scale(1.1);
-  transition:0.5s;
-}
-
-.imagegallery {
-  width:77%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-45%) translateX(-50%);
-  -webkit- transform: translateY(-45%) translateX(-50%);
-  margin:auto;
-}
 
 
-
-/*  For responsive images */
-
-.content .rs{
-    width:100px;
-    height:100px;
-    max-height:100%;
-    /* max-width:100%; */
-}
 
 .scroll-indicator {
   position:absolute;
@@ -899,6 +871,14 @@ margin: 0 auto;
   padding-top:30px;
 }
 
+#scrolltext {
+  font-size:2vw;
+}
+
+#abouttext {
+  font-size:1.3vw;
+}
+
 /* for tablet --------------------------------------------------------------------- */
 @media screen and (max-width: 767px) {
   #island-image {
@@ -915,9 +895,9 @@ margin: 0 auto;
     overflow: hidden;
     background-color:none;
     z-index:2;
-    font-family: 'Comfortaa', cursive;
-    /* font-family: 'Advent Pro', sans-serif; */
+    font-family: 'Advent Pro', sans-serif;
     font-weight: normal;
+    font-size:20px;
     width: 100%;
     margin-top:0px;
   }
@@ -940,6 +920,15 @@ margin: 0 auto;
   .topnav a.active {
     color: #ffffff;
     text-decoration: underline;
+  }
+
+  #scroll-text {
+    font-size:30px;
+  }
+
+  #abouttext {
+    font-size:3px;
+
   }
 
 
