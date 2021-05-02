@@ -17,10 +17,9 @@
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 
   <link rel="icon" href="/2021s/images/bfa_favi.png" type="image/png" sizes="16x16">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
 
   <script type="text/javascript">
-
-
     $(function() {
       $(document).ready(function() {
         var i,
@@ -73,7 +72,7 @@
   <div class="topnav">
     <a href="#home">home</a>
     <a href="#exhibition">exhibition</a>
-    <!-- <a href="#about">about</a> -->
+    <a href="#about">about</a>
     <a href="#work">works</a>
     <a href="#artist">artists</a>
     <a href="#credit">credits</a>
@@ -82,8 +81,6 @@
 
 
   <link href="https://fonts.googleapis.com/css?family=Teko:700&display=swap" rel="stylesheet">
-
-
 
   <!-- partial:index.partial.html -->
   <div class="slider">
@@ -100,7 +97,7 @@
       </div>
 
 
-      <img src="/2021s/images/island.png" width="800vw;" style="position: absolute; top: 0px; right: 5%; " alt="">
+      <img id="island-image" src="/2021s/images/island.png" alt="">
       <!-- title -->
       <h1 style="position:absolute; top:45%; font-size: 9vw;">
         <span class='one'>D</span>
@@ -121,9 +118,9 @@
         <span class='eight'>Y</span>
       </h1>
       <div class="scroll-indicator">
-          <h4 style="text-align:center; font-size:1.8vw; padding-bottom:30px;">scroll down for more</h4>
-          <div class="arrow">
-          </div>
+        <h4 id="scrolltext" style="font-family: 'Advent Pro', sans-serif; font-size:2vw;">scroll down for more</h4>
+        <div class="arrow">
+        </div>
       </div>
 
 
@@ -136,43 +133,33 @@
       <div class="grid-container">
         <div class="main">
           <!-- <h1>Title</h1> -->
-          <!-- <h4>about</h4> -->
-          <p class="aboutparagraph" style="line-height: 130%;">
-            <b>
-            CADRE Media Lab is pleased to announce Digital Autonomy, an exhibition of digital photography, video, painting, sculpture, and unclassifiable media hosted on New Art City that explores the multitude of interdependent signals
-            crisscrossing
-            the spatio-temporal void. While never physically co-present, Seniors in their culminating semester of their BFA degree in Digital Media Art came together in digital space and found synaptic resonance; a cognitive sympathy fostered by
-            digital signals. <br>
-            <br>
-            The name itself, Digital Autonomy, is a linguistic performance of cognitive dissidence. All digital objects are destined for translation, an act that requires a source, processor, and intended receiver. It begs the question; can any
-            digital-thing, be autonomous? <br>
-            <br>
-            Digital Autonomy asks the viewer to engage in fantasy, consider the physicality of the bodies they inhabit, cast spells over networks, and pokes holes in the cultures of post-colonial frameworks. As we begin to slowly emerge from our
-            socially distant adaptations, the work imagines new possibilities for the kind of world we are passing into. The artists in Digital Autonomy suggest new forms of relationships between signals, objects, and environments; redefining body &
-            space on their own terms.
-          </b>
+
+          <img id="nacimage" src="/2021s/images/nac_ssop.jpg" height="100%" width="100%" alt="">
+          <p>The exhibition is held online at New Art City. <br>
+            Please register for the zoom opening on May 7th, 4:00-6:30pm <br><br>
+            <a id="nacabout" style="position:relative; font-size:3vw; text-align: :center;" href="https://newart.city/"><b>About New Art City</b></a>
           </p>
-          <img src="/2021s/images/clouds_repeat50.png" width="100%;" height="100%" style="position: absolute; top: 0px; justify-content: center; opacity: .5;" alt="">
 
         </div>
         <div class="zoom-link">
           <a href="https://sjsu.zoom.us/meeting/register/tZ0oc-2rqzIjE9cB8jbmSU2JS3zDU73g1uR4">
-            <h3 style="font-size:3vw;"><b>REGISTER FOR ZOOM OPENING</b></h3>
+            <h3 style="font-size:4vw; font-family: 'Advent Pro', sans-serif;"><b>REGISTER FOR ZOOM OPENING</b></h3>
           </a>
           <br>
         </div>
         <div class="New-Art-City-link">
         </div>
         <div class="art1">
-          <h3 style="text-align:left; line-height:1.6; float:left;"><b>OPENING HOURS <br>
-            May 7, 2021 <br>4 - 6 : 30 pm</b></h3>
         </div>
-        <div class="art2"></div>
+        <div class="art2">
+          <h3 style="text-align:left; line-height:1.6;">
+          </h3>
+        </div>
         <div class="new-art-city-">
           <a href="https://newart.city/show/cadre-bfa-digital-autonomy">
-            <h3 style="font-size:3vw;"><b>VIEW IN NEW ART CITY</b></h3>
-            <img src="/2021s/images/nac-logo-edit2.svg" width="200px;" style="opacity: .5;">
-              <!-- <h3>view in new art city</h3> -->
+            <h3 style="font-size:4vw;font-family: 'Advent Pro', sans-serif;"><b>VIEW IN NEW ART CITY</b></h3>
+            <img src="/2021s/images/nac-logo-edit2.svg" width="120%" style="text-align:center;">
+            <!-- <h3>view in new art city</h3> -->
           </a>
         </div>
       </div>
@@ -180,21 +167,26 @@
 
     <!-- end of slide 2 -->
 
-    <!-- <div class="slide" id="about">
-    <img src="/2021s/images/web.gif" width="100%;" height="100%" style="position: absolute; top: 0px; justify-content: center; opacity: .5 " alt="">
-    <h4>about</h4>
-    <p style="padding:30px; width:90%">
-     CADRE Media Lab is pleased to announce Digital Autonomy, an exhibition of digital photography, video, painting, sculpture, and unclassifiable media hosted on New Art City that explores the multitude of interdependent signals crisscrossing the spatio-temporal void.  While never physically co-present, Seniors in their culminating semester of their BFA degree in Digital Media Art came together in digital space and found synaptic resonance; a cognitive sympathy fostered by digital signals. <br>
-      <br>
-      The name itself, Digital Autonomy, is a linguistic performance of cognitive dissidence.  All digital objects are destined for translation, an act that requires a source,  processor, and intended receiver. It begs the question; can any digital-thing, be autonomous? <br>
-      <br>
-      Digital Autonomy asks the viewer to engage in fantasy, consider the physicality of the bodies they inhabit, cast spells over networks, and pokes holes in the cultures of post-colonial frameworks.  As we begin to slowly emerge from our socially distant adaptations, the work imagines new possibilities for the kind of world we are passing into.  The artists in Digital Autonomy suggest new forms of relationships between signals, objects, and environments; redefining body & space on their own terms.
-     </p>
-  </div> -->
+    <div class="slide" id="about">
+      <!-- <img src="/2021s/images/web.gif" width="100%;" height="100%" style="position: absolute; top: 0px; z-index:0; justify-content: center; opacity: .1" alt=""> -->
+      <!-- <h4>about</h4> -->
+      <p style="padding:30px; width:90%; font-size:1.7vw; line-height:130%;">
+        CADRE Media Lab is pleased to announce Digital Autonomy, an exhibition of digital photography, video, painting, sculpture, and unclassifiable media hosted on New Art City that explores the multitude of interdependent signals crisscrossing
+        the spatio-temporal void. While never physically co-present, Seniors in their culminating semester of their BFA degree in Digital Media Art came together in digital space and found synaptic resonance; a cognitive sympathy fostered by digital
+        signals. <br>
+        <br>
+        The name itself, Digital Autonomy, is a linguistic performance of cognitive dissidence. All digital objects are destined for translation, an act that requires a source, processor, and intended receiver. It begs the question; can any
+        digital-thing, be autonomous? <br>
+        <br>
+        Digital Autonomy asks the viewer to engage in fantasy, consider the physicality of the bodies they inhabit, cast spells over networks, and pokes holes in the cultures of post-colonial frameworks. As we begin to slowly emerge from our
+        socially distant adaptations, the work imagines new possibilities for the kind of world we are passing into. The artists in Digital Autonomy suggest new forms of relationships between signals, objects, and environments; redefining body &
+        space on their own terms.
+      </p>
+    </div>
 
     <div class="slide" id="work">
 
-      <h3 style="position:absolute; top:100px; font-size:3vw">works</h3>
+      <h3 style="position:absolute; top:100px; font-size:3vw; font-family: 'Advent Pro', sans-serif;"><b>WORKS</b></h3>
       <!-- 1st row verticaly centered text in the square columns -->
 
       <div class="imagegallery">
@@ -246,7 +238,7 @@
               <img class="rs" src="/2021s/images/grid/ktang.png" />
             </a>
           </div>
-          </div>
+        </div>
         <div class="square">
           <div class="content">
             <a href="/2021s/mlandry/work.html" class="imagelink">
@@ -270,7 +262,7 @@
         </div>
         <div class="square">
           <div class="content">
-            <a href="/2021s/rocampo/work.html" class="imagelink">
+            <a href="/2021s/rocampo/mountainose.html" class="imagelink">
               <img class="rs" src="/2021s/images/grid/rocampo.png" />
             </a>
           </div>
@@ -295,7 +287,7 @@
               <img class="rs" src="/2021s/images/grid/tfujino.png" />
             </a>
           </div>
-          </div>
+        </div>
 
         <div class="square">
           <div class="content">
@@ -341,104 +333,59 @@
         </div>
         <div class="square">
           <div class="content">
+            <a href="/2021s/abarrios/lchun.html" class="imagelink">
+              <img class="rs" src="/2021s/images/grid/lchun.png" />
+            </a>
+          </div>
+        </div>
+        <div class="square">
+          <div class="content">
             <a href="/2021s/abarrios/work.html" class="imagelink">
               <img class="rs" src="/2021s/images/grid/abarrios.jpg" />
             </a>
           </div>
+        </div>
+        <div class="square">
+          <div class="content">
+            <a href="/2021s/abarrios/work.html" class="imagelink">
+              <img class="rs" src="/2021s/images/grid/abarrios.jpg" />
+            </a>
           </div>
-          <div class="square">
-            <div class="content">
-              <a href="/2021s/abarrios/work.html" class="imagelink">
-                <img class="rs" src="/2021s/images/grid/abarrios.jpg" />
-              </a>
-            </div>
+        </div>
+        <div class="square">
+          <div class="content">
+            <a href="/2021s/abarrios/work.html" class="imagelink">
+              <img class="rs" src="/2021s/images/grid/abarrios.jpg" />
+            </a>
           </div>
-          <div class="square">
-            <div class="content">
-              <a href="/2021s/abarrios/work.html" class="imagelink">
-                <img class="rs" src="/2021s/images/grid/abarrios.jpg" />
-              </a>
-            </div>
-          </div>
-          <div class="square">
-            <div class="content">
-              <a href="/2021s/abarrios/work.html" class="imagelink">
-                <img class="rs" src="/2021s/images/grid/abarrios.jpg" />
-              </a>
-            </div>
-          </div>
-          <div class="square">
-            <div class="content">
-              <a href="/2021s/abarrios/work.html" class="imagelink">
-                <img class="rs" src="/2021s/images/grid/abarrios.jpg" />
-              </a>
-            </div>
-          </div>
-          <div class="square">
-            <div class="content">
-              <a href="/2021s/abarrios/work.html" class="imagelink">
-                <img class="rs" src="/2021s/images/grid/abarrios.jpg" />
-              </a>
-            </div>
-          </div>
-          <div class="square">
-            <div class="content">
-              <a href="/2021s/abarrios/work.html" class="imagelink">
-                <img class="rs" src="/2021s/images/grid/abarrios.jpg" />
-              </a>
-            </div>
-          </div>
-          <div class="square">
-            <div class="content">
-              <a href="/2021s/abarrios/work.html" class="imagelink">
-                <img class="rs" src="/2021s/images/grid/abarrios.jpg" />
-              </a>
-            </div>
-            </div>
+        </div>
+        <div class="square">
+          <div class="content">
+            <a href="/2021s/abarrios/work.html" class="imagelink">
+              <img class="rs" src="/2021s/images/grid/abarrios.jpg" />
+            </a>
           </div>
         </div>
 
 
-          <!-- //////////////////////////////// -->
+      </div>
+    </div>
+
+
+    <!-- //////////////////////////////// -->
 
 
 
     <div class="slide" id="artist">
-      <!--
-    Artist List
-    - - Jessica Prakash
-    - - Jason Lin
-    - - Meghan Landry
-    - - Tamaki Fujino
-    - - ASRA
-    - - Noor nbondogji
-    - - Emily tran
-    - - Hector Flores
-    - - Alicia Breinke
-    - - Lauren Chun
-    - -  Sabrina Chan
-    - - Matteo Leva
-    - - Clay Bedinger
-    - -  Steven Nguyen
-    - - Vanya Rashev
-    - - Kaicong Tang
-    - - Rachel Centinaje
-    - - Vanessa Mora Mendez
-    - - Ranz Ocampo
-    - - Andrew Barrios
-    - - Elizabeth Nguyen
-    - - Aaron Chin
-    - - Sabrina Kwong
-    - - Deana Desilva
-    - - Marc Velayo
-    - - Mona Kaji -->
 
       <div class="grid-container_artist1">
         <div class="art3">
-          <h2>artists</h2>
+          <h2 style="font-family: 'Advent Pro', sans-serif;"><b>ARTISTS</b></h2>
         </div>
         <div class="art4">
-          <a href="#artist2"><h3>more<br>↧</h3></a>
+          <a href="#artist2">
+            <!-- <h3>more<br>↧</h3> -->
+          </a>
         </div>
         <div class="artist1">
           <a href="/2021s/asiddiqui/asra.html">
@@ -456,9 +403,7 @@
           </a>
         </div>
         <div class="artist4">
-          <a href="/2021s/nbondogji/nbondogji.html">
-            <h3>Noor Bondogji</h3>
-          </a>
+
         </div>
         <div class="artist5">
           <a href="/2021s/abreinke/abreinke.html">
@@ -492,13 +437,27 @@
           </a>
         </div>
         <div class="artist11">
-          <a href="/2021s/hflores/hflores.html">
-            <h3>Hector Flores</h3>
-          </a>
+
         </div>
         <div class="artist12">
           <a href="/2021s/tfujino/tfujino.html">
             <h3>Tamaki Fujino</h3>
+          </a>
+        </div>
+        <div class="artist13">
+
+        </div>
+        <div class="artist14">
+
+        </div>
+        <div class="artist15">
+          <a href="/2021s/nbondogji/nbondogji.html">
+            <h3>Noor Bondogji</h3>
+          </a>
+        </div>
+        <div class="artist16">
+          <a href="/2021s/snguyen/snguyen.html">
+            <h3>Steven H. Nguyen</h3>
           </a>
         </div>
 
@@ -510,74 +469,78 @@
       <div class="grid-container_artist2">
 
 
-        <div class="artist13">
-          <a href="/2021s/mkaji/mkaji.html">
-            <h3>Mona Kaji</h3>
-          </a>
+        <div class="artist17">
+
         </div>
-        <div class="artist14">
-          <a href="2021s/skwong/skwong.html">
+        <div class="artist18">
+          <a href="/2021s/skwong/skwong.html">
             <h3>Sabrina Kwong</h3>
           </a>
         </div>
-        <div class="artist15">
+        <div class="artist19">
           <a href="/2021s/mlandry/mlandry.html">
             <h3>Meghan Landry</h3>
           </a>
         </div>
-        <div class="artist16">
+        <div class="artist20">
           <a href="/2021s/mleva/mleva.html">
             <h3>Matteo Leva</h3>
           </a>
         </div>
-        <div class="artist17">
+        <div class="artist21">
           <a href="/2021s/jlin/jlin.html">
             <h3>Jason Lin</h3>
           </a>
         </div>
-        <div class="artist18">
+        <div class="artist22">
           <a href="/2021s/vmendez/vmendez.html">
             <h3>Vanessa Mora Méndez</h3>
           </a>
         </div>
-        <div class="artist19">
+        <div class="artist23">
           <a href="/2021s/enguyen/elizn.html">
             <h3>elizn</h3>
           </a>
         </div>
-        <div class="artist20">
-          <a href="/2021s/snguyen/snguyen.html">
-            <h3>Steven H. Nguyen</h3>
-          </a>
+        <div class="artist24">
+
         </div>
-        <div class="artist21">
+        <div class="artist25">
           <a href="/2021s/rocampo/rocampo.html">
             <h3>Ranz Ocampo</h3>
           </a>
         </div>
-        <div class="artist22">
+        <div class="artist26">
           <a href="/2021s/jprakash/jprakash.html">
             <h3>Jessica Prakash</h3>
           </a>
         </div>
-        <div class="artist23">
+        <div class="artist27" style="background-color: rgba( 44, 138, 115 , 0.5 );">
           <a href="/2021s/vrashev/VD.html">
             <h3>VD</h3>
           </a>
         </div>
-        <div class="artist24">
+        <div class="artist28">
           <a href="/2021s/ktang/ktang.html">
             <h3>Kaicong Tang</h3>
           </a>
         </div>
-        <div class="artist25">
+        <div class="artist29">
           <a href="/2021s/etran/etran.html">
             <h3>Emily Tran</h3>
           </a>
         </div>
-        <div class="artist26">
+        <div class="artist30">
           <a href="/2021s/mvelayo/mvelayo.html">
             <h3>Marc Velayo</h3>
+          </a>
+        </div>
+        <div class="artist31">
+
+        </div>
+        <div class="artist32">
+          <a href="/2021s/mkaji/mkaji.html">
+            <h3>Mona Kaji</h3>
           </a>
         </div>
 
@@ -587,7 +550,7 @@
         </div>
 
         <div class="art5">
-          <h2>artists</h2>
+
         </div>
 
       </div>
@@ -604,20 +567,29 @@
     </div> -->
 
     <div class="slide" id="credit">
-      <img src="/2021s/images/web.gif" class="bkgdweb" alt="">
-      <h4>credits</h4>
+      <!-- <img src="/2021s/images/web.gif" class="bkgdweb" alt=""> -->
+      <h4 style="font-family: 'Advent Pro', sans-serif;"><b>CREDITS</b></h4>
+      <div class="credit-page">
       <ul>
-        <li>design: Meghan Landry, Jason Lin, Jessica Prakash</li>
-        <li>web design: Asra Siddiqui, Tamaki Fujino</li>
-        <li>press: Emily Tran, Noor Bondogji</li>
-        <li>exhibition text: Andrew Barrios, Elizabeth Nguyen, Mona Kaji</li>
-        <li>layout: Clay Bedinger, Lauren Chun, Matteo Leva, Sabrina Chan</li>
-        <li>installation: Kaicong Tang, Steven Nguyen, Vanya Rashev</li>
-        <li>documentation & signage: Rachel Centinaje, Ranz Ocampo, Vanessa Mora Mendez</li>
-        <li>equipment & files: Alicia Breinke, Hector Flores</li>
-        <li>reception: Aaron Chin, Deana Desilva, Marc Velayo, Sabrina Kwong</li>
+        <li>DESIGN |
+          Jessica Prakash, Meghan Landry, Jason Lin</li> <br><br>
+        <li>WEB DESIGN:
+          Tamaki Fujino, Asra Siddiqui</li> <br><br>
+        <li>PRESS |
+          Noor Bondogji, Emily Tran</li> <br><br>
+        <li>TEXT AND FILE:
+          Andrew Barrios, Elizabeth Nguyen, Alicia Breinke, Mona Kaji</li> <br><br>
+        <li>LAYOUT |
+          Lauren Chun, Sabrina Chan,  Matteo Leva, Clay Bedinger</li> <br><br>
+        <li>INSTALLATION |
+          Steven Nguyen, Vanya Rashev, Kaicong Tang</li> <br><br>
+        <li>DOCUMENTATION & SIGNATURE |
+          Rachel Centinaje, Vanessa Mora Mendez, Ranz Ocampo</li> <br><br>
+        <li>RECEPTION |
+          Aaron Chin, Sabrina Kwong, Deana Desilva, Marc Velayo</li> <br><br>
       </ul>
     </div>
+        </div>
   </div>
 
   <!-- scroll indicator -->
