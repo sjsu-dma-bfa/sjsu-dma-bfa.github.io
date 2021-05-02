@@ -58,7 +58,7 @@ li {
 
 .slide {
   position: relative;
-  background-color: rgba(7, 24, 43, .25);
+  /* background-color: rgba(7, 24, 43, .25); */
   height: 100vh;
   color: #fff;
   text-align: center;
@@ -178,7 +178,7 @@ li {
 
 .slick-vertical .slick-slide {
 
-  background: linear-gradient(211deg, #ca97be 0%, #afaef8 100%);
+  background: linear-gradient(211deg, #ca97be 0%, #7c7bba 100%);
   /* background: linear-gradient(211deg, #303347 0%, #D488F1 100%); */
   border: none;
 }
