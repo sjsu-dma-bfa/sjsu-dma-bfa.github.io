@@ -157,8 +157,7 @@ li {
 #nacabout:hover {
   text-shadow: 0px 0px 30px rgba(255,255,255,1);
   transition: 0.2s;
-  /* color: #272C66; */
-  color: white;
+  color: #272C66;
 }
 
 .slide a:hover {
@@ -705,7 +704,11 @@ html, body, .grid-container_work {
   overflow: hidden;
   background-color:none;
   z-index:2;
+<<<<<<< HEAD
   font-family: 'Comfortaa', cursive;
+=======
+  font-family: 'Advent Pro', sans-serif;
+>>>>>>> parent of 5582005 (topnav hover is now green, about NAC hover is white, punctuation on credits page)
   width: 100%;
   margin-top:0px;
   font-size:20px;
@@ -723,7 +726,7 @@ html, body, .grid-container_work {
 .topnav a:hover {
   text-shadow: 0px 0px 30px rgba(255,255,255,1);
   transition: 0.2s;
-  color: rgba( 44, 138, 115 , 1);
+  color: #272C66;
 }
 
 .topnav a.active {
