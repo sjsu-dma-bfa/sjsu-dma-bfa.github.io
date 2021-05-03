@@ -149,15 +149,15 @@ li {
 
 #nacabout {
   color:white;
-  /* font-family: 'Advent Pro', sans-serif; */
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Advent Pro', sans-serif;
+  /* font-family: 'Comfortaa', cursive; */
   text-decoration: none;
 }
 
 #nacabout:hover {
   text-shadow: 0px 0px 30px rgba(255,255,255,1);
   transition: 0.2s;
-  color: #272C66;
+  /* color: #272C66; */
 }
 
 .slide a:hover {
@@ -717,12 +717,13 @@ html, body, .grid-container_work {
   padding: 20px 20px;
   text-decoration: none;
   font-size: 20px;
+  font-family: 'Advent Pro', sans-serif;
 }
 
 .topnav a:hover {
   text-shadow: 0px 0px 30px rgba(255,255,255,1);
   transition: 0.2s;
-  color: #272C66;
+  color: rgba( 44, 138, 115 , 1);
 }
 
 .topnav a.active {
