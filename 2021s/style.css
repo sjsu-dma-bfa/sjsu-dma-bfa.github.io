@@ -135,7 +135,7 @@ li {
   transform: translate(-50%, -50%);
 }
 
-.slide a:not(#nacabout):not(.imagelink) {
+.slide a:not(#nacabout):not(.imagelink):not(#gallery) {
   font-size: 2rem;
   text-decoration: none;
   color: white;
