@@ -29,7 +29,7 @@ html {
 }
 
 body {
-  overflow: scroll;
+  overflow: hidden;
   margin:0;
     height:100%;
     font-family: 'Comfortaa';
@@ -63,6 +63,11 @@ li {
   -webkit- transform: translateY(-50%) translateX(-50%);
 }
 
+/* single page slide navigator */
+.slick-dotted.slick-slider {
+  overflow: hidden;
+  margin-bottom: 0;
+}
 
 .slide:not(#gallery) {
   position: relative;
@@ -117,7 +122,8 @@ li {
   top:50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'Advent Pro', sans-serif;
+  /* font-family: 'Advent Pro', sans-serif; */
+  font-family: 'Comfortaa', cursive;
   font-weight: normal;
 }
 
@@ -143,14 +149,16 @@ li {
 
 #nacabout {
   color:white;
-  font-family: 'Advent Pro', sans-serif;
+  /* font-family: 'Advent Pro', sans-serif; */
+  font-family: 'Comfortaa', cursive;
   text-decoration: none;
 }
 
 #nacabout:hover {
   text-shadow: 0px 0px 30px rgba(255,255,255,1);
   transition: 0.2s;
-  color: #272C66;
+  /* color: #272C66; */
+  color: white;
 }
 
 .slide a:hover {
@@ -696,11 +704,11 @@ html, body, .grid-container_work {
   position: fixed;
   overflow: hidden;
   background-color:none;
-  z-index:4;
-  font-family: 'Advent Pro', sans-serif;
+  z-index:2;
+  font-family: 'Comfortaa', cursive;
   width: 100%;
   margin-top:0px;
-  font-size:17px;
+  font-size:20px;
 }
 
 .topnav a {
@@ -715,7 +723,7 @@ html, body, .grid-container_work {
 .topnav a:hover {
   text-shadow: 0px 0px 30px rgba(255,255,255,1);
   transition: 0.2s;
-  color: #272C66;
+  color: rgba( 44, 138, 115 , 1);
 }
 
 .topnav a.active {
@@ -728,7 +736,7 @@ html, body, .grid-container_work {
 .arrow {
   position: fixed;
   left: 50%;
-  z-index:1;
+  z-index:2;
   margin-left:-20px;
   width: 50px;
   height: 50px;
@@ -775,7 +783,8 @@ html, body, .grid-container_work {
     background: transparent;
     background-size: cover;
     -webkit-background-size: cover;
-    z-index: 0;
+    overflow: hidden;
+    z-index: -1;
 }
 
 .star {
@@ -834,6 +843,36 @@ html, body, .grid-container_work {
 	right: 0;
 }
 
+/* .stars {
+ background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+ position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: block;
+  	z-index: 0;
+} */
+
+/* .twinkling{
+	width:10000px;
+	height: 100%;
+	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+	background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+
+    -moz-animation:move-background 70s linear infinite;
+  -ms-animation:move-background 70s linear infinite;
+  -o-animation:move-background 70s linear infinite;
+  -webkit-animation:move-background 70s linear infinite;
+  animation:move-background 70s linear infinite;
+
+} */
+
 .clouds{
 	width:10000px;
 	height: 100%;
@@ -843,7 +882,7 @@ html, body, .grid-container_work {
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: 3;
 
    -moz-animation:move-background 40s linear infinite;
   -ms-animation:move-background 40s linear infinite;
@@ -851,6 +890,13 @@ html, body, .grid-container_work {
   -webkit-animation:move-background 40s linear infinite;
   animation:move-background 40s linear infinite;
 }
+/* img{
+  height: 70vh;
+  width:70vh;
+  position: absolute;
+  z-index: 3;
+  right: 20px;
+} */
 
 .paragraph {
   padding: 30px;
