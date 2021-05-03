@@ -122,7 +122,8 @@ li {
   top:50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'Advent Pro', sans-serif;
+  /* font-family: 'Advent Pro', sans-serif; */
+  font-family: 'Comfortaa', cursive;
   font-weight: normal;
 }
 
@@ -148,7 +149,8 @@ li {
 
 #nacabout {
   color:white;
-  font-family: 'Advent Pro', sans-serif;
+  /* font-family: 'Advent Pro', sans-serif; */
+  font-family: 'Comfortaa', cursive;
   text-decoration: none;
 }
 
@@ -703,10 +705,10 @@ html, body, .grid-container_work {
   overflow: hidden;
   background-color:none;
   z-index:2;
-  /* font-family: 'Advent Pro', sans-serif; */
+  font-family: 'Comfortaa', cursive;
   width: 100%;
   margin-top:0px;
-  font-size:17px;
+  font-size:20px;
 }
 
 .topnav a {
@@ -901,18 +903,6 @@ html, body, .grid-container_work {
   width: 90%;
   color: #2F4560;
 }
-
-.bkgdweb {
-  position: absolute;
-  top: 0px;
-  justify-content: center;
-  opacity: .2;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-}
-
-
 
 
 .scroll-indicator {
