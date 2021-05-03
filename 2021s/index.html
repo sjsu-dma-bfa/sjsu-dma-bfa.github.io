@@ -187,6 +187,7 @@
         </style> -->
 
         <style media="screen">
+        @media screen and (min-width: 479px) {
           .work-image {
             filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
             /* Firefox 10+, Firefox on Android */
@@ -204,6 +205,7 @@
             -ms-filter: none;
             filter: none;
           }
+        }
         </style>
         <h3 style="position:absolute; top:100px; font-size:3vw; font-family: 'Advent Pro', sans-serif;"><b>WORKS</b></h3>
         <div class="grid-container-work">
@@ -675,7 +677,7 @@
       <!-- slide 4 -------------------------------------------------------------------------------->
 
       <div class="slide" id="work">
-        <h3 style="position:absolute; top:100px; font-size:3vw; font-family: 'Advent Pro', sans-serif;"><b>WORKS</b></h3>
+
         <style media="screen">
           @media screen and (max-width: 479px) {
 
@@ -684,17 +686,17 @@
             }
             .grid-container-work-mobile {
               height: 100%;
-              margin: 0;
+              margin-right:27px;
             }
 
             .grid-container-work-mobile {
               display: grid;
               grid-template-columns: 1fr 1fr 1fr 1fr;
-              grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+              grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
               gap: 0px 0px;
               grid-template-areas:
                 ". . . ."
-                "title title w1 w2"
+                "w0 w0 w1 w2"
                 "w3 w4 w5 w6"
                 "w7 w8 w9 w10"
                 "w11 w12 w13 w14"
@@ -702,6 +704,10 @@
                 "w19 w20 w21 w22"
                 "w23 w24 w25 ."
                 ". . . .";
+            }
+
+            .w0 {
+              grid-area: w0;
             }
 
             .w1 {
@@ -822,86 +828,90 @@
               left: 0;
             }
 
+
+
           }
         </style>
 
-
         <div class="grid-container-work-mobile">
+          <div class="w0">
+                <h2 style="font-family: 'Advent Pro', sans-serif;"><b>WORKS</b></h2>
+          </div>
           <div class="w1">
-            <a href="/2021s/abarrios/work.html" class="work-image"><img src="/2021s/images/grid/abarrios.png" width=150%; alt=""></a>
+            <a href="/2021s/abarrios/work.html" class="work-image"><img src="/2021s/images/grid/abarrios.png" width=170%; alt=""></a>
           </div>
           <div class="w2">
-            <a href="/2021s/asiddiqui/work.html" class="work-image"><img src="/2021s/images/grid/asra.png" width=150%; alt=""></a>
+            <a href="/2021s/asiddiqui/work.html" class="work-image"><img src="/2021s/images/grid/asra.png" width=170%; alt=""></a>
           </div>
           <div class="w3">
-            <a href="/2021s/achin/work.html" class="work-image"><img src="/2021s/images/grid/achin.png" width=150%; alt=""></a>
+            <a href="/2021s/achin/work.html" class="work-image"><img src="/2021s/images/grid/achin.png" width=170%; alt=""></a>
           </div>
           <div class="w4">
-            <a href="/2021s/abreinke/work.html" class="work-image"><img src="/2021s/images/grid/abreinke.jpg" width=150%; alt=""></a>
+            <a href="/2021s/abreinke/work.html" class="work-image"><img src="/2021s/images/grid/abreinke.jpg" width=170%; alt=""></a>
           </div>
           <div class="w5">
-            <a href="/2021s/cbedinger/work.html" class="work-image"><img src="/2021s/images/grid/cbedinger.png" width=150%; alt=""></a>
+            <a href="/2021s/cbedinger/work.html" class="work-image"><img src="/2021s/images/grid/cbedinger.png" width=170%; alt=""></a>
           </div>
           <div class="w6">
-            <a href="/2021s/ddesilva/work.html" class="work-image"><img src="/2021s/images/grid/ddesilva.png" width=150%; alt=""></a>
+            <a href="/2021s/ddesilva/work.html" class="work-image"><img src="/2021s/images/grid/ddesilva.png" width=170%; alt=""></a>
           </div>
           <div class="w7">
-            <a href="/2021s/enguyen/work.html" class="work-image"><img src="/2021s/images/grid/enguyen.jpg" width=150%; alt=""></a>
+            <a href="/2021s/enguyen/work.html" class="work-image"><img src="/2021s/images/grid/enguyen.jpg" width=170%; alt=""></a>
           </div>
           <div class="w8">
-            <a href="/2021s/jlin/work.html" class="work-image"><img src="/2021s/images/grid/jlin.jpg" width=150%; alt=""></a>
+            <a href="/2021s/jlin/work.html" class="work-image"><img src="/2021s/images/grid/jlin.jpg" width=170%; alt=""></a>
           </div>
           <div class="w9">
-            <a href="/2021s/etran/work.html" class="work-image"><img src="/2021s/images/grid/etran.jpg" width=150%; alt=""></a>
+            <a href="/2021s/etran/work.html" class="work-image"><img src="/2021s/images/grid/etran.jpg" width=170%; alt=""></a>
           </div>
 
           <div class="w10">
-            <a href="/2021s/jprakash/work.html" class="work-image"><img src="/2021s/images/grid/jprakash.png" width=150%; alt=""></a>
+            <a href="/2021s/jprakash/work.html" class="work-image"><img src="/2021s/images/grid/jprakash.png" width=170%; alt=""></a>
           </div>
           <div class="w11">
-            <a href="/2021s/ktang/work.html" class="work-image"><img src="/2021s/images/grid/ktang.png" width=150%; alt=""></a>
+            <a href="/2021s/ktang/work.html" class="work-image"><img src="/2021s/images/grid/ktang.png" width=170%; alt=""></a>
           </div>
           <div class="w12">
-            <a href="/2021s/lchun/work.html" class="work-image"><img src="/2021s/images/grid/lchun.png" width=150%; alt=""></a>
+            <a href="/2021s/lchun/work.html" class="work-image"><img src="/2021s/images/grid/lchun.png" width=170%; alt=""></a>
           </div>
           <div class="w13">
-            <a href="/2021s/mleva/work.html" class="work-image"><img src="/2021s/images/grid/mleva.jpg" width=150%; alt=""></a>
+            <a href="/2021s/mleva/work.html" class="work-image"><img src="/2021s/images/grid/mleva.jpg" width=170%; alt=""></a>
           </div>
           <div class="w14">
-            <a href="/2021s/mkaji/work.html" class="work-image"><img src="/2021s/images/grid/mkaji.png" width=150%; alt=""></a>
+            <a href="/2021s/mkaji/work.html" class="work-image"><img src="/2021s/images/grid/mkaji.png" width=170%; alt=""></a>
           </div>
           <div class="w15">
-            <a href="/2021s/mlandry/work.html" class="work-image"><img src="/2021s/images/grid/mlandry.jpg" width=150%; alt=""></a>
+            <a href="/2021s/mlandry/work.html" class="work-image"><img src="/2021s/images/grid/mlandry.jpg" width=170%; alt=""></a>
           </div>
           <div class="w16">
-            <a href="/2021s/mvelayo/work.html" class="work-image"><img src="/2021s/images/grid/mvelayo.png" width=150%; alt=""></a>
+            <a href="/2021s/mvelayo/work.html" class="work-image"><img src="/2021s/images/grid/mvelayo.png" width=170%; alt=""></a>
           </div>
           <div class="w17">
-            <a href="/2021s/rcentinaje/work.html" class="work-image"><img src="/2021s/images/grid/rcentinaje.png" width=150%; alt=""></a>
+            <a href="/2021s/rcentinaje/work.html" class="work-image"><img src="/2021s/images/grid/rcentinaje.png" width=170%; alt=""></a>
           </div>
           <div class="w18">
-            <a href="/2021s/rocampo/work.html" class="work-image"><img src="/2021s/images/grid/rocampo.png" width=150%; alt=""></a>
+            <a href="/2021s/rocampo/work.html" class="work-image"><img src="/2021s/images/grid/rocampo.png" width=170%; alt=""></a>
           </div>
           <div class="w19">
-            <a href="/2021s/schan/work.html" class="work-image"><img src="/2021s/images/grid/schan.png" width=150%; alt=""></a>
+            <a href="/2021s/schan/work.html" class="work-image"><img src="/2021s/images/grid/schan.png" width=170%; alt=""></a>
           </div>
           <div class="w20">
-            <a href="/2021s/skwong/work.html" class="work-image"><img src="/2021s/images/grid/skwong.jpg" width=150%; alt=""></a>
+            <a href="/2021s/skwong/work.html" class="work-image"><img src="/2021s/images/grid/skwong.jpg" width=170%; alt=""></a>
           </div>
           <div class="w21">
-            <a href="/2021s/snguyen/work.html" class="work-image"><img src="/2021s/images/grid/snguyen.png" width=150%; alt=""></a>
+            <a href="/2021s/snguyen/work.html" class="work-image"><img src="/2021s/images/grid/snguyen.png" width=170%; alt=""></a>
           </div>
           <div class="w22">
-            <a href="/2021s/tfujino/work.html" class="work-image"><img src="/2021s/images/grid/tfujino.png" width=150%; alt=""></a>
+            <a href="/2021s/tfujino/work.html" class="work-image"><img src="/2021s/images/grid/tfujino.png" width=170%; alt=""></a>
           </div>
           <div class="w23">
-            <a href="/2021s/vrashev/work.html" class="work-image"><img src="/2021s/images/grid/vd.png" width=150%; alt=""></a>
+            <a href="/2021s/vrashev/work.html" class="work-image"><img src="/2021s/images/grid/vd.png" width=170%; alt=""></a>
           </div>
           <div class="w24">
-            <a href="/2021s/vmendez/work.html" class="work-image"><img src="/2021s/images/grid/vmendez.jpg" width=150%; alt=""></a>
+            <a href="/2021s/vmendez/work.html" class="work-image"><img src="/2021s/images/grid/vmendez.jpg" width=170%; alt=""></a>
           </div>
           <div class="w25">
-            <a href="/2021s/nbondogji/work.html" class="work-image"><img src="/2021s/images/grid/nbondogji.png" width=150%; alt=""></a>
+            <a href="/2021s/nbondogji/work.html" class="work-image"><img src="/2021s/images/grid/nbondogji.png" width=170%; alt=""></a>
           </div>
         </div>
 

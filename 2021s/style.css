@@ -174,7 +174,7 @@ li {
 }
 
 
-html, body, .grid-container-work { height: 100%; margin: 0; }
+.grid-container-work { height: 100%; margin: 0; }
 
 .grid-container-work {
   display: grid;
