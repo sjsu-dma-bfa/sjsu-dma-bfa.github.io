@@ -65,11 +65,11 @@ li {
 
 /* single page slide navigator */
 .slick-dotted.slick-slider {
-  overflow: hidden;
+  overflow: scroll;
   margin-bottom: 0;
 }
 
-.slide:not(#gallery) {
+.slide {
   position: relative;
   height: 100vh;
   color: #fff;
