@@ -48,22 +48,24 @@
             size + 'px; height: ' + size + 'px; background: ' + color + '; box-shadow: 0px 0px 10px ' + color + ';"></div>');
         }
 
-        $.parallaxify({
-          /*					positionProperty: 'transform',
-                responsive: true,
-                motionType: 'natural',
-                mouseMotionType: 'gaussian',
-                motionAngleX: 80,
-                motionAngleY: 80,
-                alphaFilter: 0.5,
-                adjustBasePosition: true,
-                alphaPosition: 0.025,*/
-        });
+        // $.parallaxify({
+        //   /*					positionProperty: 'transform',
+        //         responsive: true,
+        //         motionType: 'natural',
+        //         mouseMotionType: 'gaussian',
+        //         motionAngleX: 80,
+        //         motionAngleY: 80,
+        //         alphaFilter: 0.5,
+        //         adjustBasePosition: true,
+        //         alphaPosition: 0.025,*/
+        // });
         /*$('#foreground').click(function() {
       $('#info').animate({ marginLeft: "-150px" }, 700);
     });*/
       });
     }); // */
+
+
   </script>
 
 </head>
@@ -684,6 +686,19 @@
           /* artist page 01 grid layout */
           @media screen and (max-width: 479px) {
 
+            .topnav {
+              position: static;
+              background:white;
+              margin:auto;
+              z-index:2;
+            }
+            .topnav a {
+              font-size:15px;
+              padding:10px;
+              text-align: center;
+              color: #6571ad;
+            }
+
             html,
             body,
             .grid-container_artist1 {
@@ -808,7 +823,7 @@
             }
 
             #name {
-              font-size: 20px;
+              font-size: 17px;
             }
 
             .art4 {
@@ -1060,7 +1075,7 @@
               RECEPTION<br>Aaron Chin, Sabrina Kwong, Deana Desilva, Marc Velayo <br><br><br>
               FACULTY ADVISORS <br> Rhonda Holberton, Gary Craig Hobbs </p>
         </div>
-        <p id="c2021" style="position:absolute; bottom: 3%; right: 5%;  font-size:10px; opacity:0.5; text-align:right;">©︎2021 <br>All artist retain copyright to their work</p>
+        <p id="c2021" style="position:absolute; bottom: 5%; right: 5%;  font-size:10px; opacity:0.5; text-align:right;">©︎2021 <br>All artist retain copyright to their work</p>
       </div>
     </div>
   </div>
