@@ -572,88 +572,278 @@
 
     <!-- slide 5 -------------------------------------------------------------------------------->
     <div class="slide" id="artist">
+
+      <style media="screen">
+      /* artist page 01 grid layout */
+      html, body, .grid-container_artist1 {
+        height: 100%;
+        margin: 0;
+      }
+
+      .grid-container_artist1 {
+        display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "artist1 artist2 artist3"
+    "artist4 artist5 artist6"
+    "artist7 artist8 artist9"
+    "artist10 artist11 artist12"
+    "artist13 art3 art3";
+      }
+
+      .art3 {
+        grid-area: art3;
+        background-color: rgba( 202,151,190 , 0.5 );
+      }
+
+      .artist1 {
+        grid-area: artist1;
+        background-color: rgba( 101,113,173 , 0.5);
+      }
+
+      .artist2 {
+        grid-area: artist2;
+          /* background-color: rgba( 44, 138, 115 , 0.5 ); */
+      }
+
+      .artist3 {
+        grid-area: artist3;
+        background-color: rgba( 141,156,223 , 0.5);
+      }
+
+      .artist4 {
+        grid-area: artist4;
+        background-color: rgba( 43,103,199 , 0.5 );
+      }
+
+      .artist5 {
+        grid-area: artist5;
+        background-color: rgba( 252,153,216 , 0.5 );
+      }
+
+      .artist6 {
+        grid-area: artist6;
+          background-color: rgba( 44, 138, 115 , 0.5 );
+      }
+
+      .artist7 {
+        grid-area: artist7;
+      }
+
+      .artist8 {
+        grid-area: artist8;
+        background-color: rgba( 141,156,223 , 0.5);
+      }
+
+      .artist9 {
+        grid-area: artist9;
+      }
+
+      .artist10 {
+        grid-area: artist10;
+        background-color: rgba( 43,103,199 , 0.5 );
+      }
+
+      .artist11 {
+        grid-area: artist11;
+        background-color: rgba( 43,103,199 , 0.5 );
+      }
+
+      .artist12 {
+        grid-area: artist12;
+        background-color: rgba( 252,153,216 , 0.5 );
+      }
+
+      .artist13 {
+        grid-area: artist13;
+          background-color: rgba( 44, 138, 115 , 0.5 );
+      }
+
+
+      /* For presentation only, no need to copy the code below */
+      .grid-container_artist1 * {
+        /* border: 1px solid red; */
+        position: relative;
+      }
+
+      .grid-container_artist1 *:after {
+        /* content:attr(class); */
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      /* artist page 02 grid layout */
+      html, body, .grid-container_artist2 {
+        height: 100%;
+        margin: 0;
+      }
+
+      .grid-container_artist2 {
+        display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "art4 art4 artist14"
+    "artist15 artist16 artist17"
+    "artist18 artist19 artist20"
+    "artist21 artist22 artist23"
+    "artist24 artist25 artist26";
+      }
+
+      #name {
+        font-size:20px;
+      }
+
+      .art4 {
+        gird-area: art4;
+        background-color: rgba( 252,153,216 , 0.5 )
+      }
+
+      .artist14 {
+        grid-area: artist14;
+        background-color:rgba( 141,156,223 , 0.5);
+      }
+
+      .artist15 {
+        grid-area: artist15;
+        background-color:rgba( 141,156,223 , 0.5);
+      }
+
+      .artist16 {
+        grid-area: artist16;
+      }
+
+      .artist17 {
+        grid-area: artist17;
+      }
+
+      .artist18 {
+        grid-area: artist18;
+        background-color: rgba(255,255,255,0.5);
+      }
+
+      .artist19 {
+        grid-area: artist19;
+        background-color: rgba( 43,103,199 , 0.5 );
+      }
+
+      .artist20 {
+        grid-area: artist20;
+        background-color: rgba( 252,153,216 , 0.5 );
+      }
+
+      .artist21 {
+        grid-area: artist21;
+          background-color: rgba( 44, 138, 115 , 0.5 );
+      }
+
+      .artist22 {
+        grid-area: artist22;
+      }
+
+      .artist23 {
+        grid-area: artist23;
+        background-color:rgba( 252,153,216 , 0.5 );
+      }
+
+      .artist24 {
+        grid-area: artist24;
+        background-color: rgba( 43,103,199 , 0.5 );
+      }
+
+      .artist25 {
+        grid-area: artist25;
+        background-color: rgba( 202,151,190 , 0.5 );
+      }
+
+      .artist26 {
+        grid-area: artist26;
+        background-color: rgba( 141,156,223 , 0.5);
+      }
+
+      .artist27 {
+        grid-area: artist27;
+        background-color: rgba( 44, 138, 115 , 0.5 );
+      }
+
+      .artist28 {
+        grid-area: artist28;
+      }
+
+
+      </style>
+
+
       <div class="grid-container_artist1">
         <div class="art3">
           <h2 style="font-family: 'Advent Pro', sans-serif;"><b>ARTISTS</b></h2>
         </div>
-        <div class="art4">
-          <a href="#artist2">
-          </a>
-        </div>
-        <div class="artist1">
-          <a href="/2021s/asiddiqui/asra.html">
-            <h3>ASRA</h3>
-          </a>
-        </div>
+
         <div class="artist2">
           <a href="/2021s/abarrios/abarrios.html">
-            <h3>Andrew Barrios</h3>
+            <h3 id="name">Andrew Barrios</h3>
           </a>
         </div>
         <div class="artist3">
           <a href="/2021s/cbedinger/cbedinger.html">
-            <h3>Clay Bedinger</h3>
+            <h3 id="name">Clay Bedinger</h3>
           </a>
         </div>
         <div class="artist4">
-
+          <a href="/2021s/asiddiqui/asra.html">
+            <h3 id="name">ASRA</h3>
+          </a>
         </div>
         <div class="artist5">
           <a href="/2021s/abreinke/abreinke.html">
-            <h3>Alicia Breinke</h3>
+            <h3 id="name">Alicia Breinke</h3>
           </a>
         </div>
         <div class="artist6">
           <a href="/2021s/rcentinaje/rcentinaje.html">
-            <h3>Rachel Centinaje</h3>
+            <h3 id="name">Rachel Centinaje</h3>
           </a>
         </div>
         <div class="artist7">
           <a href="/2021s/schan/schan.html">
-            <h3>Sabrina Chan</h3>
+            <h3 id="name">Sabrina Chan</h3>
           </a>
         </div>
         <div class="artist8">
           <a href="/2021s/achin/achin.html">
-            <h3>Aaron Arthur Mapaye Chin</h3>
+            <h3 id="name">Aaron Arthur Mapaye Chin</h3>
           </a>
         </div>
 
         <div class="artist9">
           <a href="/2021s/lchun/lchun.html">
-            <h3>Lauren Chun</h3>
+            <h3 id="name">Lauren Chun</h3>
           </a>
         </div>
         <div class="artist10">
           <a href="/2021s/ddesilva/ddesilva.html">
-            <h3>Deana Desilva</h3>
+            <h3 id="name">Deana Desilva</h3>
           </a>
         </div>
         <div class="artist11">
-
+          <a href="/2021s/snguyen/snguyen.html">
+            <h3 id="name">Steven H. Nguyen</h3>
+          </a>
         </div>
         <div class="artist12">
           <a href="/2021s/tfujino/tfujino.html">
-            <h3>Tamaki Fujino</h3>
+            <h3 id="name">Tamaki Fujino</h3>
           </a>
         </div>
         <div class="artist13">
-
-        </div>
-        <div class="artist14">
-
-        </div>
-        <div class="artist15">
           <a href="/2021s/nbondogji/nbondogji.html">
-            <h3>Noor Bondogji</h3>
+            <h3 id="name">Noor Bondogji</h3>
           </a>
         </div>
-        <div class="artist16">
-          <a href="/2021s/snguyen/snguyen.html">
-            <h3>Steven H. Nguyen</h3>
-          </a>
-        </div>
-
       </div>
     </div>
 
@@ -663,94 +853,76 @@
 
       <div class="grid-container_artist2">
 
-        <div class="art5">
+        <div class="art4">
 
         </div>
-
+        <div class="artist14">
+          <a href="/2021s/skwong/skwong.html">
+            <h3 id="name">Sabrina Kwong</h3>
+          </a>
+        </div>
+        <div class="artist15">
+          <a href="/2021s/mlandry/mlandry.html">
+            <h3 id="name">Meghan Landry</h3>
+          </a>
+        </div>
+        <div class="artist16">
+          <a href="/2021s/mleva/mleva.html">
+            <h3 id="name">Matteo Leva</h3>
+          </a>
+        </div>
         <div class="artist17">
-
+          <a href="/2021s/jlin/jlin.html">
+            <h3 id="name">Jason Lin</h3>
+          </a>
         </div>
         <div class="artist18">
-          <a href="/2021s/skwong/skwong.html">
-            <h3>Sabrina Kwong</h3>
+          <a href="/2021s/vmendez/vmendez.html">
+            <h3 id="name">Vanessa Mora Méndez</h3>
           </a>
         </div>
         <div class="artist19">
-          <a href="/2021s/mlandry/mlandry.html">
-            <h3>Meghan Landry</h3>
+          <a href="/2021s/enguyen/elizn.html">
+            <h3 id="name">elizn</h3>
           </a>
         </div>
         <div class="artist20">
-          <a href="/2021s/mleva/mleva.html">
-            <h3>Matteo Leva</h3>
+          <a href="/2021s/mvelayo/mvelayo.html">
+            <h3 id="name">Marc Velayo</h3>
           </a>
         </div>
         <div class="artist21">
-          <a href="/2021s/jlin/jlin.html">
-            <h3>Jason Lin</h3>
+          <a href="/2021s/rocampo/rocampo.html">
+            <h3 id="name">Ranz Ocampo</h3>
           </a>
         </div>
         <div class="artist22">
-          <a href="/2021s/vmendez/vmendez.html">
-            <h3>Vanessa Mora Méndez</h3>
+          <a href="/2021s/jprakash/jprakash.html">
+            <h3 id="name">Jessica Prakash</h3>
           </a>
         </div>
         <div class="artist23">
-          <a href="/2021s/enguyen/elizn.html">
-            <h3>elizn</h3>
+          <a href="/2021s/vrashev/VD.html">
+            <h3 id="name">VD</h3>
           </a>
         </div>
-        <div class="artist24">
-
+        <div class="artist24" style="background-color: rgba( 44, 138, 115 , 0.5 );">
+          <a href="/2021s/ktang/ktang.html">
+            <h3 id="name">Kaicong Tang</h3>
+          </a>
         </div>
         <div class="artist25">
-          <a href="/2021s/rocampo/rocampo.html">
-            <h3>Ranz Ocampo</h3>
-          </a>
-        </div>
-        <div class="artist26">
-          <a href="/2021s/jprakash/jprakash.html">
-            <h3>Jessica Prakash</h3>
-          </a>
-        </div>
-        <div class="artist27" style="background-color: rgba( 44, 138, 115 , 0.5 );">
-          <a href="/2021s/vrashev/VD.html">
-            <h3>VD</h3>
-          </a>
-        </div>
-        <div class="artist28">
-          <a href="/2021s/ktang/ktang.html">
-            <h3>Kaicong Tang</h3>
-          </a>
-        </div>
-        <div class="artist29">
           <a href="/2021s/etran/etran.html">
-            <h3>Emily Tran</h3>
+            <h3 id="name">Emily Tran</h3>
           </a>
         </div>
-        <div class="artist30">
-          <a href="/2021s/mvelayo/mvelayo.html">
-            <h3>Marc Velayo</h3>
-          </a>
-        </div>
-        <div class="artist31">
 
-        </div>
-        <div class="artist32">
+
+        <div class="artist26">
           <a href="/2021s/mkaji/mkaji.html">
-            <h3>Mona Kaji</h3>
+            <h3 id="name">Mona Kaji</h3>
           </a>
         </div>
-
-
-        <div class="art6">
-          <div class="scroll-indicator">
-          </div>
-        </div>
-
-        <div class="art5">
-        </div>
-
       </div>
     </div>
 
