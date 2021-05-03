@@ -460,7 +460,7 @@
 
       <div class="scroll-indicator">
         <h4 id="scrolltext" style="font-family: 'Advent Pro', sans-serif; font-size:15px;; padding-bottom:20px;">swipe down for more</h4>
-        <div class="arrow">
+        <div class="arrow" style="opacity:0.3;">
         </div>
       </div>
     </div>
@@ -469,31 +469,71 @@
     <!-- slide 2 -------------------------------------------------------------------------------->
 
     <div class="slide" id="exhibition">
+      <style media="screen">
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1.5fr 0.8fr 0.7fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+          /* "main main main main" */
+          "zoom nac nac nac"
+          "main main main main";
+        gap: 0px 0px;
+      }
+
+      .main {
+        grid-area: main;
+      }
+
+      .zoom-link {
+        grid-area:zoom;
+        background-color: rgba( 202,151,190 , 0.5 );;
+      }
+
+      /* .New-Art-City-link {
+        grid-area: 2 / 2 / 3 / 3;
+        background-color: none;
+      }
+
+      .art1 {
+        grid-area: 1 / 3 / 2 / 4;
+        background-color: rgba( 43,103,199 , 0.3 ) ;
+      }
+
+      .art2 {
+        grid-area: 2 / 2 / 3 / 3;
+          background-color: rgba( 44, 138, 115 , 0.3 );
+      } */
+
+      .new-art-city- {
+        grid-area: nac;
+      }
+      </style>
       <div class="grid-container">
         <div class="main">
           <img id="nacimage" src="/2021s/images/nac_ssop.jpg" height="100%" width="100%" alt="" style="opacity:0.3">
-          <p>The exhibition is held online at New Art City. <br>
+          <p style="font-size:18px; width:90%;">The exhibition is held <br>online at New Art City. <br>
             Please register for the zoom opening on May 7th, 4:00-6:30pm <br><br>
-            <a id="nacabout" style="position:relative; font-size:3vw; text-align: :center;" href="https://newart.city/"><b>About New Art City</b></a>
+            <a id="nacabout" style="position:relative; font-size:22px; text-align: :center;" href="https://newart.city/"><b>About New Art City</b></a>
           </p>
 
         </div>
         <div class="zoom-link">
           <a href="https://sjsu.zoom.us/meeting/register/tZ0oc-2rqzIjE9cB8jbmSU2JS3zDU73g1uR4">
-            <h3 style="font-size:3vw; font-family: 'Advent Pro', sans-serif;"><b>REGISTER FOR ZOOM OPENING</b></h3>
+            <h3 style="font-size:22px; font-family: 'Advent Pro', sans-serif;"><b>REGISTER FOR ZOOM OPENING</b></h3>
           </a>
         </div>
-        <div class="New-Art-City-link">
-        </div>
-        <div class="art1">
+        <!-- <div class="New-Art-City-link">
+        </div> -->
+        <!-- <div class="art1">
         </div>
         <div class="art2">
           <h3 style="text-align:left; line-height:1.6;">
           </h3>
-        </div>
+        </div> -->
         <div class="new-art-city-">
           <a href="https://newart.city/show/cadre-bfa-digital-autonomy">
-            <h3 style="font-size:3vw;font-family: 'Advent Pro', sans-serif;"><b>VIEW IN NEW ART CITY</b></h3>
+            <h3 style="font-size:22px;font-family: 'Advent Pro', sans-serif;"><b>VIEW IN NEW ART CITY</b></h3>
             <!-- <img src="/2021s/images/nac-logo-edit2.svg" width="120%" style="padding-right:10px;"> -->
           </a>
         </div>
@@ -506,8 +546,8 @@
     <!-- slide 3 -------------------------------------------------------------------------------->
 
     <div class="slide" id="about">
-      <h3 style="position:absolute; top:130px; font-size:3vw; font-family: 'Advent Pro', sans-serif;"><b>ABOUT</b></h3>
-      <p id="abouttext" style="padding-top:30px; width:90%; line-height:130%; font-size:15px;">
+      <h3 style="position:absolute; top:130px; font-size:18px; font-family: 'Advent Pro', sans-serif;"><b>ABOUT</b></h3>
+      <p id="abouttext" style="padding-top:30px; width:90%; line-height:130%; font-size:12px;">
         CADRE Media Lab is pleased to announce Digital Autonomy, an exhibition of digital photography, video, painting, sculpture, and unclassifiable media hosted on New Art City that explores the multitude of interdependent signals crisscrossing
         the spatio-temporal void. While never physically co-present, Seniors in their culminating semester of their BFA degree in Digital Media Art came together in digital space and found synaptic resonance; a cognitive sympathy fostered by digital
         signals. <br>
@@ -718,34 +758,25 @@
 
     <div class="slide" id="credit">
       <!-- <img src="/2021s/images/web.gif" class="bkgdweb" alt=""> -->
-      <h4 style="font-family: 'Advent Pro', sans-serif; font-size:3vw;"><b>CREDITS</b></h4>
+      <h4 style="font-family: 'Advent Pro', sans-serif; font-size:18px;"><b>CREDITS</b></h4>
       <div class="credit-page">
         <ul style="padding-top:50px; position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
           width: 100%;">
-          <li>DESIGN |
-            Jessica Prakash, Meghan Landry, Jason Lin</li> <br><br>
-          <li>WEB DESIGN:
-            Tamaki Fujino, Asra Siddiqui</li> <br><br>
-          <li>PRESS |
-            Noor Bondogji, Emily Tran</li> <br><br>
-          <li>TEXT AND FILE:
-            Andrew Barrios, Elizabeth Nguyen, Alicia Breinke, Mona Kaji</li> <br><br>
-          <li>LAYOUT |
-            Lauren Chun, Sabrina Chan, Matteo Leva, Clay Bedinger</li> <br><br>
-          <li>INSTALLATION |
-            Steven Nguyen, Vanya Rashev, Kaicong Tang</li> <br><br>
-          <li>DOCUMENTATION & SIGNATURE |
-            Rachel Centinaje, Vanessa Mora Mendez, Ranz Ocampo</li> <br><br>
-          <li>RECEPTION |
-            Aaron Chin, Sabrina Kwong, Deana Desilva, Marc Velayo</li> <br><br>
-          <hr>
-          <li>SPECIAL THANKS | Rhonda Holberton, Gary Craig Hobbs </li>
-        </ul>
+
+          <p style=" font-size:11px; width:100%">DESIGN<br>Jessica Prakash, Meghan Landry, Jason Lin<br><br>
+          WEB DESIGN<br>Tamaki Fujino, Asra Siddiqui<br><br>
+          PRESS<br>Noor Bondogji, Emily Tran <br><br>
+          TEXT AND FILE<br>Andrew Barrios, Elizabeth Nguyen, Alicia Breinke, Mona Kaji <br><br>
+        LAYOUT<br>Lauren Chun, Sabrina Chan, Matteo Leva, Clay Bedinger <br><br>
+          INSTALLATION<br>Steven Nguyen, Vanya Rashev, Kaicong Tang <br><br>
+        DOCUMENTATION & SIGNATURE<br>Rachel Centinaje, Vanessa Mora Mendez, Ranz Ocampo<br><br>
+          RECEPTION<br>Aaron Chin, Sabrina Kwong, Deana Desilva, Marc Velayo <br><br><br>
+          FACULTY ADVISORS <br> Rhonda Holberton, Gary Craig Hobbs </p>
       </div>
-      <p id="c2021" style="position:absolute; bottom: 3%; right: 5%;  font-size:15px; opacity:0.5;">©︎2021</p>
+      <p id="c2021" style="position:absolute; bottom: 3%; right: 5%;  font-size:10px; opacity:0.5; text-align:right;">©︎2021 <br>All artist retain copyright to their work</p>
     </div>
   </div>
   </div>
