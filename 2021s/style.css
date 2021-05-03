@@ -704,11 +704,7 @@ html, body, .grid-container_work {
   overflow: hidden;
   background-color:none;
   z-index:2;
-<<<<<<< HEAD
-  font-family: 'Comfortaa', cursive;
-=======
   font-family: 'Advent Pro', sans-serif;
->>>>>>> parent of 5582005 (topnav hover is now green, about NAC hover is white, punctuation on credits page)
   width: 100%;
   margin-top:0px;
   font-size:20px;
