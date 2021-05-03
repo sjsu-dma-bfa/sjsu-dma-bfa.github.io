@@ -155,7 +155,8 @@ li {
 #nacabout:hover {
   text-shadow: 0px 0px 30px rgba(255,255,255,1);
   transition: 0.2s;
-  color: #272C66;
+  /* color: #272C66; */
+  color: white;
 }
 
 .slide a:hover {
@@ -702,7 +703,7 @@ html, body, .grid-container_work {
   overflow: hidden;
   background-color:none;
   z-index:2;
-  font-family: 'Advent Pro', sans-serif;
+  /* font-family: 'Advent Pro', sans-serif; */
   width: 100%;
   margin-top:0px;
   font-size:17px;
@@ -720,7 +721,7 @@ html, body, .grid-container_work {
 .topnav a:hover {
   text-shadow: 0px 0px 30px rgba(255,255,255,1);
   transition: 0.2s;
-  color: #272C66;
+  color: rgba( 44, 138, 115 , 1);
 }
 
 .topnav a.active {
