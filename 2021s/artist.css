@@ -94,6 +94,16 @@ img {
   transition: 0.5s;
 }
 
+#home-button {
+  padding:50px
+
+}
+
+#home-button:hover {
+  text-shadow: 0px 0px 30px rgba(255,255,255,1);
+  transition: 0.2s;
+  color: #272C66;
+}
 
 
 /* navigation menu */

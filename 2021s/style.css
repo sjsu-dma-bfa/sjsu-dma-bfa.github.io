@@ -152,7 +152,7 @@ li {
 #nacabout:hover {
   text-shadow: 0px 0px 30px rgba(255,255,255,1);
   transition: 0.2s;
-  /* color: #272C66; */
+  color: #272C66;
 }
 
 .slide a:hover {
