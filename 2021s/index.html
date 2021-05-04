@@ -84,7 +84,7 @@
 
     <div class="slider">
       <!-- slide 01 -->
-      <div class="slide" id="home">
+      <div class="slide" name="home" id="home">
         <div id="background">
           <div class="star" data-parallaxify-range="300"></div>
         </div>
@@ -122,7 +122,7 @@
 
       <!-- slide 2 -------------------------------------------------------------------------------->
 
-      <div class="slide" id="exhibition">
+      <div class="slide" name="exhibition" id="exhibition">
         <div class="grid-container">
           <div class="main">
             <img id="nacimage" src="/2021s/images/nac_ssop.jpg" height="100%" width="100%" alt="" style="opacity:0.3">
@@ -159,7 +159,7 @@
 
       <!-- slide 3 -------------------------------------------------------------------------------->
 
-      <div class="slide" id="about">
+      <div class="slide" name="about" id="about">
         <h3 style="position:absolute; top:130px; font-size:3vw; font-family: 'Advent Pro', sans-serif;"><b>ABOUT</b></h3>
         <p id="abouttext" style="padding-top:30px; width:90%; line-height:130%; font-size:15px;">
           CADRE Media Lab is pleased to announce Digital Autonomy, an exhibition of digital photography, video, painting, sculpture, and unclassifiable media hosted on New Art City that explores the multitude of interdependent signals crisscrossing
@@ -179,7 +179,7 @@
 
       <!-- slide 4 -------------------------------------------------------------------------------->
 
-      <div class="slide" id="work">
+      <div class="slide" name="work" id="work">
         <!-- <style media="screen">
           #gallery {
             width:20%;
@@ -290,7 +290,7 @@
 
 
       <!-- slide 5 -------------------------------------------------------------------------------->
-      <div class="slide" id="artist">
+      <div class="slide" name="artist" id="artist">
         <div class="grid-container_artist1">
           <div class="art3">
             <h2 style="font-family: 'Advent Pro', sans-serif;"><b>ARTISTS</b></h2>
@@ -378,7 +378,7 @@
 
       <!-- slide 6 -------------------------------------------------------------------------------->
 
-      <div class="slide" id="artist2">
+      <div class="slide"name="artist2" id="artist2">
 
         <div class="grid-container_artist2">
 
@@ -475,7 +475,7 @@
 
       <!-- slide 7 -------------------------------------------------------------------------------->
 
-      <div class="slide" id="credit">
+      <div class="slide" name="credit" id="credit">
         <!-- <img src="/2021s/images/web.gif" class="bkgdweb" alt=""> -->
         <h4 style="font-family: 'Advent Pro', sans-serif; font-size:3vw;"><b>CREDITS</b></h4>
         <div class="credit-page">
@@ -682,8 +682,9 @@
         <style media="screen">
           @media screen and (max-width: 479px) {
 
-            html {
+            html, body {
                 overflow: scroll;
+                height:100%;
             }
             .grid-container-work-mobile {
               height: 100%;
