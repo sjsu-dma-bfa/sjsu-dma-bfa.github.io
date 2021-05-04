@@ -55,6 +55,7 @@ hr {
 a {
   color: white;
   text-decoration: none;
+  font-size: 20px;
 }
 
 a:hover {
@@ -81,7 +82,7 @@ img {
   border-radius: 50px;
   padding: 8px 20px 8px;
   margin: 40px;
-  font-size: 24px;
+    font-size: 20px;
 }
 #worklink-button:hover {
   background-color: rgba( 202,151,190 , 0.5 );
