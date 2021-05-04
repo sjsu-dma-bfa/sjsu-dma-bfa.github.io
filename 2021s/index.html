@@ -73,24 +73,26 @@
     <!-- slide 1 -------------------------------------------------------------------------------->
     <!-- navigation menu -->
     <div class="topnav">
-      <a href="#background">home</a>
-      <a href="#exhibition">exhibition</a>
-      <a href="#about">about</a>
-      <a href="#work">works</a>
-      <a href="#artist">artists</a>
-      <a href="#credit">credits</a>
+      <a href="#background-pc">home</a>
+      <a href="#exhibition-pc">exhibition</a>
+      <a href="#about-pc">about</a>
+      <a href="#work-pc">works</a>
+      <a href="#artist-pc">artists</a>
+      <a href="#credit-pc">credits</a>
     </div>
+
 
     <div class="slider">
       <!-- slide 01 -->
       <div class="slide" name="home" id="home">
-        <div id="background">
+        <div id="background-pc">
           <div class="star" data-parallaxify-range="300"></div>
         </div>
         <div class="background-container">
           <div class="clouds"></div>
         </div>
-        <img id="island-image" style="float:right;" src="/2021s/images/island.png" alt="">
+
+        <img id="island-image-pc" style="float:right;" src="/2021s/images/island.png" alt="">
         <!-- title -->
         <h1 style="position:absolute; top:45%; font-size: 8.5vw;">
           <span class='one'>D</span>
@@ -121,7 +123,7 @@
 
       <!-- slide 2 -------------------------------------------------------------------------------->
 
-      <div class="slide" name="exhibition" id="exhibition">
+      <div class="slide" name="exhibition" id="exhibition-pc">
         <div class="grid-container">
           <div class="main">
             <img id="nacimage" src="/2021s/images/nac_ssop.jpg" height="100%" width="100%" alt="" style="opacity:0.3">
@@ -151,14 +153,12 @@
             </a>
           </div>
         </div>
-        <div class="scroll-indicator">
-        </div>
       </div>
 
 
       <!-- slide 3 -------------------------------------------------------------------------------->
 
-      <div class="slide" name="about" id="about">
+      <div class="slide" name="about" id="about-pc">
         <h3 style="position:absolute; top:130px; font-size:3vw; font-family: 'Advent Pro', sans-serif;"><b>ABOUT</b></h3>
         <p id="abouttext" style="padding-top:30px; width:90%; line-height:130%; font-size:15px;">
           CADRE Media Lab is pleased to announce Digital Autonomy, an exhibition of digital photography, video, painting, sculpture, and unclassifiable media hosted on New Art City that explores the multitude of interdependent signals crisscrossing
@@ -178,7 +178,7 @@
 
       <!-- slide 4 -------------------------------------------------------------------------------->
 
-      <div class="slide" name="work" id="work">
+      <div class="slide" name="work" id="work-pc">
         <!-- <style media="screen">
           #gallery {
             width:20%;
@@ -206,6 +206,7 @@
           }
         }
         </style>
+
         <h3 style="position:absolute; top:100px; font-size:3vw; font-family: 'Advent Pro', sans-serif;"><b>WORKS</b></h3>
         <div class="grid-container-work">
           <div class="w1">
@@ -289,7 +290,7 @@
 
 
       <!-- slide 5 -------------------------------------------------------------------------------->
-      <div class="slide" name="artist" id="artist">
+      <div class="slide" name="artist" id="artist-pc">
         <div class="grid-container_artist1">
           <div class="art3">
             <h2 style="font-family: 'Advent Pro', sans-serif;"><b>ARTISTS</b></h2>
@@ -474,7 +475,7 @@
 
       <!-- slide 7 -------------------------------------------------------------------------------->
 
-      <div class="slide" name="credit" id="credit">
+      <div class="slide" name="credit" id="credit-pc">
         <!-- <img src="/2021s/images/web.gif" class="bkgdweb" alt=""> -->
         <h4 style="font-family: 'Advent Pro', sans-serif; font-size:3vw;"><b>CREDITS</b></h4>
         <div class="credit-page">
@@ -565,11 +566,11 @@
           <span class='eight'>Y</span>
         </h1>
 
-        <div class="scroll-indicator">
+        <!-- <div class="scroll-indicator">
           <h4 id="scrolltext" style="font-family: 'Advent Pro', sans-serif; font-size:15px;; padding-bottom:20px;">swipe down for more</h4>
           <div class="arrow" style="opacity:0.3;">
           </div>
-        </div>
+        </div> -->
       </div>
       <!-- end of slide 1 -->
 
@@ -649,8 +650,6 @@
             </a>
           </div>
         </div>
-        <div class="scroll-indicator">
-        </div>
       </div>
 
 
@@ -694,7 +693,7 @@
             .grid-container-work-mobile {
               display: grid;
               grid-template-columns: 1fr 1fr 1fr 1fr;
-              grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+              grid-template-rows: 0.8fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
               gap: 0px 0px;
               grid-template-areas:
                 ". . . ."
@@ -932,7 +931,7 @@
             }
 
             .topnav {
-              position: sticky;
+              position: fixed;
               background: white;
               margin: auto;
               z-index: 3;

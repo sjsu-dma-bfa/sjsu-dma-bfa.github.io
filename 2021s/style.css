@@ -25,14 +25,12 @@ background: linear-gradient(211deg, #ca97be 0%, #afaef8 100%);
 html {
   margin:0;
     height:100%;
-     scroll-behavior: smooth;
 }
 
 body {
   overflow: hidden;
   margin:0;
     height:100%;
-    font-family: 'Comfortaa';
 }
 
 li {
@@ -122,7 +120,6 @@ li {
   top:50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* font-family: 'Advent Pro', sans-serif; */
   font-family: 'Comfortaa', cursive;
   font-weight: normal;
 }
@@ -149,8 +146,6 @@ li {
 
 #nacabout {
   color:white;
-  font-family: 'Advent Pro', sans-serif;
-  /* font-family: 'Comfortaa', cursive; */
   text-decoration: none;
 }
 
@@ -553,149 +548,6 @@ html, body, .grid-container_artist2 {
   left: 0;
 }
 
-/* artist page 03 */
-
-html, body, .grid-container_artist3 {
-  height: 100%;
-  margin: 0;
-}
-
-.grid-container_artist3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "art7 art7 artist25 artist26 artist27"
-    "art7 art7 artist28 artist29 artist30"
-    "artist31 artist32 artist33 art8 art8"
-    "artist34 artist35 artist36 art8 art8";
-}
-
-.art7 {
-  grid-area: art7;
-  background-color: rgba( 202,151,190 , 0.5 );
-}
-
-.art8 {
-  grid-area: art8;
-  background-color: rgba( 43,103,199 , 0.5 );
-}
-
-.artist25 {
-  grid-area: artist25;
-  background-color: rgba( 43,103,199 , 0.5 );
-}
-
-.artist26 {
-  grid-area: artist26;
-}
-
-.artist27 {
-  grid-area: artist27;
-  background-color: rgba( 141,156,223 , 0.5);
-}
-
-.artist28 {
-  grid-area: artist28;
-  background-color: rgba( 43,103,199 , 0.5 );
-}
-
-.artist29 {
-  grid-area: artist29;
-  background-color: rgba( 252,153,216 , 0.5 );
-}
-
-.artist30 {
-  grid-area: artist30;
-}
-
-.artist31 {
-  grid-area: artist31;
-}
-
-.artist32 {
-  grid-area: artist32;
-  background-color: rgba( 141,156,223 , 0.5);
-}
-
-.artist33 {
-  grid-area: artist33;
-}
-
-.artist34 {
-  grid-area: artist34;
-  background-color: rgba( 43,103,199 , 0.5 );
-}
-
-.artist35 {
-  grid-area: artist35;
-  background-color: rgba( 43,103,199 , 0.5 );
-}
-
-.artist36 {
-  grid-area: artist36;
-  background-color: rgba( 252,153,216 , 0.5 );
-}
-
-/* For presentation only, no need to copy the code below */
-.grid-container_artist3 * {
-  /* border: 1px solid red; */
-  position: relative;
-}
-
-.grid-container_artist3 *:after {
-  /* content:attr(class); */
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-
-/* work page grid layout */
-html, body, .grid-container_work {
-  height: 100%;
-  margin: 0;
-}
-
-.grid-container_work {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "art7 works-listed works-listed works-listed"
-    "art8 works-listed works-listed works-listed";
-}
-
-.art7 {
-  grid-area: art7;
-  background-color: rgba( 175,174,248 , 0.5 );
-}
-
-.art8 {
-  grid-area: art8;
-  background-color: rgba( 141,156,223 , 0.5);
-}
-
-.works-listed {
-  grid-area: works-listed;
-  background-color: rgba( 202,151,190 , 0.5 );
-}
-
-/* For presentation only, no need to copy the code below */
-.grid-container_work * {
-  /* border: 1px solid red; */
-  position: relative;
-}
-
-.grid-container_work *:after {
-  /* content:attr(class); */
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 
 /* navigation menu */
 
@@ -704,7 +556,6 @@ html, body, .grid-container_work {
   overflow: hidden;
   background-color:none;
   z-index:2;
-  font-family: 'Advent Pro', sans-serif;
   width: 100%;
   margin-top:0px;
   font-size:20px;
@@ -843,36 +694,6 @@ html, body, .grid-container_work {
 	right: 0;
 }
 
-/* .stars {
- background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
- position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	display: block;
-  	z-index: 0;
-} */
-
-/* .twinkling{
-	width:10000px;
-	height: 100%;
-	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
-	background-size: 1000px 1000px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 2;
-
-    -moz-animation:move-background 70s linear infinite;
-  -ms-animation:move-background 70s linear infinite;
-  -o-animation:move-background 70s linear infinite;
-  -webkit-animation:move-background 70s linear infinite;
-  animation:move-background 70s linear infinite;
-
-} */
-
 .clouds{
 	width:10000px;
 	height: 100%;
@@ -882,7 +703,7 @@ html, body, .grid-container_work {
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: 3;
+    z-index: 0;
 
    -moz-animation:move-background 40s linear infinite;
   -ms-animation:move-background 40s linear infinite;
