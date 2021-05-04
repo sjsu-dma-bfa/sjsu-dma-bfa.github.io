@@ -106,7 +106,7 @@ li {
   transform: translate(-50%, -50%);
 }
 
-.slide h4 {
+.slide h4:not(.credit-title) {
   font-size: 4vw;
   line-height: 1;
   position: absolute;
