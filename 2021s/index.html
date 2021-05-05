@@ -697,11 +697,6 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
         <style media="screen">
           @media screen and (max-width: 479px) {
 
-            html,
-            body {
-              height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-height: calc(var(--vh, 1vh) * 100);
-            }
             .grid-container-work-mobile {
               height: 100%;
               margin-right:27px;
@@ -710,7 +705,7 @@ height: calc(var(--vh, 1vh) * 100);
             .grid-container-work-mobile {
               display: grid;
               grid-template-columns: 1fr 1fr 1fr 1fr;
-              grid-template-rows: 0.8fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+              grid-template-rows: 0.8fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
               gap: 0px 0px;
               grid-template-areas:
                 ". . . ."
@@ -988,7 +983,7 @@ height: calc(var(--vh, 1vh) * 100);
             .grid-container_artist1 {
               display: grid;
               grid-template-columns: 1fr 1fr 1fr;
-              grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+              grid-template-rows: 1.3fr 1fr 1fr 1fr 1.3fr;
               gap: 0px 0px;
               grid-template-areas:
                 "artist1 artist2 artist3"
@@ -1092,7 +1087,7 @@ height: calc(var(--vh, 1vh) * 100);
             .grid-container_artist2 {
               display: grid;
               grid-template-columns: 1fr 1fr 1fr;
-              grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+              grid-template-rows: 1.3fr 1fr 1fr 1fr 1.3fr;
               gap: 0px 0px;
               grid-template-areas:
                 "art4 art4 artist14"
@@ -1192,18 +1187,18 @@ height: calc(var(--vh, 1vh) * 100);
 
           <div class="artist1">
             <a href="/2021s/asiddiqui/asra.html">
-              <h3 id="name">ASRA</h3>
+              <h3 id="name">  <br> <br> <br>ASRA</h3>
             </a>
           </div>
 
           <div class="artist2">
             <a href="/2021s/abarrios/abarrios.html">
-              <h3 id="name">Andrew Barrios</h3>
+              <h3 id="name">  <br> <br><br>Andrew Barrios</h3>
             </a>
           </div>
           <div class="artist3">
             <a href="/2021s/cbedinger/cbedinger.html">
-              <h3 id="name">Clay Bedinger</h3>
+              <h3 id="name">   <br><br>Clay Bedinger</h3>
             </a>
           </div>
           <div class="artist4">
@@ -1254,7 +1249,7 @@ height: calc(var(--vh, 1vh) * 100);
             </a>
           </div>
           <div class="artist13">
-                         <p style="font-size:7px;">scroll down for more artists <br> ▼</p>
+                         <p style="font-size:9px;">scroll down for more artists <br> ▼</p>
           </div>
           <p></p>
         </div>
@@ -1271,7 +1266,7 @@ height: calc(var(--vh, 1vh) * 100);
           </div>
           <div class="artist14">
             <a href="/2021s/skwong/skwong.html">
-              <h3 id="name">Sabrina Kwong</h3>
+              <h3 id="name"><br><br><br>Sabrina Kwong</h3>
             </a>
           </div>
           <div class="artist15">
