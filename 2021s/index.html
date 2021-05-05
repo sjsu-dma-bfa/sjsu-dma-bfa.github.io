@@ -591,6 +591,11 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
       <div class="slide" id="exhibition">
         <style media="screen">
           @media screen and (max-width: 479px) {
+.html {
+  min-height: -webkit-fill-available;
+  min-height: 100vh;
+}
+
 
             .grid-container {
               display: grid;
