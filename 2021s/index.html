@@ -681,8 +681,8 @@
 
             html,
             body {
-                overflow: scroll;
-                height:100vh;
+              height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+height: calc(var(--vh, 1vh) * 100);
             }
             .grid-container-work-mobile {
               height: 100%;
@@ -935,7 +935,7 @@
 
             .topnav {
               position: fixed;
-              background: white;
+              background: rgba(255,255,255,0.3);
               margin: auto;
               z-index: 3;
             }
