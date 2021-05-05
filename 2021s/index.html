@@ -84,8 +84,8 @@
 
     <div class="slider">
       <!-- slide 01 -->
-      <div class="slide" name="home" id="home">
-        <div id="background">
+      <div class="slide">
+        <div id="background-pc">
           <div class="star" data-parallaxify-range="300"></div>
         </div>
         <div class="background-container">
@@ -524,9 +524,22 @@
     <!-- slide 1 -------------------------------------------------------------------------------->
     <!-- navigation menu -->
 
+<script type="text/javascript">
+// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+// We listen to the resize event
+window.addEventListener('resize', () => {
+// We execute the same script as before
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+</script>
 
     <div class="topnav">
-      <a href="#background">home</a>
+      <a href="#home">home</a>
       <a href="#exhibition">exhibition</a>
       <a href="#about">about</a>
       <a href="#work">works</a>
@@ -535,15 +548,17 @@
     </div>
 
 
-    <div class="slider">
+    <div class="slider" style="height:100vh;">
       <!-- slide 01 -->
       <div class="slide" id="home">
         <div id="background">
-          <div class="star" data-parallaxify-range="300"></div>
+          <div class="star" data-parallaxify-range="100"></div>
         </div>
         <div class="background-container">
           <div class="clouds"></div>
         </div>
+
+
         <img id="island-image" style="position:absolute; top:20%; width:130%;" src="/2021s/images/island.png" alt="">
         <!-- title -->
         <h1 style="position:absolute; top:45%; font-size: 37px;">
@@ -936,6 +951,30 @@ height: calc(var(--vh, 1vh) * 100);
               position:relative
             }
 
+            #background {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: transparent;
+                background-size: cover;
+                -webkit-background-size: cover;
+                /* overflow: hidden; */
+                z-index: -1;
+            }
+
+            .star {
+                position: absolute;
+                top: 400px;
+                left: 400px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: rgba(255,255,255,0.75);
+                box-shadow: 0px 0px 10px rgba(255,255,255,0.75);
+            }
+
             .topnav {
               position: fixed;
               background: rgba(255,255,255,0.3);
@@ -951,8 +990,6 @@ height: calc(var(--vh, 1vh) * 100);
               font-family: 'Advent Pro', sans-serif;
             }
 
-            html,
-            body,
             .grid-container_artist1 {
               height: 100%;
               margin: 0;
