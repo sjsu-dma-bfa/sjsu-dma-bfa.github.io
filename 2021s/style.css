@@ -63,7 +63,8 @@ li {
 
 /* single page slide navigator */
 .slick-dotted.slick-slider {
-  overflow: scroll;
+  overflow-x:hidden;
+  overflow-y:scroll;
   margin-bottom: 0;
 }
 

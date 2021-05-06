@@ -4,7 +4,8 @@ $slider.slick({
   infinite: false,
   arrows: false,
   vertical: true,
-  dots: true,
+  horizotal:false,
+  dots: false,
   speed: 1200,
   cssEase: 'cubic-bezier(0.86, 0, 0.07, 1)' });
 
