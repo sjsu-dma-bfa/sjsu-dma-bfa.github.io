@@ -333,17 +333,17 @@ html, body, .grid-container_artist1 {
 
 .art3 {
   grid-area: art3;
-  background-color: rgba( 202,151,190 , 0.5 );
+  background-color: rgba( 202,151,190 , 0.3 );
 }
 
 .art4 {
   grid-area: art4;
-  background-color: rgba( 101,113,173 , 0.5);
+  background-color: rgba( 101,113,173 , 0.3);
 }
 
 .artist1 {
   grid-area: artist1;
-  background-color: rgba( 101,113,173 , 0.5);
+  background-color: rgba( 101,113,173 , 0.3);
 }
 
 .artist2 {
@@ -353,22 +353,22 @@ html, body, .grid-container_artist1 {
 
 .artist3 {
   grid-area: artist3;
-  background-color: rgba( 141,156,223 , 0.5);
+  background-color: rgba( 141,156,223 , 0.3);
 }
 
 .artist4 {
   grid-area: artist4;
-  background-color: rgba( 43,103,199 , 0.5 );
+  background-color: rgba( 43,103,199 , 0.3 );
 }
 
 .artist5 {
   grid-area: artist5;
-  background-color: rgba( 252,153,216 , 0.5 );
+  background-color: rgba( 252,153,216 , 0.3 );
 }
 
 .artist6 {
   grid-area: artist6;
-    background-color: rgba( 44, 138, 115 , 0.5 );
+    background-color: rgba( 44, 138, 115 , 0.3 );
 }
 
 .artist7 {
@@ -377,7 +377,7 @@ html, body, .grid-container_artist1 {
 
 .artist8 {
   grid-area: artist8;
-  background-color: rgba( 141,156,223 , 0.5);
+  background-color: rgba( 141,156,223 , 0.3);
 }
 
 .artist9 {
@@ -386,37 +386,37 @@ html, body, .grid-container_artist1 {
 
 .artist10 {
   grid-area: artist10;
-  background-color: rgba( 43,103,199 , 0.5 );
+  background-color: rgba( 43,103,199 , 0.3 );
 }
 
 .artist11 {
   grid-area: artist11;
-  background-color: rgba( 43,103,199 , 0.5 );
+  background-color: rgba( 43,103,199 , 0.3 );
 }
 
 .artist12 {
   grid-area: artist12;
-  background-color: rgba( 252,153,216 , 0.5 );
+  background-color: rgba( 252,153,216 , 0.3 );
 }
 
 .artist13 {
   grid-area: artist13;
-    background-color: rgba( 44, 138, 115 , 0.5 );
+    background-color: rgba( 44, 138, 115 , 0.3 );
 }
 
 .artist14 {
   grid-area: artist14;
-    background-color: rgba( 43,103,199 , 0.5 );
+    background-color: rgba( 43,103,199 , 0.3 );
 }
 
 .artist15 {
   grid-area: artist15;
-  background-color: rgba( 252,153,216 , 0.5 );
+  background-color: rgba( 252,153,216 , 0.3 );
 }
 
 .artist16 {
   grid-area: artist16;
-  background-color: rgba( 252,153,216 , 0.5 );
+  background-color: rgba( 252,153,216 , 0.3 );
 }
 
 /* For presentation only, no need to copy the code below */
@@ -452,7 +452,7 @@ html, body, .grid-container_artist2 {
 
 .art5 {
   grid-area: art5;
-  background-color:rgba( 141,156,223 , 0.5);
+  background-color:rgba( 141,156,223 , 0.3);
 }
 
 .art6 {
@@ -465,22 +465,22 @@ html, body, .grid-container_artist2 {
 
 .artist18 {
   grid-area: artist18;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.3);
 }
 
 .artist19 {
   grid-area: artist19;
-  background-color: rgba( 43,103,199 , 0.5 );
+  background-color: rgba( 43,103,199 , 0.3 );
 }
 
 .artist20 {
   grid-area: artist20;
-  background-color: rgba( 252,153,216 , 0.5 );
+  background-color: rgba( 252,153,216 , 0.3 );
 }
 
 .artist21 {
   grid-area: artist21;
-    background-color: rgba( 44, 138, 115 , 0.5 );
+    background-color: rgba( 44, 138, 115 , 0.3 );
 }
 
 .artist22 {
@@ -489,27 +489,27 @@ html, body, .grid-container_artist2 {
 
 .artist23 {
   grid-area: artist23;
-  background-color:rgba( 252,153,216 , 0.5 );
+  background-color:rgba( 252,153,216 , 0.3 );
 }
 
 .artist24 {
   grid-area: artist24;
-  background-color: rgba( 43,103,199 , 0.5 );
+  background-color: rgba( 43,103,199 , 0.3 );
 }
 
 .artist25 {
   grid-area: artist25;
-  background-color: rgba( 202,151,190 , 0.5 );
+  background-color: rgba( 202,151,190 , 0.3 );
 }
 
 .artist26 {
   grid-area: artist26;
-  background-color: rgba( 141,156,223 , 0.5);
+  background-color: rgba( 141,156,223 , 0.3);
 }
 
 .artist27 {
   grid-area: artist27;
-  background-color: rgba( 44, 138, 115 , 0.5 );
+  background-color: rgba( 44, 138, 115 , 0.3 );
 }
 
 .artist28 {
@@ -518,17 +518,17 @@ html, body, .grid-container_artist2 {
 
 .artist29 {
   grid-area: artist29;
-  background-color: rgba( 202,151,190 , 0.5 );
+  background-color: rgba( 202,151,190 , 0.3 );
 }
 
 .artist30 {
   grid-area: artist30;
-  background-color: rgba( 141,156,223 , 0.5);
+  background-color: rgba( 141,156,223 , 0.3);
 }
 
 .artist31 {
   grid-area: artist31;
-  background-color: rgba( 43,103,199 , 0.5 );
+  background-color: rgba( 43,103,199 , 0.3 );
 }
 
 .artist32 {
