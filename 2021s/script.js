@@ -6,13 +6,14 @@ $slider.slick({
   arrows: false,
   vertical: true,
   horizotal:false,
-  dots: false,
+  dots: true,
   speed: 1200,
   cssEase: 'cubic-bezier(0.86, 0, 0.07, 1)' });
 
 
 (function() {
 if( window.innerWidth > 479 ) {
+
 
   $slider.mousewheel(function (e) {
     e.preventDefault();
