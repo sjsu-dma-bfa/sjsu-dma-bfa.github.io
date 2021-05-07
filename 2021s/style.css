@@ -156,6 +156,7 @@ li {
   color: #272C66;
 }
 
+
 .slide a:hover {
 
   text-shadow: 0px 0px 30px rgba(255,255,255,1);
@@ -322,7 +323,7 @@ html, body, .grid-container_artist1 {
 .grid-container_artist1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr !important;
   gap: 0px 0px;
   grid-template-areas:
     "art3 art3 artist1 artist2 artist3"
@@ -441,7 +442,7 @@ html, body, .grid-container_artist2 {
 .grid-container_artist2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr !important;
   gap: 0px 0px;
   grid-template-areas:
     "artist17 artist18 artist19 art5 art5"
