@@ -323,7 +323,7 @@ html, body, .grid-container_artist1 {
 .grid-container_artist1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr !important;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-template-areas:
     "art3 art3 artist1 artist2 artist3"
@@ -442,7 +442,7 @@ html, body, .grid-container_artist2 {
 .grid-container_artist2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr !important;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-template-areas:
     "artist17 artist18 artist19 art5 art5"
@@ -733,6 +733,7 @@ html, body, .grid-container_artist2 {
   bottom:17%;
   width: 100%;
 margin: 0 auto;
+display:flex;
 }
 
 
