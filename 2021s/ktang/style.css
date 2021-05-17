@@ -102,7 +102,7 @@ a {
   background-color: #ffc288;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(254,103,1,5);
+  box-shadow: 0 9px #e8cdb3;
 }
 
 .button:hover {background-color: #e8cdb3}
