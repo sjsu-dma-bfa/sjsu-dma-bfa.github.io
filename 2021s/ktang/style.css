@@ -89,7 +89,6 @@ a {
   box-sizing: border-box;
 }
 
-
 worklink-button {
   background-color: #ca97be;
   border-radius: 50px;
@@ -97,6 +96,7 @@ worklink-button {
   margin: 40px;
   font-size: 20px;
 }
+
 #worklink-button:hover {
   background-color: rgba( 202,151,190 , 0.5 );
   transition: 0.5s;
