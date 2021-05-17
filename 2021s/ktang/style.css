@@ -30,14 +30,14 @@ h1 {
   font-size: 60px;
   font-style: bold;
   color: #ffffff;
-  max-width: 40%;
+  max-width: 75%;
   text-align: center;
   font-family: 'Comfortaa', cursive;
   margin: auto;
   padding: 10px;
   box-shadow: 0 10px 30px rgba(254,103,1,5);
   border: 5px solid #ffc288;
-  background: #fea82f;
+  background: #DE932A;
 }
 
 h2 {
