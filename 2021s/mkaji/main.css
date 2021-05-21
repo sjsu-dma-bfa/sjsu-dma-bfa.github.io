@@ -1,0 +1,108 @@
+html, body {
+  font-family: monospace;
+}
+
+.header{
+  background-color: black;
+  padding: 10px;
+}
+
+.menu {
+  background-color: white;
+  border: 1px;
+  border-radius: 4px;
+  font-family: monospace;
+  /* box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055); */
+	color: #594100;
+	display: block;
+	margin: 1em 1%;
+	overflow: hidden;
+	width: 100%;
+}
+.menu ul {
+  margin: 0;
+	padding: 0;
+}
+
+.menu > ul > li > a > .box {
+	border-top: 4px solid #000000;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+  font-family: monospace;
+	content: '';
+	display: inline-block;
+	height: 0;
+	width: 0;
+	vertical-align: middle;
+	-webkit-transition: color 0.1s linear;
+	        transition: color 0.1s linear;
+}
+.menu > ul > li > a {
+	color: #594100;
+  font-family: monospace;
+	display: block;
+	line-height: 56px;
+	padding: 0 10px;
+	text-decoration: none;
+}
+.menu > ul > li:hover {
+	background-color: #b8a198;
+}
+/* .menu > ul > li:hover > a {
+	color: rgb( 255, 255, 255 );
+} */
+.menu > ul > li:hover > a > .box {
+	border-top-color: rgb( 255, 255, 255 );
+}
+.menu > ul > li > div {
+	background-color: white;
+  color: #594100;
+	border-top: 0;
+	border-radius: 0 0 4px 4px;
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+	display: none;
+	margin: 0;
+	opacity: 0;
+	position: absolute;
+	width: 165px;
+	visibility: hidden;
+	-webkit-transiton: opacity 0.2s;
+	       transition: opacity 0.2s;
+}
+.menu > ul > li:hover > div {
+	display: block;
+	opacity: 1;
+	visibility: visible;
+}
+.menu > ul > li > div ul > li {
+	display: block;
+}
+.menu > ul > li > div ul > li > a {
+	color: #594100;
+	display: block;
+	padding: 12px 24px;
+	text-decoration: none;
+}
+.menu > ul > li > div ul > li:hover > a {
+	background-color: #fafafa;
+}
+
+.menu ul li {
+  display: inline-block;
+	list-style-type: none;
+	-webkit-transition: all 0.2s;
+	        transition: all 0.2s;
+}
+
+canvas {
+  margin: 10;
+  display: flex;
+  justify-content: center;
+}
+
+
+/*
+footer{
+  background-color: pink;
+  padding: 10px;
+} */
