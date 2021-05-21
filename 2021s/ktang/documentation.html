@@ -8,40 +8,40 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css'>
   <link rel="stylesheet" href="style.css">
-  <script src="/script.js"></script>
+  <!-- <script src="/script.js"></script> -->
 </head>
-
+<style>
+* {box-sizing: border-box}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+</style>
 <script>
-  var slideIndex = 1;
-  showSlides(slideIndex);
+var slideIndex = 1;
+showSlides(slideIndex);
 
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {
-      slideIndex = 1
-    }
-    if (n < 1) {
-      slideIndex = slides.length
-    }
-    for (i = 0; i < slides.length; i++) {
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
   }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
 </script>
 
 <body>
@@ -56,33 +56,38 @@
   <br>
   <!-- slides show -->
   <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 6</div>
+      <img src="/2021s/ktang/assets/lobby.png" style="width:100%">
+      <div class="text">NAC Lobby</div>
+    </div>
 
     <div class="mySlides fade">
-      <div class="numbertext">1 / 5</div>
+      <div class="numbertext">2 / 6</div>
       <img src="/2021s/ktang/assets/Comfort_1.png" style="width:100%">
       <div class="text">Comfort 1</div>
     </div>
 
     <div class="mySlides fade">
-      <div class="numbertext">2 / 5</div>
+      <div class="numbertext">3 / 6</div>
       <img src="assets/Comfort_2.png" style="width:100%">
       <div class="text">Comfort 2</div>
     </div>
 
     <div class="mySlides fade">
-      <div class="numbertext">3 / 5</div>
+      <div class="numbertext">4 / 6</div>
       <img src="assets/Comfort_3.png" style="width:100%">
       <div class="text">Comfort 3</div>
     </div>
 
     <div class="mySlides fade">
-      <div class="numbertext">4 / 5</div>
+      <div class="numbertext">5 / 6</div>
       <img src="assets/Comfort_4.png" style="width:100%">
       <div class="text">Comfort 4</div>
     </div>
 
     <div class="mySlides fade">
-      <div class="numbertext">5 / 5</div>
+      <div class="numbertext">6 / 6</div>
       <img src="assets/Comfort_5.png" style="width:100%">
       <div class="text">Comfort 5</div>
     </div>
@@ -99,6 +104,7 @@
     <span class="dot" onclick="currentSlide(3)"></span>
     <span class="dot" onclick="currentSlide(4)"></span>
     <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
   </div>
   <br>
 
