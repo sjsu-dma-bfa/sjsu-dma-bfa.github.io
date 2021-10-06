@@ -20,7 +20,7 @@ Once you have been added to the class github as a contributor:
 
 INDEX CODE TO COPY
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<title>SJSU DMA FALL 2021 BFA Exhibition</title>
@@ -33,7 +33,7 @@ INDEX CODE TO COPY
     <p> Hello World </p>
 
   </body>
-</html>
+</html> -->
 
 
 
