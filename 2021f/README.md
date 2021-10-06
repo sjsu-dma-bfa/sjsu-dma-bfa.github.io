@@ -30,7 +30,7 @@ INDEX CODE TO COPY
 	</head>
 
 	<body>
-    <p> Rhonda Holberton </p>
+    <p> Hello World </p>
 
   </body>
 </html>
