@@ -2,19 +2,40 @@ This  will become the Exhibition Page for the Fall 2021 Graduating  DMA BFA Clas
 
 Once you have been added to the class github as a contributor:
 
-Create a folder in this directory
+1) Create a folder in this directory
 
-Name it: your first initial your lastname
+    a) Name it: your first initial your lastname
 
-Example: rholberton
+      Example: rholberton
 
-Copy the index.html code and replace the 'Hello World'  text with your name
+2) Copy the index.html code below and replace the 'Hello World'  text with your name
 
-Paste it into a file in the folder you just created called index.html
+    a) Paste it into a file in the folder you just created called index.html
 
-Submit the link to your index page to canvas
+3) Submit the link to your index page to canvas
 
-Example: https://sjsu-dma-bfa.github.io/2021s/rholberton/
+    a) Example: https://sjsu-dma-bfa.github.io/2021s/rholberton/
+
+
+
+INDEX CODE TO COPY
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>SJSU DMA FALL 2021 BFA Exhibition</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="main.css">
+	</head>
+
+	<body>
+    <p> Rhonda Holberton </p>
+
+  </body>
+</html>
+
+
 
 
 If you don't have edit access to repo:
