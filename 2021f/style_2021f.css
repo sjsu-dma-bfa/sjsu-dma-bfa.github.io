@@ -81,6 +81,11 @@ body {
     color: white;
 }
 
+.not-active {
+    pointer-events: none;
+    cursor: default;
+}
+
 #art-section-title {
     margin-top: 120px;
     margin-bottom: 80px;
