@@ -42,11 +42,11 @@ body {
     font-size: 1.5em;
 }
 
-.about-text {
+.centered-text {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -55%)
 }
 
 #about-info h2 {
@@ -89,7 +89,7 @@ body {
 
 #grid-artist-gallery {
     width: 80vw;
-    margin: 0 auto 80px auto;
+    margin: 0 auto 180px auto;
     padding: 20px 20px;
 
     display: grid;
