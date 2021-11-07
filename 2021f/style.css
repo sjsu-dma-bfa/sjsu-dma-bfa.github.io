@@ -24,50 +24,67 @@ body {
 .container {
     font-size: 100%;
     line-height: 1.5;
-}
-
-#grid-about {
-    width: 80vw;
-    margin: auto;
-    padding: 100px 20px;
-    display: grid;
-    grid-gap: 40px;
-    grid-template-columns: 300px auto;
     font-size: 1.2em;
-
 }
 
-#zoom-link-container {
+.container-bgimg {
+    background-image: url("images/glass-texture.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.container-big {
+    width: 100%;
+    height: 100vh;
     position: relative;
-    overflow: hidden;
+    font-size: 1.5em;
 }
 
-.zoom-link-text {
+.about-text {
     position: absolute;
     top: 50%;
     left: 50%;
-    
     transform: translate(-50%, -50%)
-}
-
-.zoom-link-img
-{
-    height: 100%;
-    
 }
 
 #about-info h2 {
     margin-top: 0px;
 }
 
-#grid-artist-gallery {
+#exhibition-info {
     width: 80vw;
     margin: auto;
-    padding: 20px;
+    padding: 100px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+}
+
+#nac-link {
+    color: #6C22B8;
+    text-align: center;
+}
+
+#zoom-link {
+    color: #6C22B8;
+    text-align: center;
+}
+
+#art-section-title {
+    margin-top: 120px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+#grid-artist-gallery {
+    width: 80vw;
+    margin: 0 auto 80px auto;
+    padding: 20px 20px;
 
     display: grid;
     grid-gap: 40px;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .artist-link {
@@ -75,6 +92,10 @@ body {
     width: 100%;
     padding-top: 100%; /* 1:1 Aspect Ratio */
     position: relative; /* If you want text inside of it */
+}
+
+#credits {
+    padding: 40px;
 }
 
 div p.credit {
