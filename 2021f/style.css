@@ -18,7 +18,9 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    color: #6C22B8;
+    font-size: 3em;
 }
 
 .container {
@@ -62,13 +64,21 @@ body {
 }
 
 #nac-link {
-    color: #6C22B8;
     text-align: center;
 }
 
 #zoom-link {
-    color: #6C22B8;
     text-align: center;
+}
+
+.zoom-link-button {
+    background-color: #6C22B8;
+    padding: 10px;
+}
+
+.zoom-link-button a {
+    text-decoration: none;
+    color: white;
 }
 
 #art-section-title {
@@ -88,10 +98,20 @@ body {
 }
 
 .artist-link {
-    background-color: rgb(136, 136, 136);
+    background-image: url(images/b-texture.png);
     width: 100%;
     padding-top: 100%; /* 1:1 Aspect Ratio */
     position: relative; /* If you want text inside of it */
+}
+
+.artist-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
 }
 
 #credits {
