@@ -5,30 +5,6 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
-.nac_header {
-    display: flex;
-    width: 100%;
-    background-color: #FFF;
-    height: auto;
-    min-height: 75vh;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    background-image: url("images/b-texture.png");
-    background-position: center center;
-    background-size: cover;
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-
-.nac_header h1 {
-    display: block;
-    width: 100%;
-    text-align: center;
-    color: #6C22B8;
-    font-weight: 700;
-}
-
 .bgimg {
     background-image: url("images/b-texture.png");
     background-position: center;
@@ -151,6 +127,8 @@ div p.credit {
     text-align: center;
 }
 
+/* new flexible layouts by brian */
+
 .flexible-block {
     display: flex;
     width: 100%;
@@ -161,6 +139,17 @@ div p.credit {
     min-height: 450px;
     align-items: center;
     justify-content: center;
+}
+
+.flexible-block:not(.wbg) {
+    background-color: #FFF;
+}
+
+.flexible-block.wbg {
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
 }
 
 .flexible-block.flexv {
@@ -178,13 +167,44 @@ div p.credit {
     box-sizing: border-box;
 }
 
+.nac_header {
+    display: flex;
+    width: 100%;
+    background-color: #FFF;
+    height: auto;
+    min-height: 75vh;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/b-texture.png");
+    background-position: center center;
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.nac_header h1 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #6C22B8;
+    font-weight: 700;
+}
+
 .nac_subsection_title {
     margin-top:0;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     font-size: 42px;
     line-height: 44px;
     font-weight: 700;
     color: #222
+}
+
+.nac_subsection_subtitle {
+    font-size: 26px;
+    line-height: 30px;
+    color: #222;
+    font-weight: 400;
 }
 
 .nac_subsection_bodytext {
@@ -197,6 +217,39 @@ div p.credit {
 
 .nac_text_center {
     text-align: center;
+}
+
+.nac_double_button {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.nac_double_button .nac_standard_button {
+    margin-right: 7px;
+    margin-bottom: 7px;
+}
+
+.nac_standard_button {
+    display: inline-block;
+    padding:15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    background-color: #6C22B8;
+    color:#FFF;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+}
+
+.nac_standard_button:hover, .nac_standard_button:active, .nac_standard_button:focus {
+    opacity: 0.8;
+}
+
+.nac_bg_1 {
+    background-image: url("images/glass-texture.png");
 }
 
 @media(max-width: 767.9px) {
