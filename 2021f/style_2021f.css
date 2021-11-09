@@ -269,6 +269,10 @@ div p.credit {
     background-image: url(images/b-texture.png);
 }
 
+.nac_artwork_grid a:hover, .nac_artwork_grid a:active, .nac_artwork_grid a:focus {
+    opacity: 0.7;
+}
+
 .nac_artwork_grid a h3 {
     display: inline-block;
     margin-top: 0;
