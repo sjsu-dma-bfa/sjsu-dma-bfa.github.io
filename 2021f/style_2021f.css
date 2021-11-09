@@ -252,6 +252,59 @@ div p.credit {
     background-image: url("images/glass-texture.png");
 }
 
+.nac_artwork_grid {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.nac_artwork_grid a {
+    display: inline-block;
+    background-color: #000;
+    margin: 7px;
+    position: relative;
+    color: #FFF;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(images/b-texture.png);
+}
+
+.nac_artwork_grid a h3 {
+    display: inline-block;
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.nac_artwork_grid a p {
+    display: inline-block;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.nac_artwork_grid a:before {
+    content:'';
+    display:block;
+    padding-bottom: 100%;
+}
+
+.nac_artwork_grid div {
+    display: block;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    text-align: center;
+}
+
 @media(max-width: 767.9px) {
     .nac_header h1 {
         font-size: 50px;
@@ -261,6 +314,10 @@ div p.credit {
     .flexible-container {
         padding-left: 30px;
         padding-right: 30px;
+    }
+
+    .nac_artwork_grid a {
+        width: calc(100% / 2 - 14px);
     }
 }
 
@@ -274,6 +331,10 @@ div p.credit {
         padding-left: 50px;
         padding-right: 50px;
     }
+
+    .nac_artwork_grid a {
+        width: calc(100% / 4 - 14px);
+    }
 }
 
 @media(min-width: 1025px) {
@@ -285,5 +346,9 @@ div p.credit {
     .flexible-container {
         padding-left: 70px;
         padding-right: 70px;
+    }
+
+    .nac_artwork_grid a {
+        width: calc(100% / 6 - 14px);
     }
 }
