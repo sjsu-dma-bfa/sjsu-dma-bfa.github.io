@@ -5,6 +5,30 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
+.nac_header {
+    display: flex;
+    width: 100%;
+    background-color: #FFF;
+    height: auto;
+    min-height: 75vh;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/b-texture.png");
+    background-position: center center;
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.nac_header h1 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #6C22B8;
+    font-weight: 700;
+}
+
 .bgimg {
     background-image: url("images/b-texture.png");
     background-position: center;
@@ -127,3 +151,86 @@ div p.credit {
     text-align: center;
 }
 
+.flexible-block {
+    display: flex;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    min-height: 450px;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexible-block.flexv {
+    flex-flow: column wrap;
+}
+
+.flexible-block.flexh {
+    flex-flow: row wrap;
+}
+
+.flexible-container {
+    display: block;
+    width: 100%;
+    max-width: 1600px;
+    box-sizing: border-box;
+}
+
+.nac_subsection_title {
+    margin-top:0;
+    margin-bottom: 30px;
+    font-size: 42px;
+    line-height: 44px;
+    font-weight: 700;
+    color: #222
+}
+
+.nac_subsection_bodytext {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 25px;
+    color: #555;
+}
+
+.nac_text_center {
+    text-align: center;
+}
+
+@media(max-width: 767.9px) {
+    .nac_header h1 {
+        font-size: 50px;
+        line-height:  55px;
+    }
+
+    .flexible-container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1024.9px) {
+    .nac_header h1 {
+        font-size: 65px;
+        line-height:  69px;
+    }
+
+    .flexible-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media(min-width: 1025px) {
+    .nac_header h1 {
+        font-size: 80px;
+        line-height:  85px;
+    }
+
+    .flexible-container {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+}
