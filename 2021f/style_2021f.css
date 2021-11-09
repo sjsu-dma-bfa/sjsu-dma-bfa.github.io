@@ -302,7 +302,7 @@ div p.credit {
     position: absolute;
     top:50%;
     left: 50%;
-    width: auto;
+    width: 90%;
     height: auto;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
