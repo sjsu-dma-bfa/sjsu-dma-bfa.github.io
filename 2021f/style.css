@@ -51,3 +51,94 @@ body {
 div p.credit {
     text-align: center;
 }
+
+
+/*ARTIST PAGE*/
+.container2 {
+    background-color: #1e0e29;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Urbanist', sans-serif;
+    font-style: normal;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    padding: 30px;
+    min-height: calc(100vh - 40px);
+    margin-top: -20px;
+
+}
+.singleArtistFlex {
+    text-align: left;
+    
+}
+.artistNameTitle {
+    text-align: left;
+    font-size: 70px;
+    font-weight: bolder;
+}
+.workTitle {
+    text-align: left;
+    font-size: 30px;
+}
+.socialIcons {
+    text-align: left;
+    font-size: 25px;
+    word-spacing: 10px;
+}
+.socialIcons:hover {
+    cursor: pointer;
+}
+.sideImage img {
+    width: 650px; /*Width 200px for both images*/
+    height: auto;
+    /* margin: 20px; */ 
+    margin-top: 150px;
+}
+.statementTitle {
+    text-align: left;
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 25px;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    margin-bottom: 10px;
+}
+.statement {
+    text-align: left;
+    line-height: 25px;
+    font-size: 16px;
+}
+.bioTitle {
+    text-align: left;
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 25px;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    margin-bottom: 10px;
+}
+
+.bio {
+    text-align: left;
+    line-height: 25px;
+    font-size: 16px;
+}
+.btnWeb {
+    background-color: #533083;
+    border: none;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: transform .5s ease;
+    margin-right: 10px;
+}
+.btnWeb:hover {
+    cursor: pointer;
+    background-color: #643897;
+    transform: translateY(-5px);
+}
