@@ -227,7 +227,7 @@ div p.credit {
     display: block;
     width: 100%;
     margin-top:0;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     font-size: 42px;
     line-height: 44px;
     font-weight: 700;
@@ -297,7 +297,7 @@ div p.credit {
 }
 
 .nac_bg_1 {
-    background-image: url("images/glass-texture.png");
+    background-image: url("images/footercompressed.jpg");
 }
 
 .nac_artwork_grid {
@@ -398,6 +398,7 @@ div p.credit {
     margin-top: 0;
     font-size: 18px;
     line-height: 22px;
+    color: #FFF;
 }
 
 .nac_about_imgpanel {
@@ -451,6 +452,29 @@ div p.credit {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.nac_titledivider_outer {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin-bottom: 35px;
+}
+
+.nac_titledivider_outer.divider_left {
+  text-align: left;
+}
+
+.nac_titledivider_outer.divider_center {
+    text-align: center;
+}
+
+.nac_titledivider_outer .nac_titledivider_inner {
+  display: inline-block;
+  width: 50px;
+  height: 4px;
+  background-color: #f5d866;
 }
 
 /*ARTIST PAGE*/
