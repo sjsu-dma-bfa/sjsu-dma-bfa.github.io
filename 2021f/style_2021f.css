@@ -409,6 +409,41 @@ div p.credit {
     transform: translateY(-5px);
 }
 
+/* artist page image flex grid */
+
+.flex-gallery-grid {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    justify-content: space-around;
+  }
+.gallery-item {
+    padding: 10px;
+    flex: 1 0 auto;
+    height:auto;
+    position: relative;
+}
+.gallery-item:before {
+    content:'';
+    float:left;
+    padding-top:100%;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    max-height: 240px;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* mobile format */
+
 @media(max-width: 767.9px) {
     .nac_header h1 {
         font-size: 50px;
