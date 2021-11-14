@@ -3,6 +3,7 @@
 body {
     margin: 0;
     font-family: 'PT Sans', sans-serif;
+    background-color: #06010c;
 }
 
 .bgimg {
@@ -12,21 +13,6 @@ body {
     width: 100%;
     height: 100vh;
     position: relative;
-}
-
-.title-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #6C22B8;
-    font-size: 3em;
-}
-
-.container {
-    font-size: 100%;
-    line-height: 1.5;
-    font-size: 1.2em;
 }
 
 .container-bgimg {
@@ -131,6 +117,7 @@ div p.credit {
 
 .flexible-block {
     display: flex;
+    flex-flow: column wrap;
     width: 100%;
     height: auto;
     box-sizing: border-box;
@@ -142,7 +129,7 @@ div p.credit {
 }
 
 .flexible-block:not(.wbg) {
-    background-color: #FFF;
+    background-color: transparent;
 }
 
 .flexible-block.wbg {
@@ -152,19 +139,36 @@ div p.credit {
   background-size: cover;
 }
 
-.flexible-block.flexv {
+.flexible-container.flexv {
     flex-flow: column wrap;
 }
 
-.flexible-block.flexh {
+.flexible-container.flexh {
     flex-flow: row wrap;
 }
 
 .flexible-container {
-    display: block;
+    display: flex;
     width: 100%;
     max-width: 1600px;
     box-sizing: border-box;
+}
+
+.nac_header .flexible-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.nac_header .flexible-container a {
+    margin-top: 30px;
+}
+
+.flexible-col {
+    display: flex;
+    padding: 7px;
+    box-sizing: border-box;
+    flex-flow: column wrap;
+    justify-content: center;
 }
 
 .nac_header {
@@ -172,39 +176,75 @@ div p.credit {
     width: 100%;
     background-color: #FFF;
     height: auto;
-    min-height: 75vh;
+    min-height: 78vh;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    background-image: url("images/b-texture.png");
+    background-image: url("images/Hero.jpg");
     background-position: center center;
     background-size: cover;
     padding-top: 70px;
     padding-bottom: 70px;
+    position: relative;
+}
+
+.nac_header_overlay {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color: #000;
+    opacity: 0.2;
 }
 
 .nac_header h1 {
     display: block;
     width: 100%;
     text-align: center;
-    color: #6C22B8;
+    color: #FFF;
     font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgba(6,1,12,0.8);
+    margin-top:0;
+    margin-bottom: 7px;
+    position: relative;
+    z-index: 5;
+}
+
+.nac_header h3 {
+    position: relative;
+    z-index: 5;
+}
+
+.nac_header a {
+    position: relative;
+    z-index: 5;
 }
 
 .nac_subsection_title {
+    display: block;
+    width: 100%;
     margin-top:0;
     margin-bottom: 25px;
     font-size: 42px;
     line-height: 44px;
     font-weight: 700;
-    color: #222
+    color: #FFF
 }
 
 .nac_subsection_subtitle {
-    font-size: 26px;
-    line-height: 30px;
-    color: #222;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFF;
     font-weight: 400;
+    margin-top: 7px !important;
+    margin-bottom: 0 !important;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 10px rgba(6,1,12,0.8);
 }
 
 .nac_subsection_bodytext {
@@ -212,11 +252,16 @@ div p.credit {
     margin-bottom: 15px;
     font-size: 16px;
     line-height: 25px;
-    color: #555;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 400;
 }
 
 .nac_text_center {
     text-align: center;
+}
+
+.nac_text_left {
+    text-align: left;
 }
 
 .nac_double_button {
@@ -235,13 +280,16 @@ div p.credit {
     padding:15px;
     padding-right: 25px;
     padding-left: 25px;
-    background-color: #6C22B8;
+    background-color: #c74b43;
     color:#FFF;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.7px;
+    max-width: 250px;
+    text-align: center;
+    border-radius: 3px;
 }
 
 .nac_standard_button:hover, .nac_standard_button:active, .nac_standard_button:focus {
@@ -266,7 +314,7 @@ div p.credit {
     color: #FFF;
     background-size: cover;
     background-position: center center;
-    background-image: url(images/b-texture.png);
+    background-image: url(images/swirl.jpg);
 }
 
 .nac_artwork_grid a:hover, .nac_artwork_grid a:active, .nac_artwork_grid a:focus {
@@ -317,6 +365,59 @@ div p.credit {
     margin-top: 0;
     font-size: 18px;
     line-height: 22px;
+}
+
+.nac_about_imgpanel {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #182433;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 5px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/swirl.jpg");
+    background-size: cover;
+}
+
+.nac_about_imgpanel p {
+    position: relative;
+    z-index: 5;
+    font-size: 17px !important;
+    line-height: 26px !important;
+    margin-bottom: 30px;
+}
+
+.nac_about_imgpanel a {
+    position: relative;
+    z-index: 5;
+}
+
+.nac_about_imgpanel h4 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 0;
+    margin-bottom: 17px;
+    text-transform: capitalize;
+    color: #FFF;
+    position: relative;
+    z-index: 5;
+}
+
+.nac_about_imgpanel:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    background-color: #000;
+    opacity: 0.3;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /*ARTIST PAGE*/
@@ -411,8 +512,9 @@ div p.credit {
 
 @media(max-width: 767.9px) {
     .nac_header h1 {
-        font-size: 50px;
-        line-height:  55px;
+        font-size: 42px;
+        line-height:  44px;
+        letter-spacing: 5px;
     }
 
     .flexible-container {
@@ -423,12 +525,24 @@ div p.credit {
     .nac_artwork_grid a {
         width: calc(100% / 2 - 14px);
     }
+
+    .col-33 {
+        width: 100%;
+        padding:0 !important;
+        margin-bottom: 45px;
+    }
+  
+    .col-66 {
+          width: 100%;
+          padding:0 !important;
+    }
 }
 
 @media(min-width: 768px) and (max-width: 1024.9px) {
     .nac_header h1 {
-        font-size: 65px;
-        line-height:  69px;
+        font-size: 62px;
+        line-height:  64px;
+        letter-spacing: 7px;
     }
 
     .flexible-container {
@@ -439,12 +553,24 @@ div p.credit {
     .nac_artwork_grid a {
         width: calc(100% / 4 - 14px);
     }
+
+    .col-33 {
+        width: 100%;
+        padding:0 !important;
+        margin-bottom: 45px;
+    }
+  
+    .col-66 {
+          width: 100%;
+          padding:0 !important;
+    }
 }
 
 @media(min-width: 1025px) {
     .nac_header h1 {
-        font-size: 80px;
+        font-size: 82px;
         line-height:  85px;
+        letter-spacing: 15px;
     }
 
     .flexible-container {
@@ -454,5 +580,14 @@ div p.credit {
 
     .nac_artwork_grid a {
         width: calc(100% / 6 - 14px);
+    }
+
+    .col-33 {
+      width: 33%;
+    }
+
+    .col-66 {
+        width: 66%;
+        padding-left: 70px;
     }
 }
