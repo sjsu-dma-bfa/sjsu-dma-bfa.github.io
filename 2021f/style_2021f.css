@@ -723,7 +723,7 @@ li a:hover {
 
 @media (max-width: 767.9px) {
   li a {
-    padding: 14px 10px;
+    padding: 14px 8px;
     font-size: 12px;
   }
   .nac_header h1 {
