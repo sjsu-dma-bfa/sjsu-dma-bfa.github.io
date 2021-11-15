@@ -136,6 +136,7 @@ li {
 
 li a {
   display: block;
+  font-size: 20px;
   color: white;
   text-align: center;
   padding: 14px 16px;
