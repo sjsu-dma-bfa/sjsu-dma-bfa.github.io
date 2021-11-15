@@ -587,7 +587,7 @@ div p.credit {
     font-size: 16px;
 }
 .btnWeb {
-    background-color: #533083;
+    background-color: #e74124;
     border: none;
     color: white;
     padding: 16px;
@@ -601,6 +601,92 @@ div p.credit {
     background-color: #643897;
     transform: translateY(-5px);
 }
+
+
+/* Artist Page Image Animation 
+
+.slider-frame {
+    overflow: hidden;
+    height: 450px;
+    width: 4000px;
+    margin-top: 70px;
+}
+ 
+@-webkit-keyframes slide_animation {
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:1200px;}
+    30% {left:1200px;}
+    40% {left:2400px;}
+    50% {left:2400px;}
+    60% {left:1200px;}
+    70% {left:1200px;}
+    80% {left:0px;}
+    90% {left:0px;}
+    100% {left:0px;}
+ 
+}
+ 
+.slide-images {
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 33s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction:alternate;
+    -webkit-animation-play-state: running;
+}
+ 
+.img-container {
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+}
+
+*/
+
+/* GRID ARTIST PAGE */
+
+.image-grid {
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 300px;
+  
+    box-sizing: border-box;
+    padding: var(--gap);
+  
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    background-color: rgb(32, 2, 32);
+  }
+  
+  .image-grid > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .image-grid-col-2 {
+    grid-column: span 2;
+  }
+  
+  .image-grid-row-2 {
+    grid-row: span 2;
+  }
+  
+  /* Anything udner 1024px */
+@media screen and (max-width: 1024px) {
+    .image-grid {
+      --num-cols: 2;
+      --row-height: 200px;
+    }
+  }
+
 
 @media(max-width: 767.9px) {
     .nac_header h1 {
