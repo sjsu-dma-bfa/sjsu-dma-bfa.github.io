@@ -358,7 +358,7 @@ div p.credit {
 .socialIcons:hover {
     cursor: pointer;
 }
-.sideImage img {
+.sideImage {
     width: 650px; /*Width 200px for both images*/
     height: auto;
     /* margin: 20px; */ 
