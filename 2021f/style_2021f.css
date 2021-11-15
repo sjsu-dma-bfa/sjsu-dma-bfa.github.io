@@ -276,6 +276,10 @@ div p.credit {
 }
 
 .nac_standard_button {
+    -webkit-transition: opacity 0.3s 0s ease;
+    -moz-transition: opacity 0.3s 0s ease;
+    -o-transition: opacity 0.3s 0s ease;
+    transition: opacity 0.3s 0s ease;
     display: inline-block;
     padding:15px;
     padding-right: 25px;
