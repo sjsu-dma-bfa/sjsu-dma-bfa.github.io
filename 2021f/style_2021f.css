@@ -563,7 +563,7 @@ li a:hover {
   justify-content: space-evenly;
   align-items: center;
   gap: 50px;
-  padding: 30px;
+  padding: 70px 30px 30px;
   min-height: calc(100vh - 40px);
   margin-top: -20px;
 }
