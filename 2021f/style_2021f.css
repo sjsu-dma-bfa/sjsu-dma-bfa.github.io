@@ -439,6 +439,65 @@ div p.credit {
   .image-grid-row-2 {
     grid-row: span 2;
   }
+
+
+  /*Mobile Artist Page */
+  
+@media screen and (max-width: 1250px) {
+    .sideImage {
+      transform: scale(.9);
+    }
+    .statement, .bio {
+      font-size: 12px;
+    }
+    .artistNameTitle {
+      font-size: 50px;
+    }
+    .workTitle {
+      font-size: 30px;
+    }
+    .statementTitle, .bioTitle {
+      font-size: 20px;
+    }
+ }
+
+@media screen and (max-width: 1000px) {
+    .container2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .sideImage {
+      margin-top: -10px;
+      text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sideImage {
+      transform: scale(.7);
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .sideImage {
+      transform: scale(.5);
+    }
+    .btnWeb {
+      font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .sideImage {
+      transform: scale(.4);
+    }
+    .btnWeb {
+      font-size: 10px;
+      padding: 10px;
+
+    }
+}
+
   
   /* Anything udner 1024px */
 @media screen and (max-width: 1024px) {
