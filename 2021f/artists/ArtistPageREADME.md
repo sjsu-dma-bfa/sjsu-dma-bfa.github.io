@@ -10,11 +10,11 @@ The ratios for the images can be the following: 1:1, 4:3, 5:4, 16:9.
 - Format example: cpergerson_image_1.jpg
 
 ## Video
-Our page will support a YouTube or Vimeo link
+Our page will support a YouTube or Vimeo link. <br>
 Provide a text file in your folder with a link to the video
 
 ## Website and Social Media info
-Provide a text file with your website and other social media accounts
+Provide a text file with your website and other social media accounts.
 Currently supported social media links: Instagram, Twitter, and LinkedIn.
 Talk to the web dev team if you want more support. 
 
