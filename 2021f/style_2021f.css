@@ -321,7 +321,7 @@ div p.credit {
 
 /*ARTIST PAGE*/
 .container2 {
-    background-color: #1e0e29;
+    background-color: #0a0a0a;
     font-family: 'PT Sans', sans-serif;
     font-family: 'Roboto Mono', monospace;
     font-family: 'Roboto Slab', serif;
@@ -349,6 +349,8 @@ div p.credit {
 .workTitle {
     text-align: left;
     font-size: 30px;
+    color: rgb(245, 216, 102);
+    font-weight: bolder;
 }
 .socialIcons {
     text-align: left;
@@ -357,6 +359,9 @@ div p.credit {
 }
 .socialIcons:hover {
     cursor: pointer;
+}
+.socialIcons .fab:hover {
+  color: #7854a0;
 }
 .sideImage {
     width: 650px; /*Width 200px for both images*/
@@ -369,9 +374,12 @@ div p.credit {
     margin-top: 20px;
     font-weight: bolder;
     font-size: 25px;
+    margin-bottom: 10px;
     text-decoration: underline;
     text-underline-offset: 2px;
-    margin-bottom: 10px;
+    text-decoration-color: rgb(245, 216, 102);
+    text-decoration-thickness: 3px;
+
 }
 .statement {
     text-align: left;
@@ -386,6 +394,9 @@ div p.credit {
     text-decoration: underline;
     text-underline-offset: 2px;
     margin-bottom: 10px;
+    text-decoration-color: rgb(245, 216, 102);
+    text-decoration-thickness: 3px;
+
 }
 
 .bio {
@@ -394,7 +405,7 @@ div p.credit {
     font-size: 16px;
 }
 .btnWeb {
-    background-color: #e74124;
+    background-color: rgb(199, 75, 67);
     border: none;
     color: white;
     padding: 16px;
@@ -402,6 +413,7 @@ div p.credit {
     margin-top: 20px;
     transition: transform .5s ease;
     margin-right: 10px;
+    font-weight: bolder;
 }
 .btnWeb:hover {
     cursor: pointer;
@@ -423,7 +435,7 @@ div p.credit {
     grid-template-columns: repeat(var(--num-cols), 1fr);
     grid-auto-rows: var(--row-height);
     gap: var(--gap);
-    background-color: rgb(32, 2, 32);
+    background-image: url(images/Bg_Assets.jpg);
   }
   
   .image-grid > img {
