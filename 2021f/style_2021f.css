@@ -453,6 +453,53 @@ div p.credit {
   }
 
 
+  /*SECOND GRID */
+  .simpleGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(2, 20, 53);
+    row-gap: 2rem;
+  }
+  .simpleGrid img {
+      height: 400px;
+      width: 600px;
+  }
+
+@media screen and (max-width: 1250px) {
+    .simpleGrid img {
+        transform: scale(.8);
+    }
+}
+@media screen and (max-width: 1200px) {
+    .simpleGrid {
+        display: flex;
+        flex-direction: column;
+    }
+    .simpleGrid img {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .simpleGrid img {
+        transform: scale(.8);
+    }
+}
+@media screen and (max-width: 520px) {
+    .simpleGrid img {
+        transform: scale(.6);
+        margin: -3rem;
+    }
+}
+@media screen and (max-width: 420px) {
+    .simpleGrid img {
+        transform: scale(.5);
+    }
+}
+
   /*Mobile Artist Page */
   
 @media screen and (max-width: 1250px) {
