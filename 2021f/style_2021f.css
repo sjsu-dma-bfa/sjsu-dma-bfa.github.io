@@ -926,26 +926,6 @@ ul.nac_navigation {
       --num-cols: 2;
       --row-height: 200px;
     }
-
-/*   .col-33 {
-    width: 100%;
-    padding: 0 !important;
-    margin-bottom: 45px;
-  }
-
-  .col-66 {
-    width: 100%;
-    padding: 0 !important;
-  }
-
-  .nac_credit_row li {
-    width: calc(100% - 30px);
-  }
-
-  
-  .nac_credit_row {
-    margin-bottom: 40px;
-  } */
 }
 
 @media (min-width: 768px) and (max-width: 1024.9px) {
