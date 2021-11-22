@@ -564,6 +564,14 @@ ul.nac_navigation {
   box-sizing: border-box;
 }
 
+.nac_subsection_bodytext a {
+  color: #f5d866;
+}
+
+.nac_subsection_bodytext a:hover, .nac_subsection_bodytext a:active, .nac_subsection_bodytext a:focus {
+  opacity: 0.7;
+}
+
 /*ARTIST PAGE*/
 .container2 {
   background-color: #1e0e29;
