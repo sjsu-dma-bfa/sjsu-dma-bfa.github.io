@@ -13,7 +13,7 @@ function inject_nac_covers() {
                 if(nac_currenta_cover != null && nac_currenta_cover != "") {
                     nac_currentartwork.style.backgroundImage = "url(" + nac_currenta_cover + ")";
                 } else {
-
+                    nac_currentartwork.style.backgroundImage = "url(images/swirl.jpg)";
                 }
             }
         }
