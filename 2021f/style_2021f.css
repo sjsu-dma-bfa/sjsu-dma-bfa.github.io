@@ -380,13 +380,19 @@ ul.nac_navigation {
 }
 
 .nac_artwork_grid div.thecontent {
+  -webkit-transition: all 0.5s 0s ease;
+  -moz-transition: all 0.5s 0s ease;
+  -o-transition: all 0.5s 0s ease;
+  transition: all 0.5s 0s ease;
+  transform-origin: center;
   display: block;
   position: absolute;
   top: 50%;
   left: 50%;
   width: 90%;
   height: auto;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0;
   box-sizing: border-box;
   text-align: center;
   z-index: 5;
@@ -414,7 +420,15 @@ ul.nac_navigation {
 .nac_artwork_grid a:active div.gridoverlay,
 .nac_artwork_grid a:focus div.gridoverlay {
   transform: translate(-50%, -50%) scale(1);
-  opacity: 0.6;
+  opacity: 0.7;
+  visibility: visible;
+}
+
+.nac_artwork_grid a:hover div.thecontent,
+.nac_artwork_grid a:active div.thecontent,
+.nac_artwork_grid a:focus div.thecontent {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
   visibility: visible;
 }
 
