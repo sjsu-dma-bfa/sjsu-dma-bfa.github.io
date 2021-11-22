@@ -118,7 +118,7 @@ div p.credit {
 
 /* new flexible layouts by brian */
 
-ul {
+ul.nac_navigation {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -130,11 +130,11 @@ ul {
   z-index: 100;
 }
 
-li {
+.nac_navigation li {
   float: left;
 }
 
-li a {
+.nac_navigation li a {
   display: block;
   font-size: 20px;
   color: white;
@@ -143,7 +143,7 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+.nac_navigation li a:hover {
   background-color: rgba(51, 51, 51, 0.5);
 }
 
