@@ -796,7 +796,30 @@ ul.nac_navigation {
     padding-left: 30px;
     padding-right: 30px;
   }
+  
+  .nac_artwork_grid a {
+    width: calc(100% / 2 - 14px);
+  }
+  
+  .col-33 {
+    width: 100%;
+    padding: 0 !important;
+    margin-bottom: 45px;
+  }
 
+  .col-66 {
+    width: 100%;
+    padding: 0 !important;
+  }
+  
+  .nac_credit_row li {
+    width: calc(100% - 30px);
+  }
+
+  
+  .nac_credit_row {
+    margin-bottom: 40px;
+  }
 
 }
 
