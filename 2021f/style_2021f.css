@@ -928,7 +928,7 @@ ul.nac_navigation {
     }
   }
 
-  .col-33 {
+/*   .col-33 {
     width: 100%;
     padding: 0 !important;
     margin-bottom: 45px;
@@ -946,7 +946,7 @@ ul.nac_navigation {
   
   .nac_credit_row {
     margin-bottom: 40px;
-  }
+  } */
 }
 
 @media (min-width: 768px) and (max-width: 1024.9px) {
