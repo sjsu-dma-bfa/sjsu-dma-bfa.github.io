@@ -351,7 +351,7 @@ ul.nac_navigation {
   position: relative;
   background-size: cover;
   background-position: center center;
-  background-image: url(images/swirl.jpg);
+  /* background-image: url(images/swirl.jpg); */
   color: #fff;
 }
 
