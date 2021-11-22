@@ -446,16 +446,87 @@ ul.nac_navigation {
   background-color: #f5d866;
 }
 
-.nac_credit {
-  display: block;
+.nac_credit_row {
+  display: flex;
   width: 100%;
-  text-align: center;
-  margin-bottom: 15px;
-  margin-top: 0;
-  font-size: 18px;
-  line-height: 22px;
-  color: #fff;
+  box-sizing: border-box;
+  list-style-type: none;
+  flex-flow: row wrap;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
 }
+
+.nac_credit_row li {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  padding: 12px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  text-align: center;
+  background-color: #F1F1F1;
+  margin: 0;
+  margin-left: 15px;
+  margin-right: 30px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  line-height: 20px;
+  font-size: 400;
+  text-transform: capitalize;
+  color: #222;
+}
+
+.nac_credit_row li.nac_credit_category {
+  background-color: #c74b43;
+  color: #FFF;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 0px;
+}
+
+.nac_credit_row li.nac_credit_category:after{
+  position: absolute;
+  content: '';
+  right: -15px;
+  top: 0px;
+  border-style: solid;
+  border-color: #c74b43 transparent #c74b43 transparent;
+  border-width: 54px 15px 0px 0px;
+}
+
+.nac_credit_row li:not(.nac_credit_category):after{
+  position: absolute;
+  content: '';
+  right: -15px;
+  top: 0px;
+  border-style: solid;
+  border-color: #f1f1f1 transparent #f1f1f1 transparent;
+  border-width: 54px 15px 0px 0px;
+}
+
+.nac_credit_row li.nac_credit_category:before{
+  position: absolute;
+  content: '';
+  left: -15px;
+  top: 0px;
+  border-style: solid;
+  border-color: #c74b43 transparent #c74b43 transparent;
+  border-width: 0px 0px 54px 15px;
+}
+
+.nac_credit_row li:not(.nac_credit_category):before{
+  position: absolute;
+  content: '';
+  left: -15px;
+  top: 0px;
+  border-style: solid;
+  border-color: #f1f1f1 transparent #f1f1f1 transparent;
+  border-width: 0px 0px 54px 15px;
+}
+
+
 
 .nac_about_imgpanel {
   display: flex;
@@ -775,6 +846,15 @@ ul.nac_navigation {
     width: 100%;
     padding: 0 !important;
   }
+
+  .nac_credit_row li {
+    width: calc(100% - 30px);
+  }
+
+  
+  .nac_credit_row {
+    margin-bottom: 40px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024.9px) {
@@ -804,6 +884,14 @@ ul.nac_navigation {
     width: 100%;
     padding: 0 !important;
   }
+
+  .nac_credit_row li {
+    width: calc(50% - 50px);
+  }
+
+  .nac_credit_row {
+    margin-bottom: 35px;
+  }
 }
 
 @media (min-width: 1025px) {
@@ -830,5 +918,13 @@ ul.nac_navigation {
   .col-66 {
     width: 66%;
     padding-left: 70px;
+  }
+
+  .nac_credit_row li {
+    width: calc(20% - 30px);
+  }
+
+  .nac_credit_row {
+    margin-bottom: 15px;
   }
 }
