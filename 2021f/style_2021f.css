@@ -645,20 +645,21 @@ ul.nac_navigation {
 
 /*ARTIST PAGE*/
 .container2 {
-  background-color: #1e0e29;
-  font-family: "PT Sans", sans-serif;
-  font-family: "Roboto Mono", monospace;
-  font-family: "Roboto Slab", serif;
-  font-family: "Urbanist", sans-serif;
-  font-style: normal;
-  color: white;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 50px;
-  padding: 70px 30px 30px;
-  min-height: calc(100vh - 40px);
-  margin-top: -20px;
+    background-color: #0a0a0a;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Urbanist', sans-serif;
+    font-style: normal;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    padding: 30px;
+    min-height: calc(100vh - 40px);
+    margin-top: -20px;
+
 }
 .singleArtistFlex {
   text-align: left;
@@ -669,8 +670,10 @@ ul.nac_navigation {
   font-weight: bolder;
 }
 .workTitle {
-  text-align: left;
-  font-size: 30px;
+    text-align: left;
+    font-size: 30px;
+    color: rgb(245, 216, 102);
+    font-weight: bolder;
 }
 .socialIcons {
   text-align: left;
@@ -680,20 +683,26 @@ ul.nac_navigation {
 .socialIcons:hover {
   cursor: pointer;
 }
-.sideImage img {
-  width: 650px; /*Width 200px for both images*/
-  height: auto;
-  /* margin: 20px; */
-  margin-top: 150px;
+.socialIcons .fab:hover {
+  color: #7854a0;
+}
+.sideImage {
+    width: 650px; /*Width 200px for both images*/
+    height: auto;
+    /* margin: 20px; */ 
+    margin-top: 150px;
 }
 .statementTitle {
-  text-align: left;
-  margin-top: 20px;
-  font-weight: bolder;
-  font-size: 25px;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  margin-bottom: 10px;
+    text-align: left;
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: rgb(245, 216, 102);
+    text-decoration-thickness: 3px;
+
 }
 .statement {
   text-align: left;
@@ -701,13 +710,16 @@ ul.nac_navigation {
   font-size: 16px;
 }
 .bioTitle {
-  text-align: left;
-  margin-top: 20px;
-  font-weight: bolder;
-  font-size: 25px;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  margin-bottom: 10px;
+    text-align: left;
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 25px;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    margin-bottom: 10px;
+    text-decoration-color: rgb(245, 216, 102);
+    text-decoration-thickness: 3px;
+
 }
 
 .bio {
@@ -716,14 +728,15 @@ ul.nac_navigation {
   font-size: 16px;
 }
 .btnWeb {
-  background-color: #e74124;
-  border: none;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  margin-top: 20px;
-  transition: transform 0.5s ease;
-  margin-right: 10px;
+    background-color: rgb(199, 75, 67);
+    border: none;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: transform .5s ease;
+    margin-right: 10px;
+    font-weight: bolder;
 }
 .btnWeb:hover {
   cursor: pointer;
@@ -731,88 +744,40 @@ ul.nac_navigation {
   transform: translateY(-5px);
 }
 
-/* Artist Page Image Animation 
 
-.slider-frame {
-    overflow: hidden;
-    height: 450px;
-    width: 4000px;
-    margin-top: 70px;
-}
- 
-@-webkit-keyframes slide_animation {
-    0% {left:0px;}
-    10% {left:0px;}
-    20% {left:1200px;}
-    30% {left:1200px;}
-    40% {left:2400px;}
-    50% {left:2400px;}
-    60% {left:1200px;}
-    70% {left:1200px;}
-    80% {left:0px;}
-    90% {left:0px;}
-    100% {left:0px;}
- 
-}
- 
-.slide-images {
-    width: 3600px;
-    height: 800px;
-    margin: 0 0 0 -2400px;
-    position: relative;
-    -webkit-animation-name: slide_animation;
-    -webkit-animation-duration: 33s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction:alternate;
-    -webkit-animation-play-state: running;
-}
- 
-.img-container {
-    height: 800px;
-    width: 1200px;
-    position: relative;
-    float: left;
-}
+/* GRID ARTIST PAGE 
+.image-grid {
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 300px;
+  
+    box-sizing: border-box;
+    padding: var(--gap);
+  
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    background-color: rgb(2, 20, 53);
 
+  
+}
 */
 
-/* GRID ARTIST PAGE */
-
-.image-grid {
-  --gap: 16px;
-  --num-cols: 4;
-  --row-height: 300px;
-
-  box-sizing: border-box;
-  padding: var(--gap);
-
+ /*SECOND GRID */
+ .simpleGrid {
   display: grid;
-  grid-template-columns: repeat(var(--num-cols), 1fr);
-  grid-auto-rows: var(--row-height);
-  gap: var(--gap);
-  background-color: rgb(32, 2, 32);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  background-color: rgb(2, 20, 53);
+  row-gap: 2rem;
+  padding-top: 30px;
 }
-
-.image-grid > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.image-grid-col-2 {
-  grid-column: span 2;
-}
-
-.image-grid-row-2 {
-  grid-row: span 2;
-}
-
-/* Anything udner 1024px */
-@media screen and (max-width: 1024px) {
-  .image-grid {
-    --num-cols: 2;
-    --row-height: 200px;
-  }
+.simpleGrid img {
+    height: 400px;
+    width: 600px;
 }
 
 @media (max-width: 767.9px) {
@@ -832,8 +797,112 @@ ul.nac_navigation {
     padding-right: 30px;
   }
 
-  .nac_artwork_grid a {
-    width: calc(100% / 2 - 14px);
+
+}
+
+@media screen and (min-width: 1600px) {
+    .simpleGrid img {
+        transform: scale(1.1);
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .simpleGrid img {
+        transform: scale(.8);
+    }
+}
+@media screen and (max-width: 1200px) {
+    .simpleGrid {
+        display: flex;
+        flex-direction: column;
+    }
+    .simpleGrid img {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .simpleGrid img {
+        transform: scale(.8);
+    }
+}
+@media screen and (max-width: 520px) {
+    .simpleGrid img {
+        transform: scale(.6);
+        margin: -3rem;
+    }
+}
+@media screen and (max-width: 420px) {
+    .simpleGrid img {
+        transform: scale(.5);
+    }
+}
+
+  /*Mobile Artist Page */
+  
+@media screen and (max-width: 1250px) {
+    .sideImage {
+      transform: scale(.9);
+    }
+    .statement, .bio {
+      font-size: 12px;
+    }
+    .artistNameTitle {
+      font-size: 50px;
+    }
+    .workTitle {
+      font-size: 30px;
+    }
+    .statementTitle, .bioTitle {
+      font-size: 20px;
+    }
+ }
+
+@media screen and (max-width: 1100px) {
+    .container2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .sideImage {
+      margin-top: -10px;
+      text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sideImage {
+      transform: scale(.7);
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .sideImage {
+      transform: scale(.5);
+    }
+    .btnWeb {
+      font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .sideImage {
+      transform: scale(.4);
+    }
+    .btnWeb {
+      font-size: 10px;
+      padding: 10px;
+
+    }
+}
+
+  
+  /* Anything udner 1024px */
+@media screen and (max-width: 1024px) {
+    .image-grid {
+      --num-cols: 2;
+      --row-height: 200px;
+    }
   }
 
   .col-33 {
