@@ -670,6 +670,23 @@ li a:hover {
   
 }
 */
+
+ /*SECOND GRID */
+ .simpleGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  background-color: rgb(2, 20, 53);
+  row-gap: 2rem;
+  padding-top: 30px;
+}
+.simpleGrid img {
+    height: 400px;
+    width: 600px;
+}
+
 @media (max-width: 767.9px) {
   li a {
     padding: 14px 10px;
@@ -688,21 +705,7 @@ li a:hover {
   }
 
 
-  /*SECOND GRID */
-  .simpleGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
-    background-color: rgb(2, 20, 53);
-    row-gap: 2rem;
-    padding-top: 30px;
-  }
-  .simpleGrid img {
-      height: 400px;
-      width: 600px;
-  }
+}
 
 @media screen and (min-width: 1600px) {
     .simpleGrid img {
