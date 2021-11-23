@@ -774,6 +774,7 @@ ul.nac_navigation {
   background-color: rgb(2, 20, 53);
   row-gap: 2rem;
   padding-top: 30px;
+  padding: 20px;
 }
 .simpleGrid img {
     height: 400px;
@@ -823,10 +824,17 @@ ul.nac_navigation {
 
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1531px) {
     .simpleGrid img {
-        transform: scale(1.1);
-        margin: 20px;
+      transform: scale(1.2);
+      margin: 40px;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1530px) {
+    .simpleGrid img {
+      transform: scale(1.15);
+      margin: 30px;
     }
 }
 
