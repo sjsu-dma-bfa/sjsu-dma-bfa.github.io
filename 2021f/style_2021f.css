@@ -824,7 +824,80 @@ ul.nac_navigation {
 
 }
 
-@media screen and (min-width: 1531px) {
+/* New Media Queries Start */
+@media screen and (min-width: 2400px) and (max-width: 3200px) {
+  .simpleGrid img {
+    transform: scale(1.75);
+    padding-bottom: 20px;
+    padding-top: 40px;
+    margin: 120px;
+  }
+  .statement, .bio {
+    font-size: 25px;
+  }
+  .sideImage {
+    transform: scale(1.25);
+    padding: 40px;
+  }
+}
+
+@media screen and (min-width: 2200px) and (max-width: 2400px) {
+  .simpleGrid img {
+    transform: scale(1.69);
+    padding-bottom: 20px;
+    padding-top: 40px;
+    margin: 100px;
+  }
+  .statement, .bio {
+    font-size: 25px;
+  }
+  .sideImage {
+    transform: scale(1.25);
+    padding: 40px;
+  }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2200px) {
+  .simpleGrid img {
+    transform: scale(1.59);
+    padding-bottom: 20px;
+    padding-top: 40px;
+    margin: 80px;
+  }
+  .statement, .bio {
+    font-size: 20px;
+  }
+  .sideImage {
+    transform: scale(1.25);
+    padding: 40px;
+  }
+}
+
+@media screen and (min-width: 1800px) and (max-width: 2000px) {
+    .simpleGrid img {
+      transform: scale(1.45);
+      padding-bottom: 20px;
+      padding-top: 40px;
+      margin: 60px;
+    }
+    .statement, .bio {
+      font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1601px) and (max-width: 1800px) {
+    .simpleGrid img {
+      transform: scale(1.3);
+      padding-top: 20px;
+      margin: 45px;
+    }
+    .statement, .bio {
+      font-size: 20px;
+    }
+}
+/* New Media Queries end */
+
+@media screen and (min-width: 1531px) and (max-width: 1600px) {
     .simpleGrid img {
       transform: scale(1.2);
       margin: 40px;
@@ -898,6 +971,12 @@ ul.nac_navigation {
     .sideImage {
       margin-top: -10px;
       text-align: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container2 {
+      margin-top: 50px;
     }
 }
 
