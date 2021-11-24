@@ -1,1 +1,3 @@
-Add links here
+website: zainib.com
+LinkedIn: https://www.linkedin.com/in/zainibahmed/
+Instagram: https://www.instagram.com/amazinzai/
