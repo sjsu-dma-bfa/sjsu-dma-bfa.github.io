@@ -668,6 +668,7 @@ ul.nac_navigation {
   text-align: left;
   font-size: 70px;
   font-weight: bolder;
+  margin-top: 25px;
 }
 .workTitle {
     text-align: left;
@@ -779,7 +780,7 @@ a:hover,a:link{
   text-align: center;
   background-color: rgb(2, 20, 53);
   padding: 10px;
-
+  margin-top: -30px;
 }
 .flexStyle img {
   height: 500px;
@@ -792,6 +793,9 @@ a:hover,a:link{
     transform: scale(1.2);
     margin: 40px;
     padding: 40px;
+  }
+  .flexStyle {
+    margin-top: -80px;
   }
 }
 @media (max-width: 750px) {
