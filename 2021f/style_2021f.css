@@ -675,10 +675,17 @@ ul.nac_navigation {
     color: rgb(245, 216, 102);
     font-weight: bolder;
 }
+a:hover,a:link{
+  text-decoration: none;
+}
 .socialIcons {
   text-align: left;
   font-size: 25px;
   word-spacing: 10px;
+  color: white;
+}
+.socialIcons .fab {
+  color: white;
 }
 .socialIcons:hover {
   cursor: pointer;
