@@ -465,7 +465,7 @@ ul.nac_navigation {
   padding-top: 17px;
   padding-bottom: 17px;
   text-align: center;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   margin: 0;
   margin-left: 15px;
   margin-right: 30px;
@@ -479,16 +479,16 @@ ul.nac_navigation {
 
 .nac_credit_row li.nac_credit_category {
   background-color: #c74b43;
-  color: #FFF;
+  color: #fff;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   border-radius: 0px;
 }
 
-.nac_credit_row li.nac_credit_category:after{
+.nac_credit_row li.nac_credit_category:after {
   position: absolute;
-  content: '';
+  content: "";
   right: -15px;
   top: 0px;
   border-style: solid;
@@ -496,9 +496,9 @@ ul.nac_navigation {
   border-width: 54px 15px 0px 0px;
 }
 
-.nac_credit_row li:not(.nac_credit_category):after{
+.nac_credit_row li:not(.nac_credit_category):after {
   position: absolute;
-  content: '';
+  content: "";
   right: -15px;
   top: 0px;
   border-style: solid;
@@ -506,9 +506,9 @@ ul.nac_navigation {
   border-width: 54px 15px 0px 0px;
 }
 
-.nac_credit_row li.nac_credit_category:before{
+.nac_credit_row li.nac_credit_category:before {
   position: absolute;
-  content: '';
+  content: "";
   left: -15px;
   top: 0px;
   border-style: solid;
@@ -516,17 +516,15 @@ ul.nac_navigation {
   border-width: 0px 0px 54px 15px;
 }
 
-.nac_credit_row li:not(.nac_credit_category):before{
+.nac_credit_row li:not(.nac_credit_category):before {
   position: absolute;
-  content: '';
+  content: "";
   left: -15px;
   top: 0px;
   border-style: solid;
   border-color: #f1f1f1 transparent #f1f1f1 transparent;
   border-width: 0px 0px 54px 15px;
 }
-
-
 
 .nac_about_imgpanel {
   display: flex;
@@ -639,27 +637,28 @@ ul.nac_navigation {
   color: #f5d866;
 }
 
-.nac_subsection_bodytext a:hover, .nac_subsection_bodytext a:active, .nac_subsection_bodytext a:focus {
+.nac_subsection_bodytext a:hover,
+.nac_subsection_bodytext a:active,
+.nac_subsection_bodytext a:focus {
   opacity: 0.7;
 }
 
 /*ARTIST PAGE*/
 .container2 {
-    background-color: #0a0a0a;
-    font-family: 'PT Sans', sans-serif;
-    font-family: 'Roboto Mono', monospace;
-    font-family: 'Roboto Slab', serif;
-    font-family: 'Urbanist', sans-serif;
-    font-style: normal;
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 50px;
-    padding: 30px;
-    min-height: calc(100vh - 40px);
-    margin-top: -20px;
-
+  background-color: #0a0a0a;
+  font-family: "PT Sans", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto Slab", serif;
+  font-family: "Urbanist", sans-serif;
+  font-style: normal;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+  padding: 30px;
+  min-height: calc(100vh - 40px);
+  margin-top: -20px;
 }
 .singleArtistFlex {
   text-align: left;
@@ -671,12 +670,13 @@ ul.nac_navigation {
   margin-top: 25px;
 }
 .workTitle {
-    text-align: left;
-    font-size: 30px;
-    color: rgb(245, 216, 102);
-    font-weight: bolder;
+  text-align: left;
+  font-size: 30px;
+  color: rgb(245, 216, 102);
+  font-weight: bolder;
 }
-a:hover,a:link{
+a:hover,
+a:link {
   text-decoration: none;
 }
 .socialIcons {
@@ -695,22 +695,21 @@ a:hover,a:link{
   color: #7854a0;
 }
 .sideImage {
-    width: 650px; /*Width 200px for both images*/
-    height: auto;
-    /* margin: 20px; */ 
-    margin-top: 150px;
+  width: 650px; /*Width 200px for both images*/
+  height: auto;
+  /* margin: 20px; */
+  margin-top: 150px;
 }
 .statementTitle {
-    text-align: left;
-    margin-top: 20px;
-    font-weight: bolder;
-    font-size: 25px;
-    margin-bottom: 10px;
-    text-decoration: underline;
-    text-underline-offset: 2px;
-    text-decoration-color: rgb(245, 216, 102);
-    text-decoration-thickness: 3px;
-
+  text-align: left;
+  margin-top: 20px;
+  font-weight: bolder;
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: rgb(245, 216, 102);
+  text-decoration-thickness: 3px;
 }
 .statement {
   text-align: left;
@@ -718,16 +717,15 @@ a:hover,a:link{
   font-size: 16px;
 }
 .bioTitle {
-    text-align: left;
-    margin-top: 20px;
-    font-weight: bolder;
-    font-size: 25px;
-    text-decoration: underline;
-    text-underline-offset: 2px;
-    margin-bottom: 10px;
-    text-decoration-color: rgb(245, 216, 102);
-    text-decoration-thickness: 3px;
-
+  text-align: left;
+  margin-top: 20px;
+  font-weight: bolder;
+  font-size: 25px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  margin-bottom: 10px;
+  text-decoration-color: rgb(245, 216, 102);
+  text-decoration-thickness: 3px;
 }
 
 .bio {
@@ -736,22 +734,21 @@ a:hover,a:link{
   font-size: 16px;
 }
 .btnWeb {
-    background-color: rgb(199, 75, 67);
-    border: none;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    margin-top: 20px;
-    transition: transform .5s ease;
-    margin-right: 10px;
-    font-weight: bolder;
+  background-color: rgb(199, 75, 67);
+  border: none;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: transform 0.5s ease;
+  margin-right: 10px;
+  font-weight: bolder;
 }
 .btnWeb:hover {
   cursor: pointer;
   background-color: #643897;
   transform: translateY(-5px);
 }
-
 
 /* GRID ARTIST PAGE 
 .image-grid {
@@ -771,9 +768,6 @@ a:hover,a:link{
   
 }
 */
-
-
-
 
 /* Smaller border grid */
 .flexStyle {
@@ -817,9 +811,8 @@ a:hover,a:link{
   }
 }
 
-
 @media (max-width: 767.9px) {
-  li a {
+  .nac_navigation li a {
     padding: 14px 10px;
     font-size: 12px;
   }
@@ -834,11 +827,11 @@ a:hover,a:link{
     padding-left: 30px;
     padding-right: 30px;
   }
-  
+
   .nac_artwork_grid a {
     width: calc(100% / 2 - 14px);
   }
-  
+
   .col-33 {
     width: 100%;
     padding: 0 !important;
@@ -849,89 +842,86 @@ a:hover,a:link{
     width: 100%;
     padding: 0 !important;
   }
-  
+
   .nac_credit_row li {
     width: calc(100% - 30px);
   }
 
-  
   .nac_credit_row {
     margin-bottom: 40px;
   }
-
 }
 
+/*Mobile Artist Page */
 
-  /*Mobile Artist Page */
-  
 @media screen and (max-width: 1250px) {
-    .sideImage {
-      transform: scale(.9);
-    }
-    .statement, .bio {
-      font-size: 12px;
-    }
-    .artistNameTitle {
-      font-size: 50px;
-    }
-    .workTitle {
-      font-size: 30px;
-    }
-    .statementTitle, .bioTitle {
-      font-size: 20px;
-    }
- }
+  .sideImage {
+    transform: scale(0.9);
+  }
+  .statement,
+  .bio {
+    font-size: 12px;
+  }
+  .artistNameTitle {
+    font-size: 50px;
+  }
+  .workTitle {
+    font-size: 30px;
+  }
+  .statementTitle,
+  .bioTitle {
+    font-size: 20px;
+  }
+}
 
 @media screen and (max-width: 1100px) {
-    .container2 {
-        display: flex;
-        flex-direction: column;
-    }
-    .sideImage {
-      margin-top: -10px;
-      text-align: center;
-    }
+  .container2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .sideImage {
+    margin-top: -10px;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 650px) {
-    .container2 {
-      margin-top: 50px;
-    }
+  .container2 {
+    margin-top: 50px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .sideImage {
-      transform: scale(.7);
-    }
+  .sideImage {
+    transform: scale(0.7);
+  }
 }
 
 @media screen and (max-width: 460px) {
-    .sideImage {
-      transform: scale(.5);
-    }
-    .btnWeb {
-      font-size: 13px;
-    }
+  .sideImage {
+    transform: scale(0.5);
+  }
+  .btnWeb {
+    font-size: 13px;
+  }
 }
 
 @media screen and (max-width: 330px) {
-    .sideImage {
-      transform: scale(.4);
-    }
-    .btnWeb {
-      font-size: 10px;
-      padding: 10px;
-
-    }
+  .sideImage {
+    transform: scale(0.4);
+  }
+  .btnWeb {
+    font-size: 10px;
+    padding: 10px;
+  }
 }
 
-  
-  /* Anything udner 1024px */
+/* Anything udner 1024px */
 @media screen and (max-width: 1024px) {
-    .image-grid {
-      --num-cols: 2;
-      --row-height: 200px;
-    }
+  .image-grid {
+    --num-cols: 2;
+    --row-height: 200px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024.9px) {
