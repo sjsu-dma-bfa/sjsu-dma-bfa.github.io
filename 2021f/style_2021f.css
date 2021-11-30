@@ -363,7 +363,7 @@ ul.nac_navigation {
   margin-bottom: 0;
   font-size: 15px;
   line-height: 19px;
-  text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+  text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
   font-weight: 400;
 }
 
@@ -759,7 +759,7 @@ a:link {
     line-height: 21px;
     text-align: center;
     margin-bottom: 7px;
-    text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+    text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
     font-weight: 700;
   }
 
@@ -937,7 +937,7 @@ a:link {
     line-height: 21px;
     text-align: center;
     margin-bottom: 7px;
-    text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+    text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
     font-weight: 700;
   }
 
@@ -1126,7 +1126,7 @@ a:link {
     line-height: 23px;
     text-align: center;
     margin-bottom: 7px;
-    text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+    text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
     font-weight: 700;
   }
   
