@@ -742,6 +742,7 @@ a:link {
   margin-top: 20px;
   transition: transform 0.5s ease;
   margin-right: 10px;
+  margin-bottom: 30px;
   font-weight: bolder;
 }
 .btnWeb:hover {
