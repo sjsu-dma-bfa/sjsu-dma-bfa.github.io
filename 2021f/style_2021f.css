@@ -353,15 +353,7 @@ ul.nac_navigation {
   background-position: center center;
   /* background-image: url(images/swirl.jpg); */
   color: #fff;
-}
-
-.nac_artwork_grid a h3 {
-  display: inline-block;
-  margin-top: 0;
-  font-size: 20px;
-  line-height: 22px;
-  text-align: center;
-  margin-bottom: 15px;
+  overflow: hidden;
 }
 
 .nac_artwork_grid a p {
@@ -369,73 +361,15 @@ ul.nac_navigation {
   width: 100%;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 15px;
+  line-height: 19px;
+  text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+  font-weight: 400;
 }
 
 .nac_artwork_grid a:before {
   content: "";
   display: block;
-  padding-bottom: 100%;
-}
-
-.nac_artwork_grid div.thecontent {
-  -webkit-transition: all 0.5s 0s ease;
-  -moz-transition: all 0.5s 0s ease;
-  -o-transition: all 0.5s 0s ease;
-  transition: all 0.5s 0s ease;
-  transform-origin: center;
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 90%;
-  height: auto;
-  transform: translate(-50%, -50%) scale(0.8);
-  opacity: 0;
-  box-sizing: border-box;
-  text-align: center;
-  z-index: 5;
-}
-
-.nac_artwork_grid a div.gridoverlay {
-  -webkit-transition: all 0.5s 0s ease;
-  -moz-transition: all 0.5s 0s ease;
-  -o-transition: all 0.5s 0s ease;
-  transition: all 0.5s 0s ease;
-  transform-origin: center;
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  transform: translate(-50%, -50%) scale(0.5);
-  opacity: 0;
-  z-index: 3;
-  visibility: hidden;
-}
-
-.nac_artwork_grid a:hover div.gridoverlay,
-.nac_artwork_grid a:active div.gridoverlay,
-.nac_artwork_grid a:focus div.gridoverlay {
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 0.7;
-  visibility: visible;
-}
-
-.nac_artwork_grid a:hover div.thecontent,
-.nac_artwork_grid a:active div.thecontent,
-.nac_artwork_grid a:focus div.thecontent {
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 1;
-  visibility: visible;
-}
-
-.nac_artwork_grid a:nth-child(even):hover,
-.nac_artwork_grid a:nth-child(even):active,
-.nac_artwork_grid a:nth-child(even):focus {
-  color: #111924;
 }
 
 .nac_artwork_grid a:nth-child(odd) div.gridoverlay {
@@ -444,6 +378,10 @@ ul.nac_navigation {
 
 .nac_artwork_grid a:nth-child(even) div.gridoverlay {
   background-color: #f5d866;
+}
+
+.nac_artwork_grid a:nth-child(even) {
+  color:#0f151f;
 }
 
 .nac_credit_row {
@@ -812,6 +750,67 @@ a:link {
 }
 
 @media (max-width: 767.9px) {
+
+  .nac_artwork_grid a h3 {
+    display: inline-block;
+    position: relative;
+    margin-top: 0;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: center;
+    margin-bottom: 7px;
+    text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+    font-weight: 700;
+  }
+
+  .nac_artwork_grid a div.gridoverlay {
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
+    transform-origin: center;
+    display: block;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    opacity: 0.8;
+    z-index: 3;
+  }
+
+  .nac_artwork_grid div.thecontent {
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
+    transform-origin: center;
+    display: block;
+    position: absolute;
+    left: 50%;
+    width: 90%;
+    bottom: 35px;
+    height: auto;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 5;
+  }
+  
+  .nac_artwork_grid a:hover div.gridoverlay,
+  .nac_artwork_grid a:active div.gridoverlay,
+  .nac_artwork_grid a:focus div.gridoverlay {
+    opacity: 0.2;
+    bottom: -17%;
+  }
+  
+  .nac_artwork_grid a:hover div.thecontent,
+  .nac_artwork_grid a:active div.thecontent,
+  .nac_artwork_grid a:focus div.thecontent {
+    bottom: -17%;
+    opacity: 0.2;
+  }
+
   .nac_navigation li a {
     padding: 14px 10px;
     font-size: 12px;
@@ -849,6 +848,10 @@ a:link {
 
   .nac_credit_row {
     margin-bottom: 40px;
+  }
+
+  .nac_artwork_grid a:before {
+    padding-bottom: 140%;
   }
 }
 
@@ -925,6 +928,67 @@ a:link {
 }
 
 @media (min-width: 768px) and (max-width: 1024.9px) {
+
+  .nac_artwork_grid a h3 {
+    display: inline-block;
+    position: relative;
+    margin-top: 0;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: center;
+    margin-bottom: 7px;
+    text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+    font-weight: 700;
+  }
+
+  .nac_artwork_grid a div.gridoverlay {
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
+    transform-origin: center;
+    display: block;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    opacity: 0.8;
+    z-index: 3;
+  }
+
+  .nac_artwork_grid div.thecontent {
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
+    transform-origin: center;
+    display: block;
+    position: absolute;
+    left: 50%;
+    width: 90%;
+    bottom: 27px;
+    height: auto;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 5;
+  }
+  
+  .nac_artwork_grid a:hover div.gridoverlay,
+  .nac_artwork_grid a:active div.gridoverlay,
+  .nac_artwork_grid a:focus div.gridoverlay {
+    opacity: 0.2;
+    bottom: -17%;
+  }
+  
+  .nac_artwork_grid a:hover div.thecontent,
+  .nac_artwork_grid a:active div.thecontent,
+  .nac_artwork_grid a:focus div.thecontent {
+    bottom: -17%;
+    opacity: 0.2;
+  }
+
   .nac_header h1 {
     font-size: 62px;
     line-height: 64px;
@@ -938,7 +1002,7 @@ a:link {
   }
 
   .nac_artwork_grid a {
-    width: calc(100% / 4 - 14px);
+    width: calc(100% / 3 - 14px);
   }
 
   .col-33 {
@@ -958,6 +1022,10 @@ a:link {
 
   .nac_credit_row {
     margin-bottom: 35px;
+  }
+
+  .nac_artwork_grid a:before {
+    padding-bottom: 130%;
   }
 }
 
@@ -994,4 +1062,72 @@ a:link {
   .nac_credit_row {
     margin-bottom: 15px;
   }
+
+  .nac_artwork_grid a:before {
+    padding-bottom: 100%;
+  }
+
+  .nac_artwork_grid a div.gridoverlay {
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
+    transform-origin: center;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+    z-index: 3;
+  }
+
+  .nac_artwork_grid div.thecontent {
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
+    transform-origin: center;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 5;
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+  }
+  
+  .nac_artwork_grid a:hover div.gridoverlay,
+  .nac_artwork_grid a:active div.gridoverlay,
+  .nac_artwork_grid a:focus div.gridoverlay {
+    opacity: 0.85;
+    transform: translate(-50%, -50%) scale(1.0);
+  }
+  
+  .nac_artwork_grid a:hover div.thecontent,
+  .nac_artwork_grid a:active div.thecontent,
+  .nac_artwork_grid a:focus div.thecontent {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.0);
+  }
+
+  .nac_artwork_grid a h3 {
+    display: inline-block;
+    position: relative;
+    margin-top: 0;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 7px;
+    text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+    font-weight: 700;
+  }
+  
 }
