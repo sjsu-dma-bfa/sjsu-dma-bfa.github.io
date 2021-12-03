@@ -689,6 +689,73 @@ a:link {
   transform: translateY(-5px);
 }
 
+.nac_altcredits {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  
+}
+
+.nac_altcredits_col {
+  display: flex;
+  box-sizing: border-box;
+  background-color: #FFF;
+  flex-flow: column wrap;
+  margin: 7px;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.nac_altcredits_col .nac_altcredits_top {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #f5d866;
+  color: #182433;
+}
+
+.nac_altcredits_col .nac_altcredits_top h3 {
+  display: block;
+  text-align: center;
+  margin: 0;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 18px;
+  line-height: 22px;
+
+}
+
+.nac_altcredits_col .nac_altcredits_names {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+} 
+
+.nac_altcredits_col .nac_altcredits_names ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin:0;
+  flex-flow: column wrap;
+}
+
+.nac_altcredits_col .nac_altcredits_names ul li {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  padding: 7px;
+  margin:0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nac_altcredits_col .nac_altcredits_names ul li:last-of-type {
+  border: none;
+}
+
 /* GRID ARTIST PAGE 
 .image-grid {
     --gap: 16px;
@@ -752,6 +819,16 @@ a:link {
 }
 
 @media (max-width: 767.9px) {
+  
+  .nac_altcredits_col:nth-child(odd) .nac_altcredits_top {
+    background-color: #c74b43;
+    color: #FFF;
+  }
+
+  .nac_altcredits_col {
+    flex: 1 0 calc(100% - 14px);
+    max-width: calc(100% - 14px);
+  }
 
   .nac_artwork_grid a h3 {
     display: inline-block;
@@ -930,6 +1007,31 @@ a:link {
 }
 
 @media (min-width: 768px) and (max-width: 1024.9px) {
+  
+  .nac_altcredits_col:nth-child(1) .nac_altcredits_top {
+    background-color: #c74b43;
+    color: #FFF;
+  }
+
+  .nac_altcredits_col:nth-child(3) .nac_altcredits_top {
+    background-color: #c74b43;
+    color: #FFF;
+  }
+
+  .nac_altcredits_col:nth-child(5) .nac_altcredits_top {
+    background-color: #c74b43;
+    color: #FFF;
+  }
+
+  .nac_altcredits_col:nth-child(8) .nac_altcredits_top {
+    background-color: #c74b43;
+    color: #FFF;
+  }
+
+  .nac_altcredits_col {
+    flex: 1 0 calc(33% - 14px);
+    max-width: calc(33% - 14px);
+  }
 
   .nac_artwork_grid a h3 {
     display: inline-block;
@@ -1032,6 +1134,16 @@ a:link {
 }
 
 @media (min-width: 1025px) {
+  .nac_altcredits_col:nth-child(1) .nac_altcredits_top, .nac_altcredits_col:nth-child(3) .nac_altcredits_top, .nac_altcredits_col:nth-child(6) .nac_altcredits_top, .nac_altcredits_col:nth-child(8) .nac_altcredits_top {
+    background-color: #c74b43;
+    color: #FFF;
+  }
+
+  .nac_altcredits_col {
+    flex: 1 0 calc(25% - 14px);
+    max-width: calc(25% - 14px);
+  }
+  
   .nac_header h1 {
     font-size: 82px;
     line-height: 85px;
