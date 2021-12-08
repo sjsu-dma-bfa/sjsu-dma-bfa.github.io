@@ -1,1 +1,5 @@
 Add links here
+
+website: https://asukabaka.github.io/index.html
+instagram: https://www.instagram.com/rlasukabaka/?hl=en
+github repo for Welcome to the City of Expired Tear Gas: https://github.com/asukabaka/welcome
