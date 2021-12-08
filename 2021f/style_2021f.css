@@ -381,7 +381,7 @@ ul.nac_navigation {
 }
 
 .nac_artwork_grid a:nth-child(even) {
-  color:#0f151f;
+  color: #0f151f;
 }
 
 .nac_credit_row {
@@ -693,13 +693,12 @@ a:link {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  
 }
 
 .nac_altcredits_col {
   display: flex;
   box-sizing: border-box;
-  background-color: #FFF;
+  background-color: #fff;
   flex-flow: column wrap;
   margin: 7px;
   overflow: hidden;
@@ -723,7 +722,6 @@ a:link {
   text-transform: capitalize;
   font-size: 18px;
   line-height: 22px;
-
 }
 
 .nac_altcredits_col .nac_altcredits_names {
@@ -731,13 +729,13 @@ a:link {
   width: 100%;
   box-sizing: border-box;
   padding: 15px;
-} 
+}
 
 .nac_altcredits_col .nac_altcredits_names ul {
   display: flex;
   list-style-type: none;
   padding: 0;
-  margin:0;
+  margin: 0;
   flex-flow: column wrap;
 }
 
@@ -748,7 +746,7 @@ a:link {
   line-height: 20px;
   text-align: center;
   padding: 7px;
-  margin:0;
+  margin: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -819,10 +817,9 @@ a:link {
 }
 
 @media (max-width: 767.9px) {
-  
   .nac_altcredits_col:nth-child(odd) .nac_altcredits_top {
     background-color: #c74b43;
-    color: #FFF;
+    color: #fff;
   }
 
   .nac_altcredits_col {
@@ -850,7 +847,7 @@ a:link {
     transform-origin: center;
     display: block;
     position: absolute;
-    bottom:0;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 120px;
@@ -875,14 +872,14 @@ a:link {
     text-align: center;
     z-index: 5;
   }
-  
+
   .nac_artwork_grid a:hover div.gridoverlay,
   .nac_artwork_grid a:active div.gridoverlay,
   .nac_artwork_grid a:focus div.gridoverlay {
     opacity: 0.2;
     bottom: -17%;
   }
-  
+
   .nac_artwork_grid a:hover div.thecontent,
   .nac_artwork_grid a:active div.thecontent,
   .nac_artwork_grid a:focus div.thecontent {
@@ -1007,25 +1004,24 @@ a:link {
 }
 
 @media (min-width: 768px) and (max-width: 1024.9px) {
-  
   .nac_altcredits_col:nth-child(1) .nac_altcredits_top {
     background-color: #c74b43;
-    color: #FFF;
+    color: #fff;
   }
 
   .nac_altcredits_col:nth-child(3) .nac_altcredits_top {
     background-color: #c74b43;
-    color: #FFF;
+    color: #fff;
   }
 
   .nac_altcredits_col:nth-child(5) .nac_altcredits_top {
     background-color: #c74b43;
-    color: #FFF;
+    color: #fff;
   }
 
   .nac_altcredits_col:nth-child(8) .nac_altcredits_top {
     background-color: #c74b43;
-    color: #FFF;
+    color: #fff;
   }
 
   .nac_altcredits_col {
@@ -1053,7 +1049,7 @@ a:link {
     transform-origin: center;
     display: block;
     position: absolute;
-    bottom:0;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 100px;
@@ -1078,14 +1074,14 @@ a:link {
     text-align: center;
     z-index: 5;
   }
-  
+
   .nac_artwork_grid a:hover div.gridoverlay,
   .nac_artwork_grid a:active div.gridoverlay,
   .nac_artwork_grid a:focus div.gridoverlay {
     opacity: 0.2;
     bottom: -17%;
   }
-  
+
   .nac_artwork_grid a:hover div.thecontent,
   .nac_artwork_grid a:active div.thecontent,
   .nac_artwork_grid a:focus div.thecontent {
@@ -1134,16 +1130,19 @@ a:link {
 }
 
 @media (min-width: 1025px) {
-  .nac_altcredits_col:nth-child(1) .nac_altcredits_top, .nac_altcredits_col:nth-child(3) .nac_altcredits_top, .nac_altcredits_col:nth-child(6) .nac_altcredits_top, .nac_altcredits_col:nth-child(8) .nac_altcredits_top {
+  .nac_altcredits_col:nth-child(1) .nac_altcredits_top,
+  .nac_altcredits_col:nth-child(3) .nac_altcredits_top,
+  .nac_altcredits_col:nth-child(6) .nac_altcredits_top,
+  .nac_altcredits_col:nth-child(8) .nac_altcredits_top {
     background-color: #c74b43;
-    color: #FFF;
+    color: #fff;
   }
 
   .nac_altcredits_col {
     flex: 1 0 calc(25% - 14px);
     max-width: calc(25% - 14px);
   }
-  
+
   .nac_header h1 {
     font-size: 82px;
     line-height: 85px;
@@ -1217,19 +1216,19 @@ a:link {
     transform: translate(-50%, -50%) scale(0.8);
     opacity: 0;
   }
-  
+
   .nac_artwork_grid a:hover div.gridoverlay,
   .nac_artwork_grid a:active div.gridoverlay,
   .nac_artwork_grid a:focus div.gridoverlay {
     opacity: 0.85;
-    transform: translate(-50%, -50%) scale(1.0);
+    transform: translate(-50%, -50%) scale(1);
   }
-  
+
   .nac_artwork_grid a:hover div.thecontent,
   .nac_artwork_grid a:active div.thecontent,
   .nac_artwork_grid a:focus div.thecontent {
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1.0);
+    transform: translate(-50%, -50%) scale(1);
   }
 
   .nac_artwork_grid a h3 {
@@ -1243,5 +1242,4 @@ a:link {
     text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
     font-weight: 700;
   }
-  
 }
