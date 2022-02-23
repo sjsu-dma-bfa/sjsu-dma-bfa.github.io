@@ -2,19 +2,19 @@ This  will become the Exhibition Page for the Spring 2022 Graduating  DMA BFA Cl
 
 Once you have been added to the class github as a contributor:
 
-Create a folder in this directory
+ Create a folder in this directory
 
-Name it: your first initial your lastname
+  Name it: your first initial your lastname
 
-Example: rholberton
+    Example: rholberton
 
-Copy the index.html code and replace the 'Hello World'  text with your name
+  Copy the index.html code and replace the 'Hello World'  text with your name
 
-Paste it into a file in the folder you just created called index.html
+  Paste it into a file in the folder you just created called index.html
 
-Submit the link to your index page to canvas
+  Submit the link to your index page to canvas
 
-Example: https://sjsu-dma-bfa.github.io/2022s/rholberton/
+  Example: https://sjsu-dma-bfa.github.io/2022s/rholberton/
 
 
 If you don't have edit access to repo:
