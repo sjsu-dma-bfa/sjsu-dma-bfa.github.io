@@ -14,7 +14,7 @@ Once you have been added to the class github as a contributor:
 
   Submit the link to your index page to canvas
 
-  Example: https://sjsu-dma-bfa.github.io/2022s/rholberton/
+    Example: https://sjsu-dma-bfa.github.io/2022s/rholberton/
 
 
 If you don't have edit access to repo:
