@@ -1,4 +1,4 @@
-This  will become the Exhibition Page for the Fall 2021 Graduating  DMA BFA Class
+This  will become the Exhibition Page for the Spring 2022 Graduating  DMA BFA Class
 
 Once you have been added to the class github as a contributor:
 
@@ -14,7 +14,7 @@ Paste it into a file in the folder you just created called index.html
 
 Submit the link to your index page to canvas
 
-Example: https://sjsu-dma-bfa.github.io/2021s/rholberton/
+Example: https://sjsu-dma-bfa.github.io/2022s/rholberton/
 
 
 If you don't have edit access to repo:
