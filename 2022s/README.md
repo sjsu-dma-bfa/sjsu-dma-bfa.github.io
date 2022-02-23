@@ -1,5 +1,7 @@
 This  will become the Exhibition Page for the Spring 2022 Graduating  DMA BFA Class
+
 Public URL: https://sjsu-dma-bfa.github.io/2022s/index.html
+
 
 
 Once you have been added to the class github as a contributor:
