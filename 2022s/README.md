@@ -12,7 +12,7 @@ Once you have been added to the class github as a contributor:
 
     Example: rholberton
 
-  Copy the index.html code and replace the 'Hello World'  text with your name
+  Copy the index.html code from the rholberton directory and replace the 'Hello World'  text with your name
 
   Paste it into a file in the folder you just created called index.html
 
