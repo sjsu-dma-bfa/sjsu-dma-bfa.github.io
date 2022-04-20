@@ -69,17 +69,6 @@ body {
   text-align: center;
 }
 
-/* #goTO-about {
-  background-color: #4E4E4E;
-} */
-
-/* #goTO-visit {
-  background-color: #264653;
-} */
-
-/* #goTO-credit {
-  background-color: #4E4E4E;
-} */
 
 .zoom-link-button {
   background-color: #6c22b8;
@@ -165,8 +154,15 @@ ul.nac_navigation {
 }
 
 .nac_navigation li a:hover {
-  background-color: #2526271;
+  background-color: transparent;
 }
+.nac_navigation li a:hover,
+.nac_navigation li a:active,
+.nac_navigation li a:focus {
+  opacity: 0.7;
+  color: #f5d866;
+}
+
 
 .flexible-block {
   display: flex;
@@ -359,34 +355,6 @@ ul.nac_navigation {
   border-radius: 8px;
 }
 
-.nac_standard_button {
-  -webkit-transition: opacity 0.3s 0s ease;
-  -moz-transition: opacity 0.3s 0s ease;
-  -o-transition: opacity 0.3s 0s ease;
-  transition: opacity 0.3s 0s ease;
-  display: inline-block;
-  padding: 15px;
-  padding-right: 25px;
-  padding-left: 25px;
-  background-color: #2A9D8F;
-  color: #fff;
-  border-radius: 50px;
-  font-size: 16px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 0.7px;
-  max-width: 250px;
-  text-align: center;
-  border-radius: 20px;
-  margin-top: 30px;
-}
-
-.nac_standard_button:hover,
-.nac_standard_button:active,
-.nac_standard_button:focus {
-  background-color: #E76F51;
-}
 
 
 .nac_artwork_grid {
@@ -627,13 +595,14 @@ ul.nac_navigation {
 }
 
 .nac_subsection_bodytext a {
-  color: #f5d866;
+  color: #ffffff;
 }
 
 .nac_subsection_bodytext a:hover,
 .nac_subsection_bodytext a:active,
 .nac_subsection_bodytext a:focus {
   opacity: 0.7;
+  color: #f5d866;
 }
 
 /*ARTIST PAGE*/
