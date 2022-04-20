@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
 
 html {
 
   scroll-behavior: smooth;
 }
+
+h2{
+  font-family: 'Poppins', sans-serif;
+}
+
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
-  background-color: #06010c;
+  font-family: 'Poppins', sans-serif;
+  background-color: #000000;
 }
 
 .bgimg {
@@ -61,17 +69,17 @@ body {
   text-align: center;
 }
 
-#goTO-about {
+/* #goTO-about {
   background-color: #4E4E4E;
-}
+} */
 
-#goTO-visit {
+/* #goTO-visit {
   background-color: #264653;
-}
+} */
 
-#goTO-credit {
+/* #goTO-credit {
   background-color: #4E4E4E;
-}
+} */
 
 .zoom-link-button {
   background-color: #6c22b8;
@@ -136,7 +144,7 @@ ul.nac_navigation {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: #264653;
+  background: transparent;
   position: fixed;
   width: 100%;
   top: 0;
@@ -157,7 +165,7 @@ ul.nac_navigation {
 }
 
 .nac_navigation li a:hover {
-  background-color: #E76F51;
+  background-color: #2526271;
 }
 
 .flexible-block {
@@ -585,7 +593,7 @@ ul.nac_navigation {
   display: inline-block;
   width: 50px;
   height: 4px;
-  background-color: #E76F51;
+  background-color: #252627;
 }
 
 .nac_footer {
@@ -746,7 +754,7 @@ a:link {
 .nac_altcredits_col {
   display: flex;
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: transparent;
   flex-flow: column wrap;
   margin: 15px;
   overflow: hidden;
@@ -758,7 +766,7 @@ a:link {
   width: 100%;
   padding: 15px;
   box-sizing: border-box;
-  background-color: #2A9D8F;
+  background-color: transparent;
   color: #fff;
 }
 
@@ -777,6 +785,7 @@ a:link {
   width: 100%;
   box-sizing: border-box;
   padding: 15px;
+  color: #fff;
 }
 
 .nac_altcredits_col .nac_altcredits_names ul {
@@ -865,8 +874,8 @@ a:link {
 
 @media (max-width: 767.9px) {
   .nac_altcredits_col:nth-child(odd) .nac_altcredits_top {
-    background-color: #2A9D8F;
-    color: #fff;
+    background-color: transparent;
+    color: #252627;
   }
 
   .nac_altcredits_col {
@@ -1053,22 +1062,22 @@ a:link {
 @media (min-width: 768px) and (max-width: 1024.9px) {
   .nac_altcredits_col:nth-child(1) .nac_altcredits_top {
     background-color: #E9C46A;
-    color: #fff;
+    color: #252627;
   }
 
   .nac_altcredits_col:nth-child(3) .nac_altcredits_top {
     background-color: #E9C46A;
-    color: #fff;
+    color: #252627;
   }
 
   .nac_altcredits_col:nth-child(5) .nac_altcredits_top {
     background-color: #E9C46A;
-    color: #fff;
+    color: #252627;
   }
 
   .nac_altcredits_col:nth-child(8) .nac_altcredits_top {
     background-color: #E9C46A;
-    color: #fff;
+    color: #252627;
   }
 
   .nac_altcredits_col {
@@ -1181,7 +1190,7 @@ a:link {
   .nac_altcredits_col:nth-child(3) .nac_altcredits_top,
   .nac_altcredits_col:nth-child(6) .nac_altcredits_top,
   .nac_altcredits_col:nth-child(8) .nac_altcredits_top {
-    background-color: #2A9D8F;
+    background-color: transparent;
     color: #fff;
   }
 
