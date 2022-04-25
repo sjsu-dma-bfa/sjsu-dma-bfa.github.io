@@ -70,16 +70,38 @@ body {
 }
 
 
-.zoom-link-button {
-  background-color: #6c22b8;
-  padding: 10px;
+.nac_double_button .nac_standard_button {
+  margin-right: 7px;
+  margin-bottom: 7px;
 }
 
-.zoom-link-button a {
+.nac_standard_button {
+  -webkit-transition: opacity 0.3s 0s ease;
+  -moz-transition: opacity 0.3s 0s ease;
+  -o-transition: opacity 0.3s 0s ease;
+  transition: opacity 0.3s 0s ease;
+  display: inline-block;
+  padding: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
+  background-color: #264653;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
   text-decoration: none;
-  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  max-width: 250px;
+  text-align: center;
+  border-radius: 5px;
 }
 
+.nac_standard_button:hover,
+.nac_standard_button:active,
+.nac_standard_button:focus {
+  color: #f5d866;
+}
 .not-active {
   pointer-events: none;
   cursor: default;
