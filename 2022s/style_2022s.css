@@ -2,13 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
-
 html {
-
   scroll-behavior: smooth;
 }
 
-h2{
+h2 {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -69,7 +67,6 @@ body {
   text-align: center;
 }
 
-
 .nac_double_button .nac_standard_button {
   margin-right: 7px;
   margin-bottom: 7px;
@@ -94,6 +91,7 @@ body {
 .nac_standard_button:focus {
   color: #f5d866;
 }
+
 .not-active {
   pointer-events: none;
   cursor: default;
@@ -109,7 +107,6 @@ body {
   width: 80vw;
   margin: 0 auto 180px auto;
   padding: 20px 20px;
-
   display: grid;
   grid-gap: 40px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -118,8 +115,10 @@ body {
 .artist-link {
   background-image: url(images/b-texture.png);
   width: 100%;
-  padding-top: 100%; /* 1:1 Aspect Ratio */
-  position: relative; /* If you want text inside of it */
+  padding-top: 100%;
+  /* 1:1 Aspect Ratio */
+  position: relative;
+  /* If you want text inside of it */
 }
 
 .artist-text {
@@ -141,7 +140,6 @@ div p.credit {
 }
 
 /* new flexible layouts by brian */
-
 ul.nac_navigation {
   list-style-type: none;
   margin: 0;
@@ -170,13 +168,13 @@ ul.nac_navigation {
 .nac_navigation li a:hover {
   background-color: transparent;
 }
+
 .nac_navigation li a:hover,
 .nac_navigation li a:active,
 .nac_navigation li a:focus {
   opacity: 0.7;
   color: #f5d866;
 }
-
 
 .flexible-block {
   display: flex;
@@ -246,7 +244,6 @@ ul.nac_navigation {
   background-image: url("images/earf.png");
   background-position: center center;
   background-size: cover;
-
   padding-top: 70px;
   padding-bottom: 70px;
   position: relative;
@@ -298,28 +295,28 @@ ul.nac_navigation {
   color: #fff;
 }
 
-.nac_subsection_title:before{
-  content:'';
-  display:block;
-  width:120px;
-  height:2px;
+.nac_subsection_title:before {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 2px;
   background: #bbb;
   position: absolute;
   left: 0;
   top: 50%;
-  z-index:-2;
+  z-index: -2;
 }
 
-.nac_subsection_title:after{
-  content:'';
-  display:block;
-  width:120px;
-  height:2px;
+.nac_subsection_title:after {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 2px;
   background: #bbb;
   position: absolute;
   right: 0;
   top: 50%;
-  z-index:-2;
+  z-index: -2;
 }
 
 .nac_subsection_subtitle {
@@ -369,8 +366,6 @@ ul.nac_navigation {
   border-radius: 8px;
 }
 
-
-
 .nac_artwork_grid {
   display: flex;
   flex-flow: row wrap;
@@ -379,7 +374,7 @@ ul.nac_navigation {
 
 .nac_artwork_grid a {
   display: inline-block;
-  background-color: #000;
+  background-color: #252627;
   margin: 7px;
   position: relative;
   background-size: cover;
@@ -406,7 +401,7 @@ ul.nac_navigation {
 }
 
 .nac_artwork_grid a:nth-child(odd) div.gridoverlay {
-  background-color: #E9C46A;
+  background-color: #f5d866;
 }
 
 .nac_artwork_grid a:nth-child(even) div.gridoverlay {
@@ -636,46 +631,56 @@ ul.nac_navigation {
   min-height: calc(100vh - 40px);
   margin-top: -20px;
 }
+
 .singleArtistFlex {
   text-align: left;
 }
+
 .artistNameTitle {
   text-align: left;
   font-size: 70px;
   font-weight: bolder;
   margin-top: 25px;
 }
+
 .workTitle {
   text-align: left;
   font-size: 30px;
-  color: #2A9D8F
-  font-weight: bolder;
+  color: #2A9D8F font-weight: bolder;
 }
+
 a:hover,
 a:link {
   text-decoration: none;
 }
+
 .socialIcons {
   text-align: left;
   font-size: 25px;
   word-spacing: 10px;
   color: white;
 }
+
 .socialIcons .fab {
   color: white;
 }
+
 .socialIcons:hover {
   cursor: pointer;
 }
+
 .socialIcons .fab:hover {
   color: #f5d866;
 }
+
 .sideImage {
-  width: 650px; /*Width 200px for both images*/
+  width: 650px;
+  /*Width 200px for both images*/
   height: auto;
   /* margin: 20px; */
   margin-top: 150px;
 }
+
 .statementTitle {
   text-align: left;
   margin-top: 20px;
@@ -687,11 +692,13 @@ a:link {
   text-decoration-color: #252627;
   text-decoration-thickness: 3px;
 }
+
 .statement {
   text-align: left;
   line-height: 25px;
   font-size: 16px;
 }
+
 .bioTitle {
   text-align: left;
   margin-top: 20px;
@@ -700,7 +707,7 @@ a:link {
   text-decoration: underline;
   text-underline-offset: 2px;
   margin-bottom: 10px;
-  text-decoration-color: #252627
+  text-decoration-color: #252627;
   text-decoration-thickness: 3px;
 }
 
@@ -709,6 +716,7 @@ a:link {
   line-height: 25px;
   font-size: 16px;
 }
+
 .btnWeb {
   background-color: #264653;
   border: none;
@@ -722,6 +730,7 @@ a:link {
   margin-bottom: 30px;
   font-weight: bolder;
 }
+
 .btnWeb:hover {
   cursor: pointer;
   background-color: #f5d866;
@@ -732,7 +741,6 @@ a:link {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-
 }
 
 .nac_altcredits_col {
@@ -812,14 +820,14 @@ a:link {
 
 }
 */
-
 /* Smaller border grid */
 .flexStyle {
   text-align: center;
-  background-color: rgb(2, 20, 53);
+  background-color: #000000;
   padding: 10px;
   margin-top: -30px;
 }
+
 .flexStyle img {
   height: 500px;
   width: 700px;
@@ -833,22 +841,26 @@ a:link {
     margin: 40px;
     padding: 40px;
   }
+
   .flexStyle {
     margin-top: -80px;
   }
 }
+
 @media (max-width: 750px) {
   .flexStyle img {
     height: 300px;
     width: 500px;
   }
 }
+
 @media (max-width: 550px) {
   .flexStyle img {
     height: 200px;
     width: 350px;
   }
 }
+
 @media (max-width: 450px) {
   .flexStyle img {
     height: 200px;
@@ -931,6 +943,7 @@ a:link {
     padding: 14px 10px;
     font-size: 12px;
   }
+
   .nac_header h1 {
     font-size: 42px;
     line-height: 44px;
@@ -972,21 +985,24 @@ a:link {
 }
 
 /*Mobile Artist Page */
-
 @media screen and (max-width: 1250px) {
   .sideImage {
     transform: scale(0.9);
   }
+
   .statement,
   .bio {
     font-size: 12px;
   }
+
   .artistNameTitle {
     font-size: 50px;
   }
+
   .workTitle {
     font-size: 30px;
   }
+
   .statementTitle,
   .bioTitle {
     font-size: 20px;
@@ -998,6 +1014,7 @@ a:link {
     display: 1080;
     flex-direction: column;
   }
+
   .sideImage {
     margin-top: -10px;
     text-align: center;
@@ -1020,6 +1037,7 @@ a:link {
   .sideImage {
     transform: scale(0.5);
   }
+
   .btnWeb {
     font-size: 13px;
   }
@@ -1029,6 +1047,7 @@ a:link {
   .sideImage {
     transform: scale(0.4);
   }
+
   .btnWeb {
     font-size: 10px;
     padding: 10px;
@@ -1170,6 +1189,7 @@ a:link {
 }
 
 @media (min-width: 1025px) {
+
   .nac_altcredits_col:nth-child(1) .nac_altcredits_top,
   .nac_altcredits_col:nth-child(3) .nac_altcredits_top,
   .nac_altcredits_col:nth-child(6) .nac_altcredits_top,
