@@ -401,11 +401,11 @@ ul.nac_navigation {
 }
 
 .nac_artwork_grid a:nth-child(odd) div.gridoverlay {
-  background-color: #f5d866;
+  background-color: #E9C46A;
 }
 
 .nac_artwork_grid a:nth-child(even) div.gridoverlay {
-  background-color: #f5d866;
+  background-color:#E9C46A;
 }
 
 .nac_artwork_grid a:nth-child(even) {
@@ -818,8 +818,8 @@ a:link {
     background-color: rgb(2, 20, 53);
 
 
-}
-*/
+} */
+
 /* Smaller border grid */
 .flexStyle {
   text-align: center;
