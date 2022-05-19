@@ -379,7 +379,6 @@ ul.nac_navigation {
   position: relative;
   background-size: cover;
   background-position: center center;
-  /* background-image: url(images/swirl.jpg); */
   color: #fff;
   overflow: hidden;
 }
@@ -1301,5 +1300,100 @@ a:link {
     margin-bottom: 7px;
     text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
     font-weight: 700;
+  }
+
+img {
+width: 230px;
+height: 230px;
+object-fit: contain;
+object-position: center;
+}
+
+/* Gallery Test */
+h1 {
+  color: white;
+  font-size: 36px;
+  text-align: center;
+}
+
+p {
+  position: relative;
+  left: -20px;
+}
+
+
+.image-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.media {
+  width: 30%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.media:hover {
+  cursor: pointer;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  left: 10px;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  opacity: 0;
+  transition: all ease-in-out 0.5s;
+}
+
+.media:hover .overlay {
+  opacity: 1;
+}
+
+img {
+  width: 100%;
+  z-index: -1;
+  margin: auto;
+  transform: scale(1);
+  transition: all ease-in-out 0.5s;
+}
+
+.media:hover img {
+  transform: scale(1.1);
+  filter: blur(2px);
+}
+
+.image-details {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  align-items: center;
+  z-index: 4;
+  position: absolute;
+  top: 100%;
+  opacity: 0;
+  transition: all ease-in-out 0.5s;
+}
+
+.media:hover .image-details {
+  top: 40%;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 900px) {
+  .media {
+    width: 70%;
+    height: 70%;
   }
 }
