@@ -1,4 +1,4 @@
-This will become the Exhibition Page for the Fall 2021 Graduating DMA BFA Class
+This will become the Exhibition Page for the Fall 2022 Graduating DMA BFA Class
 
 Once you have been added to the class github as a contributor:
 
