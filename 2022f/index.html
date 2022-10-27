@@ -1,174 +1,125 @@
 <!DOCTYPE html>
-<html>
-<title>DMA BFA EXHIBITION 2021 SPRING</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-<style>
-body, html {
-  height: 100%;
-  font-family: "Inconsolata", sans-serif;
-}
+<html lang="en">
+  <head>
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
 
-.bgimg {
-  background-position: center;
-  background-size: cover;
-  background-image: url("images/cadre-1984-poster.jpeg");
-  min-height: 75%;
-}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
 
-.menu {
-  display: none;
-}
-</style>
-<body>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
 
-<!-- Links (sit on top) -->
-<div class="w3-top">
-  <div class="w3-row w3-padding w3-black">
-    <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block w3-black">HOME</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#artists" class="w3-button w3-block w3-black">ARTISTS</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#where" class="w3-button w3-block w3-black">EXHIBITION</a>
-    </div>
-  </div>
-</div>
+    <title>Resonance</title>
 
-<!-- Header with image -->
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-    <span class="w3-tag">Exhibition Dates</span>
-  </div>
-  <div class="w3-display-middle w3-center">
-    <span class="w3-text-white" style="font-size:90px">DMA<br>BFA</span>
-  </div>
-  <div class="w3-display-bottomright w3-center w3-padding-large">
-    <span class="w3-text-white">WEBSITE</span>
-  </div>
-</header>
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
+    <meta
+      name="description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Hello World!" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
+    <meta
+      property="og:description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
+    />
+    <meta name="twitter:card" content="summary" />
 
-<!-- Add a background color and large text to the whole page -->
-<div class="w3-sand w3-grayscale w3-large">
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Michroma&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- About Container -->
-<div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE EXHIBITION</span></h5>
-    <p>The Exhibition was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
-    <div class="w3-panel w3-leftbar w3-light-grey">
-      <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
-      <p>DMA BFA Class 2021</p>
-    </div>
-    <img src="images/cadre-1984-poster.jpeg" style="width:100%;max-width:1000px" class="w3-margin-top">
-    <p><strong>Opening hours:</strong> May 7 4-6:30 PM</p>
-    <p><strong>Opening Reception:</strong> Register for Zoom Link</p>
-  </div>
-</div>
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
 
-<!-- Artists Container -->
-<div class="w3-container" id="artists">
-  <div class="w3-content" style="max-width:700px">
- 
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ARTISTS</span></h5>
-  
-    <div class="w3-row w3-center w3-card w3-padding">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Holberton');" id="myLink">
-        <div class="w3-col s6 tablink">Holberton</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Hobbs');">
-        <div class="w3-col s6 tablink">Hobbs</div>
-      </a>
+  <!-----------------------------------------BODY--------------------------------------->
+  <body>
+    <!--     <img
+      src="https://cdn.glitch.global/ef412731-fd9a-4e7f-81a5-edad0415a83b/Untitled-2%20coGGVGpy.png?v=1666835181271"
+      height=""
+      width="100%"
+    /> -->
+
+    <div class="nav">
+      <ul class="navbar">
+        <li style="float: left"><a href="">RESONANCE</a></li>
+        <li><a href="">EXHIBITION</a></li>
+        <li><a href="">ARTISTS</a></li>
+        <li><a href="">ABOUT</a></li>
+      </ul>
     </div>
 
-    <div id="Holberton" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Bread Basket</h5>
-      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
-    
-      <h5>Honey Almond Granola with Fruits</h5>
-      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
-    
-      <h5>Belgian Waffle</h5>
-      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
-    
-      <h5>Scrambled eggs</h5>
-      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-    
-      <h5>Blueberry Pancakes</h5>
-      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+    <div class="hero-text">
+      <h1
+        style="
+          font-family: 'Michroma', sans-serif;
+          font-size: 50px;
+          letter-spacing: 10px;
+        "
+      >
+        RESONANCE
+      </h1>
+      <h4
+        class="registration-info"
+        style="
+          margin-top: 15px;
+          font-family: 'Michroma', sans-serif;
+          color: #094152;
+        "
+      >
+        Registration coming soon
+      </h4>
+
+      <button class="button">
+        <span
+          ><a href="https://www.instagram.com/cadre_sjsu/?hl=en"
+            >Check out our Instagram
+          </a></span
+        >
+      </button>
     </div>
 
-    <div id="Hobbs" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Coffee</h5>
-      <p class="w3-text-grey">Regular coffee 2.50</p><br>
-    
-      <h5>Chocolato</h5>
-      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
-    
-      <h5>Corretto</h5>
-      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
-    
-      <h5>Iced tea</h5>
-      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
-    
-      <h5>Soda</h5>
-      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
-    </div>  
-    <img src="images/cadre-1984-poster.jpeg" style="width:100%;max-width:1000px;margin-top:32px;">
-  </div>
-</div>
+    <!--     <div id="curatorsstatement">
+      <h1>Curator's Statement</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit,
+        nulla in auctor posuere, justo tortor bibendum odio, in gravida velit
+        purus a leo. Nunc eget porta massa. Nunc ipsum diam, rutrum quis nunc
+        sed, sodales ornare tortor. In convallis eu quam eu mollis. Class aptent
+        taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+        himenaeos. Donec sed magna et justo consectetur semper. Cras ac justo id
+        libero ornare fermentum. 
+      </p>
+      <p>
+        Aliquam rhoncus neque lorem, non viverra mi ornare sed. Vestibulum
+        bibendum mauris ac nisi bibendum, a feugiat turpis tempor. Suspendisse
+        quis sagittis sapien. Cras sed ex sit amet ante gravida rhoncus eget in
+        risus. Nulla facilisi. Cras sollicitudin neque sit amet lorem ultricies
+        aliquam. Donec enim velit, malesuada eget interdum a, laoreet sit amet
+        velit. In ex velit, mattis et pulvinar.
+      </p>
+    </div> -->
 
-<!-- Contact/Area Container -->
-<div class="w3-container" id="where" style="padding-bottom:32px;">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
-    <p>Find us at some address at some place.</p>
-    <img src="https://newart.city/img/media-kit/new-art-city-logo-white-bg.png" class="w3-image" style="width:100%">
-    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
-    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
-    </form>
-  </div>
-</div>
-
-<!-- End page content -->
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-  <p>Created by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">student</a></p>
-</footer>
-
-<script>
-// Tabbed Menu
-function openMenu(evt, menuName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
-}
-document.getElementById("myLink").click();
-</script>
-
-</body>
+    <!----------------FOOTER--------------------------------------------------------->
+    <footer class="footer"></footer>
+  </body>
 </html>
