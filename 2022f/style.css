@@ -1,0 +1,125 @@
+body {
+  background-image: url("https://cdn.glitch.global/ef412731-fd9a-4e7f-81a5-edad0415a83b/Untitled-2%20copy.png?v=1666835181236");
+}
+/* img {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.1;
+} */
+
+.hero-text {
+
+  justify-content: center;
+  text-align: center;
+  padding-top:20%;
+  
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+
+ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  font-family: "Michroma", sans-serif;
+  font-size: 20px;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: #bec6cd;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  color: #31405f;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+button {
+  border-radius: 4px;
+  background-color: #bec6cd88;
+  border: none;
+  color: #FFFFFF;
+   font-family: "Michroma", sans-serif;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 400px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover {
+  background-color:#31405f;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+a {
+  text-decoration:none;
+  color:white;
+}
+a:visited {
+  text-decoration:none;
+  color:white;
+}
+a:active {
+  text-decoration:underline;
+  color:white;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+#curatorsstatement h1 {
+  font-family: "Michroma", sans-serif;
+  font-weight: normal;
+  text-align: center;
+  color: #19506b;
+  margin: 5%;
+}
+#curatorsstatement p {
+  /*   background-color:#ca95a2; */
+  padding: 0px 100px 1px;
+  line-height: 1.6;
+  font-family: "Michroma", sans-serif;
+}
