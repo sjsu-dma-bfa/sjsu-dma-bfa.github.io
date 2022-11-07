@@ -1,5 +1,9 @@
 body {
-  background-image: url("https://cdn.glitch.global/ef412731-fd9a-4e7f-81a5-edad0415a83b/Untitled-2%20copy.png?v=1666835181236");
+  background-image: url('resonance_website.jpeg');
+  background-size: 100% 100%;  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+
 }
 /* img {
   display: block;
@@ -28,7 +32,7 @@ ul {
   top: 0;
   width: 100%;
   list-style-type: none;
-  margin: 0;
+  margin: 3;
   padding: 0;
   overflow: hidden;
 
