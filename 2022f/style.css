@@ -1,5 +1,5 @@
 body {
-  background-image: url('resonance_website.jpeg');
+  background-image: url('resonance_website.jpeg'); /*resonance_website.jpeg*/
   background-size: 100% 100%;  background-attachment: fixed;
   background-repeat: no-repeat;
 
@@ -17,27 +17,26 @@ body {
 } */
 
 .hero-text {
-
   justify-content: center;
   text-align: center;
-  padding-top:20%;
+  padding-top:21%;
   
 }
 
 /*----------------------------------------------------------------------------------------------------*/
 
 
-ul {
+ ul {
   position: fixed;
   top: 0;
   width: 100%;
   list-style-type: none;
-  margin: 5;
+  margin-top: 7px;
   padding: 0;
   overflow: hidden;
-
   font-family: "Michroma", sans-serif;
-  font-size: 20px;
+  font-size: 15px;
+
 }
 
 li {
@@ -46,14 +45,14 @@ li {
 
 li a {
   display: block;
-  color: #bec6cd;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover:not(.active) {
-  color: #31405f;
+  color: #252327;
 }
 
 /*----------------------------------------------------------------------------------------------------*/
@@ -63,14 +62,14 @@ button {
   background-color: #bec6cd88;
   border: none;
   color: #FFFFFF;
-   font-family: "Michroma", sans-serif;
+  font-family: "Michroma", sans-serif;
   text-align: center;
   font-size: 20px;
   padding: 20px;
   width: 400px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
+  margin: 1px;
 }
 
 button span {
@@ -93,7 +92,7 @@ button span:after {
   padding-right: 25px;
 }
 .button:hover {
-  background-color:#31405f;
+  background-color:#ce8eaa;
 }
 
 button:hover span:after {
