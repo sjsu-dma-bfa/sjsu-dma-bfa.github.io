@@ -110,15 +110,17 @@
     }
 
     .images_container {
-      display: flex;
-      width: 100%;
-      flex-direction: column;
+      display: grid;
+  grid-template-columns: auto auto auto;
+        width: 100%;
+      flex-direction: row;
+      gap: 10px;
       align-items: center;
     }
 
     .image_container {
       display: flex;
-      width: 50%;
+      width: 100%;
       padding-top: 20px;
     }
 
