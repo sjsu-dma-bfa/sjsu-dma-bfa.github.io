@@ -30,191 +30,927 @@
     href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Michroma&display=swap"
     rel="stylesheet" />
   <!-- Per file css-->
-  <style>
-    body {
-      height: 100%;
-      background-image: linear-gradient(#094152, #bfc6cc);
-    }
+   <style>
+      body {
+        /*         height: 100%; */
+        background-image: linear-gradient(#000000, #000000);
+        background-color: black;
+      }
 
-    .container {
-      display: flex;
-      width: 100%;
-      height: 100%;
-      flex-direction: column;
-      font-family: "Michroma", sans-serif;
-    }
+      .container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        font-family: "Michroma", sans-serif;
+      }
 
-    .intro_container {
-      display: flex;
-      width: 100%;
-    }
+      .intro_container {
+        display: flex;
+        width: 100%;
+      }
 
-    .project_intro {
-      display: flex;
-      width: 60%;
-      height: 100%;
-      flex-direction: column;
-      padding: 0px 25px 0px 25px;
-      color: #bec6cd;
-    }
+      .project_intro {
+        display: flex;
+        width: 60%;
+        height: 100%;
+        flex-direction: column;
+        padding: 0px 80px 0px 80px;
+        color: #bec6cd;
+      }
+      .project_intro h1 {
+        margin-top: 50px;
+      }
+      .project_intro h3 {
+        margin-top: 2px;
+      }
 
-    .project_intro h3 {
-      margin-top: 2px;
-    }
+      .project_intro h4 {
+        font-size: 25px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+      }
 
-    .project_intro h4 {
-      font-size: 25px;
-      margin-top: 2px;
-      margin-bottom: 2px;
-    }
+      .project_intro p {
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
 
-    .project_intro p {
-      font-size: 18px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
+      .project_title {
+        display: flex;
+      }
 
-    .project_title {
-      display: flex;
-    }
+      .artist_name {
+        display: flex;
+      }
 
-    .artist_name {
-      display: flex;
-    }
+      .artist_statement {
+        display: flex;
+        flex-direction: column;
+      }
 
-    .artist_statement {
-      display: flex;
-      flex-direction: column;
-    }
+      .artist_bio {
+        display: flex;
+        flex-direction: column;
+      }
 
-    .artist_bio {
-      display: flex;
-      flex-direction: column;
-    }
+      .buttons {
+        display: flex;
+      }
 
-    .buttons {
-      display: flex;
-    }
+      .project_video {
+        display: flex;
+        width: 40%;
+        padding: 0px 50px 0px 30px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
 
-    .project_video {
-      display: flex;
-      width: 40%;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
+      .video_container {
+        width: 100%;
+        height: 50%;
+      }
 
-    .video_container {
-      width: 100%;
-      height: 50%;
-    }
+      .images_container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+      }
 
-    .images_container {
-      display: flex;
-      width: 100%;
-      flex-direction: column;
-      align-items: center;
-    }
+      .image_container {
+        display: flex;
+        width: 50%;
+        padding-top: 20px;
+      }
 
-    .image_container {
-      display: flex;
-      width: 50%;
-      padding-top: 20px;
-    }
+      .image_container img {
+        display: flex;
+        width: 100%;
+      }
+      button {
+        border-radius: 4px;
+        background-color: #ffb0fc;
+        border: none;
+        color: #ffffff;
+        font-family: "Michroma", sans-serif;
+        text-align: center;
+        font-size: 20px;
+        padding: 20px;
+        width: 250px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 1px;
+      }
 
-    .image_container img {
-      display: flex;
-      width: 100%;
-    }
-  </style>
+      button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
 
-  <!-- Import the webpage's javascript file -->
-  <script src="/script.js" defer></script>
-</head>
-<!----------------BODY--------------------------------------------------------->
+      button span:after {
+        content: "\00bb";
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
 
-<body>
-  <div class="nav">
-    <div class="navbar">
-      <div class="title">
-        <a href="../index.html">RESONANCE</a>
-      </div>
-      <div class="nav_items">
-        <ul>
-          <li><a href="../exhibition.html">EXHIBITION</a></li>
-          <li><a href="../artists.html">ARTISTS</a></li>
-          <li><a href="../about.html">ABOUT</a></li>
-        </ul>
+      .button:hover span {
+        padding-right: 25px;
+      }
+      .button:hover {
+        background-color: #ff33d3;
+      }
+
+      button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a:visited {
+        text-decoration: none;
+        color: white;
+      }
+      a:active {
+        text-decoration: underline;
+        color: white;
+      }
+      table {
+        margin-left: auto;
+        margin-right: auto;
+        font-family: sans-serif;
+        width: 80%;
+        margin: 0 auto;
+        width: 80%;
+        /*   margin:0 auto; */
+        border-spacing: 8px;
+        table-layout: fixed;
+        font-family: sans-serif;
+        text-align: center;
+        line-height: 1.5;
+      }
+      table,
+      tr,
+      td {
+        /*         border: 1px solid red; */
+      }
+      td {
+        text-align: right;
+      }
+      figcaption {
+        background-color: black;
+        color: white;
+        font-family: sans-serif;
+        font-style: italic;
+        padding: 2px;
+        text-align: center;
+      }
+      figure {
+        border-bottom: 1px #ff00e1 dashed;
+        padding: 4px;
+        margin: auto;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Verdana, sans-serif;
+      }
+      .mySlides {
+        display: none;
+      }
+      img {
+        vertical-align: middle;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Verdana, sans-serif;
+      }
+      .mySlides {
+        display: none;
+      }
+      img {
+        vertical-align: middle;
+      }
+
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      /* The dots/bullets/indicators */
+      .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active {
+        background-color: #ff24e9;
+      }
+
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .text {
+          font-size: 11px;
+        }
+      }
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      /* Caption text */
+      .textexh {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertextexh {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      /* The dots/bullets/indicators */
+      .dotexh {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active,
+      .dotexh:hover {
+        background-color: #ff24e9;
+      }
+
+      /* Fading animation */
+      .fadeexh {
+        animation-name: fadeexh;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fadeexh {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev,
+        .next,
+        .textexh {
+          font-size: 11px;
+        }
+      }
+    </style>
+
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <!----------------BODY--------------------------------------------------------->
+
+  <body>
+    <div class="nav">
+      <div class="navbar">
+        <div class="title">
+          <a href="../index.html">RESONANCE</a>
+        </div>
+        <div class="nav_items">
+          <ul>
+            <li><a href="../exhibition.html">EXHIBITION</a></li>
+            <li><a href="../artists.html">ARTISTS</a></li>
+            <li><a href="../about.html">ABOUT</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="container">
-    <div class="intro_container">
-      <div class="project_intro">
-        <div class="project_title">
-          <h1>PROJECT TITLE</h1>
+    <div class="container">
+      <div class="intro_container">
+        <div class="project_intro">
+          <div class="project_title">
+            <h1 style="font-variant: small-caps">
+              <span style="color: #ff24e9">MARIJA</span> by Alyssa Castañeda
+            </h1>
+          </div>
+          <!--           <div class="artist_name">
+            <h2 style="font-family:sans-serif;">Alyssa Castaneda</h2>
+          </div> -->
+          <div class="artist_statement">
+            <h4 style="font-variant: small-caps">Artist Statement</h4>
+            <p style="font-family: sans-serif">
+              Marija is an RPG game, where you play as a young girl who gives
+              birth to a monstrous stillborn at your friend, Lorelei’s
+              sleepover. Ashamed, and scared, with the help of your friends'
+              stuffed animals, your goal is to discard it before anyone
+              discovers what's happened. The game is alluding to the Chrisitan
+              themes, as well as others like adolescence, puberty, sex, family
+              violence, and substance abuse. The game is largely based on my own
+              preadolescents, and the relationship I had with God, my friends,
+              my family, and especially my body.
+            </p>
+          </div>
+          <div class="artist_bio">
+            <h4 style="font-variant: small-caps">Artist Bio</h4>
+            <p style="font-family: sans-serif">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et
+              hendrerit sem. Vivamus eu tincidunt est. Maecenas mauris sapien,
+              venenatis sed malesuada in, scelerisque non nulla. Pellentesque
+              ultricies consequat mauris, id placerat turpis mollis et. Ut risus
+              dolor, aliquam in molestie eget, faucibus at lorem. Pellentesque
+              lorem ipsum, viverra a varius eget, vulputate eu odio. Proin
+              tincidunt enim quis cursus vehicula. Aenean luctus elit pulvinar
+              dolor posuere, eu luctus diam consequat.
+            </p>
+          </div>
+          <br />
+          <!-- Add NAC/Website documentation link here -->
+          <button class="button">
+            <span
+              ><a href="https://localfetus.itch.io/marija" target="_blank"
+                >View Game</a
+              ></span
+            >
+          </button>
         </div>
-        <div class="artist_name">
-          <h3>STUDENT NAME</h3>
-        </div>
-        <div class="artist_statement">
-          <h4>ARTIST STATEMENT</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et hendrerit sem. Vivamus eu tincidunt est.
-            Maecenas mauris sapien, venenatis sed malesuada in, scelerisque non nulla. Pellentesque ultricies consequat
-            mauris, id placerat turpis mollis et. Ut risus dolor, aliquam in molestie eget, faucibus at lorem.
-            Pellentesque lorem ipsum, viverra a varius eget, vulputate eu odio. Proin tincidunt enim quis cursus
-            vehicula.
-            Aenean luctus elit pulvinar dolor posuere, eu luctus diam consequat.
-          </p>
-        </div>
-        <div class="artist_bio">
-          <h4>ARTIST BIO</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et hendrerit sem. Vivamus eu tincidunt est.
-            Maecenas mauris sapien, venenatis sed malesuada in, scelerisque non nulla. Pellentesque ultricies consequat
-            mauris, id placerat turpis mollis et. Ut risus dolor, aliquam in molestie eget, faucibus at lorem.
-            Pellentesque lorem ipsum, viverra a varius eget, vulputate eu odio. Proin tincidunt enim quis cursus
-            vehicula.
-            Aenean luctus elit pulvinar dolor posuere, eu luctus diam consequat.
-          </p>
-        </div>
-<!-- Add NAC/Website documentation link here -->
-        <button class="button">
-          <span><a href="">View Project
-            </a></span>
-        </button>
-      </div>
 
-      <div class="project_video">
-        <div class="video_container">
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/u31qwQUeGuM"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+        <div class="project_video">
+          <div class="video_container">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/watch?v=4_sUzbJOLlo&t=1s&ab_channel=acasta"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
             ></iframe>
+          </div>
         </div>
       </div>
+      <br />
+
+      <!-------------------------------------------------------------------------SLIDESHOW-------------------------------------------------------------------------->
+
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 8</div>
+          <img
+            src="https://cdn.glitch.global/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/1.PNG?v=1670092377815"
+            style="width: 100%"
+          />
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 8</div>
+          <img
+            src="https://cdn.glitch.global/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/2.PNG?v=1670101985019"
+            style="width: 100%"
+          />
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 8</div>
+          <img
+            src="https://cdn.glitch.global/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/8.PNG?v=1670092377417"
+            style="width: 100%"
+          />
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 8</div>
+          <img
+            src="https://cdn.glitch.global/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/3.PNG?v=1670092378663"
+            style="width: 100%"
+          />
+          <div class="text"></div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 8</div>
+          <img
+            src="https://cdn.glitch.global/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/5.PNG?v=1670092376141"
+            style="width: 100%"
+          />
+          <div class="text"></div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 8</div>
+          <img
+            src="https://cdn.glitch.global/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/4.PNG?v=1670461506286"
+            style="width: 100%"
+          />
+          <div class="text"></div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">7 / 8</div>
+          <img
+            src="https://cdn.glitch.global/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/6.PNG?v=1670092376612"
+            style="width: 100%"
+          />
+          <div class="text"></div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">8 / 8</div>
+          <img
+            src="https://cdn.glitch.global/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/7.PNG?v=1670092377024"
+            style="width: 100%"
+          />
+          <div class="text"></div>
+        </div>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <!-----------------------------------------------------------------FIGURE TABLE---------------------------------------------------------------------------------->
+      <table style="padding-top: 80px">
+        <tr>
+          <td
+            colspan="2"
+            style="
+              font-family: 'Michroma', sans-serif;
+              color: white;
+              text-align: center;
+              font-size: 40px;
+              font-variant: small-caps;
+            "
+          >
+            <!--             Documentation -->
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <figure>
+              <img
+                src="https://cdn.glitch.global/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/Screen%20Shot%202022-11-15%20at%208.20.03%20PM.png?v=1670109779205"
+                alt="Trulli"
+                style="width: 100%"
+              />
+              <figcaption>
+                The UI of RPG Maker divides the map into a grid of 48x48 pixels.
+                The dark squares are events triggered by switches when the
+                player walks over or interacts with them.
+              </figcaption>
+            </figure>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <figure>
+              <img
+                src="https://cdn.glitch.global/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/example-tileset-1.png?v=1670463672938"
+                alt="Trulli"
+                style="width: 100%"
+              />
+              <figcaption>
+                A zoom-in of one of two main object tilesheets. 768 x 768 px.
+                Each object is either within a 48x48 48x96 or 192 x 192,
+                depending how large and how I wanted to divide the object.
+              </figcaption>
+            </figure>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <figure>
+              <img
+                src="https://cdn.glitch.global/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/spritesheet-rex.png?v=1670463736669"
+                alt="Trulli"
+                style="width: 100%"
+              />
+              <figcaption>
+                Running animation spritesheet for Rex. Legs are shortened and
+                "fleas" are misplaced to give the illusion of movement.
+                640x480px.
+              </figcaption>
+            </figure>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <figure>
+              <img
+                src="https://cdn.glitch.global/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/spritesheet-marija.png?v=1670463724290"
+                alt="Trulli"
+                style="width: 100%"
+              />
+              <figcaption>
+                Walking animation spritesheet for Marija. 640x480px.
+              </figcaption>
+            </figure>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <figure>
+              <img
+                src="https://cdn.glitch.global/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/gamemaps.png?v=1670463532858"
+                alt="Trulli"
+                style="width: 100%"
+              />
+              <figcaption>
+                List of the rooms/worlds which make up the house in order of
+                gameplay. Some rooms are embedded within others to show their
+                relationship and chronology with each other.
+              </figcaption>
+            </figure>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <figure>
+              <img
+                src="https://cdn.glitch.global/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/event-manager.png?v=1670463918564"
+                alt="Trulli"
+                style="width: 100%"
+              />
+              <figcaption>
+                An event in RPG Maker is a way to create scripted actions
+                triggered by the event command. This event has a conditional
+                switch that can only take place after the event "0004 Bathroom
+                Birth" takes place.
+              </figcaption>
+            </figure>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <figure>
+              <img
+                src="https://cdn.glitch.global/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/events-hallway.PNG?v=1670463887082"
+                alt="Trulli"
+                style="width: 100%"
+              />
+              <figcaption>
+                Series of events with conditions applied over the hallway map.
+              </figcaption>
+            </figure>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <figure>
+              <img
+                src="https://cdn.glitch.global/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/proposal-195-render.jpg?v=1670479700817"
+                alt="preliminary render for exhibition"
+                style="width: 100%"
+              />
+              <figcaption>Preliminary render of exhibition layout.</figcaption>
+            </figure>
+          </td>
+        </tr>
+      </table>
+      <!---------------------------------------------------------------------------------------------------------------->
+
+      <div class="images_container">
+        <!------------------------------------------------------------------------RENDER----------------------->
+
+        <!------------------------------------------------------------------------SPREADHSEETS-------------->
+        <br />
+        <h3 style="color: white">Materials Spreadhseet</h3>
+        <iframe
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQQRR5iCaI5aPKvY2GeW_k3wmJ_WcatnoaQVGjMCvSBJalHGWPaJArg3tjDUHFVqEpkY5OqfnO0Fx3U/pubhtml?widget=true&amp;headers=false"
+          height="500"
+          width="80%"
+          style="border: 10px solid #2b2b2b; padding: 5px"
+        ></iframe>
+        <h3 style="color: white">Gantt Chart</h3>
+        <iframe
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTE_Way8-7en2_EC2j1qXJshyrrjG8932v8zmQa0wnyV8XHQZinK4cCqKSyRYFJAj-E--4pERo2FPxw/pubhtml?gid=162293999&amp;single=true&amp;widget=true&amp;headers=false"
+          height="500"
+          width="80%"
+          style="border: 10px solid #2b2b2b; padding: 5px"
+        ></iframe>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <!------------------------------------------------------------------------EXH SLIDESHOW-------------->
+      </div>
+      <div class="slideshow-container">
+        <div class="exhb fade">
+          <div class="numbertext">1 / 7</div>
+          <img
+            src="https://cdn.glitch.global/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/bfa-installation.jpeg?v=1670476812308"
+            style="width: 100%"
+          />
+          <div class="text"></div>
+        </div>
+
+        <div class="exhb fade">
+          <div class="numbertext">2 / 7</div>
+          <img
+            src="https://cdn.glitch.global/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/install-2.jpeg?v=1670476827623"
+            style="width: 100%"
+          />
+          <div class="text"></div>
+        </div>
+
+        <div class="exhb fade">
+          <div class="numbertext">2 / 7</div>
+          <img
+            src="https://cdn.glitch.global/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/instal-4.jpeg?v=1670476820464"
+            style="width: 100%"
+          />
+          <div class="text"></div>
+        </div>
+
+        <div class="exhb fade">
+          <div class="numbertext">4 / 7</div>
+          <img
+            src="https://cdn.glitch.global/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/IMG_7504.jpeg?v=1670476815458"
+            style="width: 100%"
+          />
+          <div class="text"></div>
+        </div>
+
+        <div class="exhb fade">
+          <div class="numbertext">5 / 7</div>
+          <img
+            src="https://cdn.glitch.global/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/IMG_7518.jpeg?v=1670476816860"
+            style="width: 100%"
+          />
+          <div class="text"></div>
+        </div>
+
+        <div class="exhb fade">
+          <div class="numbertext">6 / 7</div>
+          <img
+            src="https://cdn.glitch.global/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/instal-6.jpeg?v=1670476824660"
+            style="width: 100%"
+          />
+          <div class="text"></div>
+        </div>
+
+        <div class="exhb fade">
+          <div class="numbertext">7 / 7</div>
+          <img
+            src="https://cdn.glitch.global/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/IMG_7496.jpeg?v=1670476813368"
+            style="width: 100%"
+          />
+          <div class="text"></div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dotexh" onclick="currentSlide(1)"></span>
+        <span class="dotexh" onclick="currentSlide(2)"></span>
+        <span class="dotexh" onclick="currentSlide(3)"></span>
+        <span class="dotexh" onclick="currentSlide(1)"></span>
+        <span class="dotexh" onclick="currentSlide(2)"></span>
+        <span class="dotexh" onclick="currentSlide(3)"></span>
+        <span class="dotexh" onclick="currentSlide(3)"></span>
+      </div>
+      <br />
+      <br />
+      <table style="padding-top: 40px">
+        <tr>
+          <td>
+            <figure>
+              <img
+                src="https://cdn.glitch.global/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/instal-5.jpeg?v=1670476822772"
+                alt="photo of business cards to play the game"
+                style="width: 100%"
+              />
+              <figcaption>
+                Cards to direct people to play the game online on their own
+                time. I hope people would do so to experience the game for
+                themselves.
+              </figcaption>
+            </figure>
+          </td>
+          <td></td>
+        </tr>
+      </table>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="images_container">
+        <div class="image_container">
+          <img
+            style=""
+            src="https://cdn.glitch.global/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/install3.jpeg?v=1670476829858"
+            alt="A screengrab of the opening scene of the game. This is Lorelei's bedroom."
+          />
+          <!--             <img
+            src=""
+            alt="A screengrab of the opening scene of the game. This is Lorelei's bedroom."
+          /> -->
+        </div>
+      </div>
+      <div class="images_container">
+        <div class="image_container">
+          <img
+            style=""
+            src="https://cdn.glitch.global/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/instal-1.jpeg?v=1670476817781"
+            alt="A screengrab of the opening scene of the game. This is Lorelei's bedroom."
+          />
+          <!--             <img
+            src=""
+            alt="A screengrab of the opening scene of the game. This is Lorelei's bedroom."
+          /> -->
+        </div>
+      </div>
+      <div class="images_container">
+        <div class="image_container">
+          <video width="700" height="525" controls>
+            <source
+              src="https://cdn.glitch.me/0c7f6157-8d05-4127-b3f6-153f0e5e2a88/installation.mov?v=1670483407228"
+              type="video/mp4"
+            />
+            <source src="movie.ogg" type="video/ogg" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+        <p style="color:#ff00dd;">
+      Copyright &#169;2022. All Rights Reserved.
+    </p>
     </div>
 
-    <div class="images_container">
-      <div class="image_container">
-        <img src="./splash.PNG" alt="Placeholder1" />
-      </div>
-      <div class="image_container">
-        <img src="../web_resonance_notopline.jpg" alt="Placeholder2" />
-      </div>
-      <div class="image_container">
-        <img src="../web_resonance_notopline.jpg" alt="Placeholder3" />
-      </div>
-      <div class="image_container">
-        <img src="../placeholder.jpeg" alt="Placeholder4" />
-      </div>
-    </div>
+  
+    
+    <!------------------------------------------------------------------SCRIPT--------------------------------->
 
+    <script>
+      let slideIndex = 0;
+      showSlides();
 
-  </div>
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 2 seconds
+      }
+      <!-------------------------------------------------------------SCRIPT2-------------------------->
+      let slideIndexexh = 1;
+      showSlides2(slideIndexexh);
 
+      function plusSlides(n) {
+        showSlides2((slideIndexexh += n));
+      }
 
+      function currentSlide(n) {
+        showSlides2((slideIndexexh = n));
+      }
+
+      function showSlides2(n) {
+        let i;
+        let slides2 = document.getElementsByClassName("exhb");
+        let dots2 = document.getElementsByClassName("dotexh");
+        if (n > slides2.length) {
+          slideIndexexh = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides2.length; i++) {
+          slides2[i].style.display = "none";
+        }
+        for (i = 0; i < dots2.length; i++) {
+          dots2[i].className = dots2[i].className.replace(" active", "");
+        }
+        slides2[slideIndexexh - 1].style.display = "block";
+        dots2[slideIndexexh - 1].className += " active";
+      }
+    </script>
+  </body>
 </html>
